@@ -12,10 +12,10 @@ function Profile(props) {
     >
       <div id="Title" className="item">
         Title
-        <h1>Profile</h1>
-        <p>I'm a creative Javascript Developer</p>
+        <h1 >Profile</h1>
+        <p >I'm a creative Javascript Developer</p>
       </div>
-      <div id="About_Me" className="item">
+      <div id="About_Me" className="item" >
         About me
         <p>
           I am an allround web developer. I am a senior programmer with good
@@ -35,7 +35,7 @@ function Profile(props) {
       <div id="Details" className="item">
         Details
         <h2>Name:</h2>
-        <p>Marc Rodriguez</p>
+        <p >Marc Rodriguez</p>
         <h2>Age:</h2>
         <p>28</p>
         <h2>Location:</h2>

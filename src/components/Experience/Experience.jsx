@@ -4,7 +4,7 @@ function Experience(props) {
   return (
     <div className="Experience" style={{ backgroundColor: "#cfe2e2" }}>
       <h1>Experience</h1>
-      <p1>
+      <p1 style={{fontFamily: 'Yellowtail', fontSize: "20px"}}>
         “If I had asked people what they wanted, they would have said faster
         horses. ” - Henry Ford
       </p1>

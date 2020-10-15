@@ -12,15 +12,22 @@ function Projects(props) {
         <p>Quote</p>
 
         <div>
-          <CardDeck 	
-styles={{ display: "flex", flexWrap: "wrap" }}>
+          <CardDeck
+            className="flex-container"
+            styles={{ display: "flex", flexWrap: "wrap" }}
+          >
             <Card
-              style={{ width: "18rem", backgroundColor: "silver", flex: "33.333%"}}
+              style={{
+                margin: "2rem",
+                border: "3px solid silver",
+                backgroundColor: "white",
+                flex: 0.1,
+              }}
             >
               <Card.Img
                 variant="top"
                 src={placeholder}
-                style={{ height: "150px", width: "225px" }}
+                style={{ height: "150px", width: "100%" }}
               />
               <Card.Body>
                 <Card.Title>Real Estate Website</Card.Title>
@@ -35,12 +42,17 @@ styles={{ display: "flex", flexWrap: "wrap" }}>
               </Card.Footer>
             </Card>
             <Card
-              style={{ width: "18rem", backgroundColor: "silver", flex: "34.333%" }}
+              style={{
+                margin: "2rem",
+                border: "3px solid silver",
+                backgroundColor: "white",
+                flex: 0.1,
+              }}
             >
               <Card.Img
                 variant="top"
                 src={placeholder}
-                style={{ height: "150px", width: "225px" }}
+                style={{ height: "150px", width: "100%" }}
               />
               <Card.Body>
                 <Card.Title>MentorMii</Card.Title>
@@ -58,12 +70,18 @@ styles={{ display: "flex", flexWrap: "wrap" }}>
               </Card.Footer>
             </Card>
             <Card
-              style={{ width: "18rem", backgroundColor: "silver", flex: "3%" }}
+              style={{
+                margin: "2rem",
+                width: "233px",
+                border: "3px solid silver",
+                backgroundColor: "white",
+                flex: 0.1,
+              }}
             >
               <Card.Img
                 variant="top"
                 src={placeholder}
-                style={{ height: "150px", width: "225px" }}
+                style={{ height: "150px", width: "100%" }}
               />
               <Card.Body>
                 <Card.Title>RottenHuevos</Card.Title>
