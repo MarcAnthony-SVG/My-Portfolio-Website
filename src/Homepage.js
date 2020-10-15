@@ -19,6 +19,7 @@ class Homepage extends React.Component {
       <div>
         <Profile></Profile>
         <Experience></Experience>
+        
         <Projects></Projects>
         <ContactInfo></ContactInfo>
       </div>

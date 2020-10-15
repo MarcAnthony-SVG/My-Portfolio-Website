@@ -1,5 +1,5 @@
 import React from "react";
-
+import TechnicalSkills from "../Technical_Skills/Technical_Skills.jsx"
 function Experience(props) {
   return (
     <div className="Experience" style={{ backgroundColor: "#cfe2e2" }}>
@@ -19,6 +19,7 @@ function Experience(props) {
           <img></img>Website
         </a>
       </div>
+      <TechnicalSkills></TechnicalSkills>
     </div>
   );
 }

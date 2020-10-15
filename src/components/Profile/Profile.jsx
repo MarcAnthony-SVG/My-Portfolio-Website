@@ -1,6 +1,7 @@
 import React from "react";
 import profilePic from "./Images/profilePic.jpeg";
 import "./Profile.css";
+import Image from "react-bootstrap/Image";
 
 function Profile(props) {
   return (
@@ -25,7 +26,12 @@ function Profile(props) {
           one'.
         </p>
       </div>
-      <img src={profilePic} alt="ProfilePic" id="ProfilePic"></img>
+      <Image
+        src={profilePic}
+        style={{ height: "170px", width: "auto" }}
+        id="ProfilePic"
+        thumbnail
+      />
       <div id="Details" className="item">
         Details
         <h2>Name:</h2>
