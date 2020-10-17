@@ -1,29 +1,36 @@
 import React from "react";
 import placeholder from "./images/placeholder.png";
 import Image from "react-bootstrap/Image";
+import CorkBoard from "./images/CorkBoardBackground.jpg";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 
+var cardStyle = {
+  margin: "1%",
+  height: "50%",
+  border: "2px solid silver",
+  backgroundColor: "white",
+  flex: 0.1,
+};
 function Projects(props) {
   return (
-    <div className="Projects" style={{ backgroundColor: "#cfe2e2" }}>
-      <div className="title">
+    <div className="Projects" >
+      <div className="title" style={{backgroundColor: "goldenrod"}}>
         <h1>Projects</h1>
         <p>Quote</p>
 
-        <div>
+        <div
+          style={{
+            backgroundImage: "url(" + CorkBoard + ")",
+            backgroundRepeat: "no-repeat",
+            imageRendering: "high-quality",
+          }}
+        >
           <CardDeck
             className="flex-container"
             styles={{ display: "flex", flexWrap: "wrap" }}
           >
-            <Card
-              style={{
-                margin: "2rem",
-                border: "3px solid silver",
-                backgroundColor: "white",
-                flex: 0.1,
-              }}
-            >
+            <Card style={cardStyle}>
               <Card.Img
                 variant="top"
                 src={placeholder}
@@ -41,14 +48,7 @@ function Projects(props) {
                 <small className="text-muted">Last updated 3 mins ago</small>
               </Card.Footer>
             </Card>
-            <Card
-              style={{
-                margin: "2rem",
-                border: "3px solid silver",
-                backgroundColor: "white",
-                flex: 0.1,
-              }}
-            >
+            <Card style={cardStyle}>
               <Card.Img
                 variant="top"
                 src={placeholder}
@@ -69,15 +69,7 @@ function Projects(props) {
                 <small className="text-muted">Last updated 3 mins ago</small>
               </Card.Footer>
             </Card>
-            <Card
-              style={{
-                margin: "2rem",
-                width: "233px",
-                border: "3px solid silver",
-                backgroundColor: "white",
-                flex: 0.1,
-              }}
-            >
+            <Card style={cardStyle}>
               <Card.Img
                 variant="top"
                 src={placeholder}

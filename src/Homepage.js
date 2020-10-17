@@ -17,9 +17,10 @@ class Homepage extends React.Component {
   render() {
     return (
       <div>
+        <div style={{ fontSize: "55px" }}>Marc A Rodriguez</div>
         <Profile></Profile>
         <Experience></Experience>
-        
+
         <Projects></Projects>
         <ContactInfo></ContactInfo>
       </div>
