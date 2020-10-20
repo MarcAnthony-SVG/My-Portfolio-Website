@@ -1,6 +1,6 @@
 import React from "react";
 import placeholder from "./images/placeholder.png";
-import Image from "react-bootstrap/Image";
+// import Image from "react-bootstrap/Image";
 import CorkBoard from "./images/CorkBoardBackground.jpg";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
@@ -14,8 +14,8 @@ var cardStyle = {
 };
 function Projects(props) {
   return (
-    <div className="Projects" >
-      <div className="title" style={{backgroundColor: "goldenrod"}}>
+    <div className="Projects">
+      <div className="title" style={{ backgroundColor: "goldenrod" }}>
         <h1>Projects</h1>
         <p>Quote</p>
 

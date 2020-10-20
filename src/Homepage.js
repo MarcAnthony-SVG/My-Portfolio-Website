@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Button } from "react-bootstrap";
+// import { Jumbotron, Button } from "react-bootstrap";
 import Profile from "./components/Profile/Profile.jsx";
 import Experience from "./components/Experience/Experience.jsx";
 import Projects from "./components/Projects/Projects.jsx";

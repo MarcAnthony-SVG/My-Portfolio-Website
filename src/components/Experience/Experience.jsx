@@ -13,13 +13,13 @@ function Experience(props) {
       </p1>
       <div>
         <a href="https://www.linkedin.com/in/marcrodriguez2020/">
-          <img></img>Linkedin
+          <img alt="Linkedin"></img>
         </a>
         <a href="https://www.facebook.com/MarcRodriguez20">
-          <img></img>Facebook
+          <img alt="Facebook"></img>
         </a>
         <a href=" ">
-          <img></img>Website
+          <img alt="Website"></img>
         </a>
       </div>
       <TechnicalSkills></TechnicalSkills>

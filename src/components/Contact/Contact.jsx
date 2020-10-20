@@ -9,7 +9,7 @@ function ContactInfo(props) {
       style={{ backgroundColor: "#cfe2e2", height: "700px" }}
     >
       <h1>Contact</h1>
-      <div>{animation}</div>
+      {/* <div>{animation}</div> */}
       <p1>
         “If I had asked people what they wanted, they would have said faster
         horses. ” - Henry Ford
@@ -29,7 +29,7 @@ function ContactInfo(props) {
           <a href=" ">Website</a>
         </div>
         <div className="Links">
-          <a href="">marcanthonyrodriguez95@gmail.com</a>
+          <a href="FILL ME IN">marcanthonyrodriguez95@gmail.com</a>
         </div>
       </div>
     </div>
