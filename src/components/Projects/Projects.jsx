@@ -4,6 +4,7 @@ import placeholder from "./images/placeholder.png";
 import CorkBoard from "./images/CorkBoardBackground.jpg";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
+// import { useDrag } from "react-dnd";
 
 var cardStyle = {
   margin: "1%",
@@ -18,7 +19,9 @@ function Projects(props) {
       <div className="title" style={{ backgroundColor: "goldenrod" }}>
         <h1>Projects</h1>
         <p>Quote</p>
-
+        {/* <div ref={dragRef} style={{ opacity }}>
+          {text}
+        </div> */}
         <div
           style={{
             backgroundImage: "url(" + CorkBoard + ")",
