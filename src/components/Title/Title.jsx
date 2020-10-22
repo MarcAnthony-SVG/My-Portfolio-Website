@@ -1,0 +1,44 @@
+import React from "react";
+
+function Title(props) {
+  return (
+    <div
+      id="Title"
+      className="flex-container"
+      style={{ backgroundColor: "#cfe2e2" }}
+    >
+      <div id="Title" className="item">
+        Title
+        <h1 >Profile</h1>
+        <p >I'm a creative Javascript Developer</p>
+      </div>
+      <div id="About_Me" className="item" >
+        About me
+        <p>
+          I am an allround web developer. I am a senior programmer with good
+          knowledge of front-end techniques. I love structure and order and I
+          also stand for quality. I love spending time on fixing little details
+          and optimizing web apps. Also I like working in a team, you'll learn
+          faster and much more. As the saying goes: 'two heads are better than
+          one'.
+        </p>
+      </div>
+      <Image
+        src={profilePic}
+        style={{ height: "170px", width: "auto" }}
+        id="ProfilePic"
+        thumbnail
+      />
+      <div id="Details" className="item">
+        Details
+        <h2>Name:</h2>
+        <p >Marc Rodriguez</p>
+        <h2>Age:</h2>
+        <p>28</p>
+        <h2>Location:</h2>
+        <p>San Antonio, Texas</p>
+      </div>
+    </div>
+  );
+}
+export default Title;
