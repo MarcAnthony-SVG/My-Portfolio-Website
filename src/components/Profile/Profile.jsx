@@ -6,7 +6,7 @@ import Image from "react-bootstrap/Image";
 const containerStyle = {
   display: "flex",
   flexDirection: "row",
-  width: "100rem",
+  width: "auto",
   border: "2px solid red"
 };
 
