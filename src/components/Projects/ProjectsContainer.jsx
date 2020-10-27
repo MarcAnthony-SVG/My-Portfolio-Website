@@ -1,5 +1,5 @@
 import React from "react";
-import CorkBoard from "../../components/Projects/images/CorkBoardBackground.jpg";
+import CorkBoard from "../../components/OldProjects/images/CorkBoardBackground.jpg";
 import { Card } from "./Card";
 import Projects from "../../Data/Projects.js";
 import update from "immutability-helper";
@@ -7,7 +7,7 @@ import update from "immutability-helper";
 const constainerStyle = {
   width: "100%",
   display: "flex",
-  height: "700px",
+  height: "790px",
   justifyContent: "center",
   backgroundImage: "url(" + CorkBoard + ")",
   backgroundRepeat: "repeat",
@@ -36,7 +36,7 @@ function buildCardData() {
   };
 }
 
-export default class Container extends React.Component {
+export default class ProjectsContainer extends React.Component {
   constructor(props) {
     super(props);
     this.drawFrame = () => {

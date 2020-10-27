@@ -4,8 +4,8 @@ import { ItemTypes } from "../../Utilities/ItemTypes";
 
 const cardStyle = {
   border: "1px solid black",
-  width: "15%",
-  height: "50%",
+  width: "22%",
+  height: "56%",
   margin: "1%",
   padding: "0.5rem 1rem",
   backgroundColor: "white",

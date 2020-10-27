@@ -1,13 +1,3 @@
-.flex-container {
-  display: flex;
-  flex-direction: row;
-}
-#Title {
-  order: 1;
-  width: 500px;
-  margin: auto;
-  border: 3px solid #73ad21;
-}
 #About_Me {
   order: 2;
   width: 500px;

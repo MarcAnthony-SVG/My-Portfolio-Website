@@ -1,4 +1,4 @@
-const placeholder = require("../components/Projects/images/placeholder.png");
+const placeholder = require("../components/OldProjects/images/placeholder.png");
 
 var Projects = [
   {

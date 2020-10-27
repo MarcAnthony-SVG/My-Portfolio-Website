@@ -1,12 +1,11 @@
 import React from "react";
-import "./Contact.css";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 
 function ContactInfo(props) {
   return (
     <div
       className="ContactInfo"
-      style={{ backgroundColor: "#cfe2e2", height: "700px" }}
+      style={{ backgroundColor: "#cfe2e2", height: "900px" }}
     >
       <h1>Contact</h1>
       {/* <div>{animation}</div> */}
@@ -14,7 +13,10 @@ function ContactInfo(props) {
         “If I had asked people what they wanted, they would have said faster
         horses. ” - Henry Ford
       </p1>
-      <div className="LinkedGroups">
+      <div
+        className="LinksContainer"
+        style={{ display: "flex", flexDirection: "row" }}
+      >
         <div className="Links">
           <AiFillLinkedin size="2em" />
           <a href="https://www.linkedin.com/in/marcrodriguez2020/">

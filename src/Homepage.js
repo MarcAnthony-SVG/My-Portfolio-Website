@@ -1,10 +1,12 @@
 import React from "react";
 // import { Jumbotron, Button } from "react-bootstrap";
+import Title from "./components/Title/Title.jsx";
+
 import Profile from "./components/Profile/Profile.jsx";
 import Experience from "./components/Experience/Experience.jsx";
-import Projects from "./components/Projects/Projects.jsx";
+// import Projects from "./components/OldProjects/OldProjects.jsx";
 import ContactInfo from "./components/Contact/Contact.jsx";
-import Container from "./components/Test/Container.jsx";
+import ProjectsContainer from "./components/Projects/ProjectsContainer.jsx";
 
 // import "./Homepage.css";
 
@@ -19,13 +21,11 @@ class Homepage extends React.Component {
   render() {
     return (
       <div>
-        <div style={{ fontSize: "55px", height: "950px",   justifyContent: "center"
-  }}>Marc A Rodriguez</div>
-        <Profile></Profile>
-        <Experience></Experience>
-        <Projects></Projects>
-        <ContactInfo></ContactInfo>
-        <Container></Container>
+        <Title />
+        <Profile />
+        <Experience />
+        <ProjectsContainer />
+        <ContactInfo />
       </div>
     );
   }
