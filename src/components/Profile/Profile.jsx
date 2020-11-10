@@ -16,7 +16,7 @@ function Profile(props) {
       id="Profile"
       style={{
         backgroundColor: "#cfe2e2",
-        height: "960px",
+        height: "1100px",
         textAlign: "center",
       }}
     >

@@ -1,10 +1,19 @@
 import React from "react";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import { Link, animateScroll as scroll } from "react-scroll";
+
+var linkStyle = {
+  margin: 2,
+  width: "auto",
+  border: "2px solid silver",
+  flex: 0.15,
+  textAlign: "center",
+};
 
 function ContactInfo(props) {
   return (
     <div
-      className="ContactInfo"
+      className="Contact"
       style={{ backgroundColor: "#cfe2e2", height: "900px" }}
     >
       <h1>Contact</h1>
@@ -13,24 +22,21 @@ function ContactInfo(props) {
         “If I had asked people what they wanted, they would have said faster
         horses. ” - Henry Ford
       </p1>
-      <div
-        className="LinksContainer"
-        style={{ display: "flex", flexDirection: "row" }}
-      >
-        <div className="Links">
+      <div className="LinksContainer" style={{ display: "flex" }}>
+        <div style={linkStyle}>
           <AiFillLinkedin size="2em" />
           <a href="https://www.linkedin.com/in/marcrodriguez2020/">
             marcrodriguez2020
           </a>
         </div>
-        <div className="Links">
+        <div style={linkStyle}>
           <AiFillFacebook size="2em" />
           <a href="https://www.facebook.com/MarcRodriguez20">MarcRodriguez20</a>
         </div>
-        <div className="Links">
+        <div style={linkStyle}>
           <a href=" ">Website</a>
         </div>
-        <div className="Links">
+        <div style={linkStyle}>
           <a href="FILL ME IN">marcanthonyrodriguez95@gmail.com</a>
         </div>
       </div>

@@ -7,7 +7,7 @@ import update from "immutability-helper";
 const constainerStyle = {
   width: "100%",
   display: "flex",
-  height: "790px",
+  height: "1000px",
   justifyContent: "center",
   backgroundImage: "url(" + CorkBoard + ")",
   backgroundRepeat: "repeat",
@@ -86,7 +86,7 @@ export default class ProjectsContainer extends React.Component {
               moveCard={this.moveCard}
             />
           ))}
-        </div>{" "}
+        </div>
       </div>
     );
   }

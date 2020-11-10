@@ -1,19 +1,18 @@
 import React from "react";
+const Background = require("./Images/Artistic-4K-Wallpaper-3840x2160.jpg");
 
 function Title(props) {
   return (
     <div
-      id="Title"
-      style={{
-        backgroundColor: "silver",
-        height: "960px",
-        width: "auto",
-        display: "flex",
-        margin: "auto",
-      }}
+    id="Title"
+    style={{
+      height: "1200px",
+      width: "auto",
+      display: "flex",
+      margin: "auto",
+    }}
     >
       <div id="Title" className="item" style={{
-        backgroundColor: "",
         width: "auto",
         display: "flex",
         margin: "auto",
@@ -21,6 +20,7 @@ function Title(props) {
       }}>
         Marc Anthony Rodriguez
       </div>
+      <img src={Background} alt="background"/>
     </div>
   );
 }

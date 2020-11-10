@@ -1,9 +1,11 @@
 const placeholder = require("../components/OldProjects/images/placeholder.png");
+const RealEstate = require("../components/Projects/Images/RealEstateApp.png");
+const MentorMii = require("../components/Projects/Images/MentorMii.png");
 
 var Projects = [
   {
     id: 1,
-    image: placeholder,
+    image: RealEstate,
     title: `Real Estate Website`,
     text: `A website I created to use libraries, frameworks, and APIs
 that I hadn’t used before, to challenge myself as a developer
@@ -11,7 +13,7 @@ and improve upon my skills.`,
   },
   {
     id: 2,
-    image: placeholder,
+    image: MentorMii,
     title: `MentorMii`,
     text: `A full-stack web application that connects those seeking
         mentorship with a variety of skills with mentors that can

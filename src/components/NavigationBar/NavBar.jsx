@@ -1,96 +1,91 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-// Each logical "route" has two components, one for
-// the sidebar and one for the main area. We want to
-// render both of them in different places when the
-// path matches the current URL.
-
-// We are going to use this route config in 2
-// spots: once for the sidebar and once in the main
-// content section. All routes are in the same
-// order they would appear in a <Switch>.
-const routes = [
-  {
-    path: "/",
-    exact: true,
-    sidebar: () => <div>home!</div>,
-    main: () => <h2>Home</h2>
-  },
-  {
-    path: "/bubblegum",
-    sidebar: () => <div>bubblegum!</div>,
-    main: () => <h2>Bubblegum</h2>
-  },
-  {
-    path: "/shoelaces",
-    sidebar: () => <div>shoelaces!</div>,
-    main: () => <h2>Shoelaces</h2>
+var Style = {
+  margin: 2,
+  position: "fixed",
+  right: "10px",
+  top: "46%",
+  backgroundColor: "#708090",
+  width: "120px",
+  height: "125px",
+  border: "2px solid silver",
+  textAlign: "center",
+};
+export default class Navbar extends Component {
+  render() {
+    return (
+      <nav className="nav" id="navbar" style={Style}>
+        <div className="nav-content">
+          <div className="nav-items">
+            <div>
+              <Link
+                activeClass="active"
+                to="Title"
+                spy={true}
+                smooth={true}
+                offset={10}
+                duration={1000}
+                onSetActive={this.handleSetActive}
+              >
+                Title
+              </Link>
+            </div>
+            <div>
+              <Link
+                activeClass="active"
+                to="Profile"
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={1000}
+                onSetActive={this.handleSetActive}
+              >
+                Profile
+              </Link>
+            </div>
+            <div>
+              <Link
+                activeClass="active"
+                to="Experience"
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={1000}
+                onSetActive={this.handleSetActive}
+              >
+                Experience
+              </Link>
+            </div>
+            <div>
+              <Link
+                activeClass="active"
+                to="Projects"
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={1000}
+                onSetActive={this.handleSetActive}
+              >
+                Projects
+              </Link>
+            </div>
+            <div>
+              <Link
+                activeClass="active"
+                to="Contact"
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={1000}
+                onSetActive={this.handleSetActive}
+              >
+                ContactInfo
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+    );
   }
-];
-
-export default function SidebarExample() {
-  return (
-    <Router>
-      <div style={{ display: "flex" }}>
-        <div
-          style={{
-            padding: "10px",
-            width: "40%",
-            background: "#f0f0f0"
-          }}
-        >
-          <ul style={{ listStyleType: "none", padding: 0 }}>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/bubblegum">Bubblegum</Link>
-            </li>
-            <li>
-              <Link to="/shoelaces">Shoelaces</Link>
-            </li>
-          </ul>
-
-          <Switch>
-            {routes.map((route, index) => (
-              // You can render a <Route> in as many places
-              // as you want in your app. It will render along
-              // with any other <Route>s that also match the URL.
-              // So, a sidebar or breadcrumbs or anything else
-              // that requires you to render multiple things
-              // in multiple places at the same URL is nothing
-              // more than multiple <Route>s.
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                children={<route.sidebar />}
-              />
-            ))}
-          </Switch>
-        </div>
-
-        <div style={{ flex: 1, padding: "10px" }}>
-          <Switch>
-            {routes.map((route, index) => (
-              // Render more <Route>s with the same paths as
-              // above, but different components this time.
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                children={<route.main />}
-              />
-            ))}
-          </Switch>
-        </div>
-      </div>
-    </Router>
-  );
 }
