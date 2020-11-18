@@ -1,4 +1,5 @@
 import React from "react";
+
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -11,12 +12,13 @@ var linkStyle = {
 };
 
 function ContactInfo(props) {
+
   return (
     <div
       className="Contact"
       style={{ backgroundColor: "#cfe2e2", height: "900px" }}
     >
-      <h1>Contact</h1>
+      <h1 style={{ marginBlockStart: "0.1em" }}>Contact</h1>
       {/* <div>{animation}</div> */}
       <p1>
         “If I had asked people what they wanted, they would have said faster

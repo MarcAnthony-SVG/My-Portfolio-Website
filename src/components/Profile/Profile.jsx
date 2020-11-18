@@ -7,7 +7,7 @@ const containerStyle = {
   display: "flex",
   flexDirection: "row",
   width: "auto",
-  border: "2px solid red"
+  border: "2px solid red",
 };
 
 function Profile(props) {
@@ -27,10 +27,10 @@ function Profile(props) {
           textAlign: "center",
         }}
       >
-        <h1>Profile</h1>
+        <h1 style={{ marginBlockStart: "0em" }}>Profile</h1>
         <p>I'm a creative Javascript Developer</p>
       </div>
-        <hr></hr>
+      <hr></hr>
       <div style={containerStyle}>
         <section id="About_Me" className="item">
           <h2>About me</h2>
@@ -45,7 +45,7 @@ function Profile(props) {
         </section>
         <Image
           src={profilePic}
-          style={{ height: "270px", width: "auto" }}
+          style={{ height: "270px", width: "auto" , borderRadius: "10%" }}
           id="ProfilePic"
           thumbnail
         />

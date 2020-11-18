@@ -1,5 +1,5 @@
 import React from "react";
-import CorkBoard from "../../components/OldProjects/images/CorkBoardBackground.jpg";
+import CorkBoard from "../Projects/Images/Corkboard.jpg"
 import { Card } from "./Card";
 import Projects from "../../Data/Projects.js";
 import update from "immutability-helper";

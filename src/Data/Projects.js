@@ -1,4 +1,4 @@
-const placeholder = require("../components/OldProjects/images/placeholder.png");
+// const placeholder = require("../components/OldProjects/images/placeholder.png");
 const RealEstate = require("../components/Projects/Images/RealEstateApp.png");
 const MentorMii = require("../components/Projects/Images/MentorMii.png");
 
@@ -24,7 +24,7 @@ and improve upon my skills.`,
   },
   {
     id: 3,
-    image: placeholder,
+    image: "image",
     title: `RottenHuevos`,
     text: `A full-stack e-commerce application and alternative to Newegg.
         I served as a software developer focusing on the front-end.`,

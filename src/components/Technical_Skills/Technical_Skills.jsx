@@ -3,10 +3,10 @@ import React from "react";
 function TechnicalSkills(props) {
   return (
     <div className="TechnicalSkills" style={{ backgroundColor: "#cfe2e2" }}>
-      <h1>Technical Skills</h1>
+      <h1 style={{ marginBlockStart: "0.1em" }}>Technical Skills</h1>
       <hr></hr>
       <section>
-        <h1>Skills</h1>
+        <h1 >Skills</h1>
         <div>
           <p1>Front End ​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap</p1>
         </div>
@@ -16,11 +16,11 @@ function TechnicalSkills(props) {
         <p1>Developer Tools:​ React Debugger, Git, npm, Webpack, Babel </p1>
       </section>
       <hr></hr>
-      <section>
+      {/* <section>
         <h1>Languages</h1>
-      </section>
-      <hr></hr>
-
+      </section> */}
+      {/* <hr></hr> */}
+{/* 
       <section>
         <h1>Tools</h1>
         <p>
@@ -39,8 +39,9 @@ function TechnicalSkills(props) {
           VS Code
           <span></span>
         </p>
-      </section>
+      </section> */}
     </div>
+
   );
 }
 export default TechnicalSkills;

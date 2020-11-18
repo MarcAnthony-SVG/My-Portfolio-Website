@@ -11,6 +11,7 @@ var Style = {
   height: "125px",
   border: "2px solid silver",
   textAlign: "center",
+  borderRadius: "10%"
 };
 export default class Navbar extends Component {
   render() {

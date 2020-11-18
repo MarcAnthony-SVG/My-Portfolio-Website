@@ -3,12 +3,14 @@
   width: 500px;
   margin: auto;
   border: 3px solid #73ad21;
+  /* text-align: justify */
 }
 #Details {
   order: 4;
   width: 500px;
   margin: auto;
   border: 3px solid #73ad21;
+  
 }
 #ProfilePic {
   order: 3;
