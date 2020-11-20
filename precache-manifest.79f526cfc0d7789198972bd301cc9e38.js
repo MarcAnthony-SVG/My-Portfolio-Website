@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4de48dca35332e81227ff81e07742cb5",
+    "revision": "1cab5f525a2f951768dc510e9c07fd53",
     "url": "/My_Portfolio_Website/index.html"
   },
   {
-    "revision": "d8f80b763320f90f5f75",
-    "url": "/My_Portfolio_Website/static/css/main.34343fd0.chunk.css"
+    "revision": "892876e70da2cf3afea9",
+    "url": "/My_Portfolio_Website/static/css/main.ca2bdf04.chunk.css"
   },
   {
-    "revision": "be9c4666196e59115275",
-    "url": "/My_Portfolio_Website/static/js/2.3a34c357.chunk.js"
+    "revision": "f81a9c28089b1cee8713",
+    "url": "/My_Portfolio_Website/static/js/2.0d55a6cd.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/My_Portfolio_Website/static/js/2.3a34c357.chunk.js.LICENSE.txt"
+    "url": "/My_Portfolio_Website/static/js/2.0d55a6cd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d8f80b763320f90f5f75",
-    "url": "/My_Portfolio_Website/static/js/main.c67b25d2.chunk.js"
+    "revision": "892876e70da2cf3afea9",
+    "url": "/My_Portfolio_Website/static/js/main.f32329d6.chunk.js"
   },
   {
     "revision": "a5bbda09600cf2ef9af0",
@@ -28,8 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/My_Portfolio_Website/static/media/Artistic-4K-Wallpaper-3840x2160.6a375215.jpg"
   },
   {
-    "revision": "92a93b8b7ffc930e6f2a82f9dc4cb59f",
-    "url": "/My_Portfolio_Website/static/media/CorkBoardBackground.92a93b8b.jpg"
+    "revision": "950a841015f92d4cf192dfe0beb1d895",
+    "url": "/My_Portfolio_Website/static/media/Corkboard.950a8410.jpg"
+  },
+  {
+    "revision": "e8acad948840f317387374c78223f4fe",
+    "url": "/My_Portfolio_Website/static/media/Galvanize Logo.e8acad94.jpg"
   },
   {
     "revision": "e1a2dc19ddaa0ed6f0fbfed5df48b6bd",
@@ -38,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "77bab1d77254fe3fc36ae470fdec3986",
     "url": "/My_Portfolio_Website/static/media/RealEstateApp.77bab1d7.png"
+  },
+  {
+    "revision": "92f211733eff83fe7cee6061f884aed7",
+    "url": "/My_Portfolio_Website/static/media/U.S. Army Logo.92f21173.png"
   },
   {
     "revision": "6c35e602ab1cd72867541ecf360a5a32",
