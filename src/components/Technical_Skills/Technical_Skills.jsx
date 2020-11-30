@@ -5,22 +5,29 @@ function TechnicalSkills(props) {
     <div className="TechnicalSkills" style={{ backgroundColor: "#cfe2e2" }}>
       <h1 style={{ marginBlockStart: "0.1em" }}>Technical Skills</h1>
       <hr></hr>
+
       <section>
-        <h1 >Skills</h1>
-        <div>
-          <p1>Front End ​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap</p1>
+        <div
+          style={{
+            textAlign: "left",
+          }}
+        >
+          <h4 style={{ display: "inline" }}>Front End </h4>
+          <p1>​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap</p1>
+          <br></br>
+          <h4 style={{ display: "inline" }}>Back End </h4>
+          <p1> Node.js, Express, MySQL, S3, D3, Graphql, Apollo-Server </p1>
+          <br></br>
+          <h4 style={{ display: "inline" }}>Developer Tools</h4>
+
+          <p1>:​ React Debugger, Git, npm, Webpack, Babel </p1>
         </div>
-        <br></br>
-        <p1>Back End:​ Node.js, Express, MySQL, S3 </p1>
-        <br></br>
-        <p1>Developer Tools:​ React Debugger, Git, npm, Webpack, Babel </p1>
       </section>
-      <hr></hr>
       {/* <section>
         <h1>Languages</h1>
       </section> */}
       {/* <hr></hr> */}
-{/* 
+      {/* 
       <section>
         <h1>Tools</h1>
         <p>
@@ -41,7 +48,6 @@ function TechnicalSkills(props) {
         </p>
       </section> */}
     </div>
-
   );
 }
 export default TechnicalSkills;

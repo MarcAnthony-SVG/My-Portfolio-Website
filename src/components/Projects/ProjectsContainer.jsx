@@ -7,7 +7,7 @@ import update from "immutability-helper";
 const constainerStyle = {
   width: "100%",
   display: "flex",
-  height: "1000px",
+  height: "930px",
   justifyContent: "center",
   backgroundImage: "url(" + CorkBoard + ")",
   backgroundRepeat: "repeat",
@@ -73,7 +73,7 @@ export default class ProjectsContainer extends React.Component {
       <div className="Projects" style={{ backgroundColor: "goldenrod" , border: '10px solid black' , width: "99%"}}>
         <div className="title">
           <h1>Projects</h1>
-          <p>Quote</p>
+          {/* <p>Quote</p> */}
         </div>
         <div style={constainerStyle}>
           {cardsByIndex.map((card) => (

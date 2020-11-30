@@ -1,24 +1,35 @@
 #About_Me {
   order: 2;
-  width: 500px;
-  margin: auto;
-  border: 3px solid #73ad21;
-  /* text-align: justify */
+  width: 245px;
+  text-align: justify;
 }
 #Details {
   order: 4;
-  width: 500px;
-  margin: auto;
-  border: 3px solid #73ad21;
-  
+  width: 250px;
+  border-radius: 4%;
+  -webkit-border-radius: 4%;
+  -moz-border-radius: 4%;
+  -ms-border-radius: 4%;
+  -o-border-radius: 4%;
 }
 #ProfilePic {
   order: 3;
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
   margin: auto;
 }
-/* p {
-  font-family: 'Yellowtail';
-  font-size: 22px;
-} */
+#Title {
+  textalign: "center";
+}
+
+.Information_Box {
+  margin: 20px;
+  background-color: darkgrey;
+  border-radius: 4%;
+  border: 3px solid black;
+  width: 250px;
+  height: 350px;
+  -webkit-border-radius: 4%;
+  -moz-border-radius: 4%;
+  -ms-border-radius: 4%;
+  -o-border-radius: 4%;
+}

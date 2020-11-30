@@ -6,7 +6,7 @@ function Title(props) {
     <div
       id="Title"
       style={{
-        height: "1200px",
+        height: "930px",
         width: "auto",
         display: "flex",
         margin: "auto",

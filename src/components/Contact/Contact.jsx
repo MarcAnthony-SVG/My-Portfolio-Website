@@ -16,7 +16,7 @@ function ContactInfo(props) {
   return (
     <div
       className="Contact"
-      style={{ backgroundColor: "#cfe2e2", height: "900px" }}
+      style={{ backgroundColor: "#cfe2e2", height: "300px" }}
     >
       <h1 style={{ marginBlockStart: "0.1em" }}>Contact</h1>
       {/* <div>{animation}</div> */}
