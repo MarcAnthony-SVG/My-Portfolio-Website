@@ -5,7 +5,7 @@ import ArmyLogo from "./../../Data/Images/U.S. Army Logo.png";
 import TechnicalSkills from "../Technical_Skills/Technical_Skills.jsx";
 import Image from "react-bootstrap/Image";
 
-const ParentContainer = {
+const Parent_Container = {
   borderStyle: "solid",
   height: "auto",
   width: "300px",
@@ -13,6 +13,13 @@ const ParentContainer = {
   margin: "10px",
   backgroundColor: "silver",
   borderRadius: "0.9%",
+  overflow: "auto"
+
+};
+const Photo_Style = {
+  height: "13vh",
+  width: "auto",
+  borderRadius: "10%",
 };
 function Experience(props) {
   return (
@@ -23,6 +30,8 @@ function Experience(props) {
         height: "923px",
         textAlign: "center",
         border: "65px inset darkred",
+        overflow: "auto"
+
       }}
     >
       <h1 style={{ marginBlockStart: "0.1em" }}>Work Experience</h1>
@@ -36,12 +45,12 @@ function Experience(props) {
           // alignItems: "center",
         }}
       >
-        <div className="ParentContainer" style={ParentContainer}>
+        <div className="ParentContainer" style={Parent_Container}>
           <div className="ChildContainer">
             <Image
               src={GalvanizeLogo}
               alt="Galvanize Logo"
-              style={{ height: "80px", width: "auto", borderRadius: "10%" }}
+              style={Photo_Style}
             />
             <h4>Galvanize Inc</h4>
             <p3>4 Months</p3>
@@ -63,12 +72,12 @@ function Experience(props) {
             </div>
           </div>
         </div>
-        <div className="ParentContainer" style={ParentContainer}>
+        <div className="ParentContainer" style={Parent_Container}>
           <div className="ChildContainer">
             <Image
               src={ArmyLogo}
               alt="Army Logo"
-              style={{ height: "80px", width: "auto", borderRadius: "10%" }}
+              style={Photo_Style}
             />
             <h4>US Army</h4>
             <p3> 5 Years 8 Months</p3>

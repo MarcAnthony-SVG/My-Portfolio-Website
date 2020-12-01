@@ -21,7 +21,7 @@ function Title(props) {
           width: "auto",
           display: "flex",
           margin: "auto",
-          fontSize: "55px",
+          fontSize: "5vmax",
         }}
         > 
         Marc Anthony Rodriguez

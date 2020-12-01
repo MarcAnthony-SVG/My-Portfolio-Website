@@ -1,16 +1,10 @@
 #About_Me {
   order: 2;
-  width: 245px;
   text-align: justify;
 }
 #Details {
   order: 4;
-  width: 250px;
-  border-radius: 4%;
-  -webkit-border-radius: 4%;
-  -moz-border-radius: 4%;
-  -ms-border-radius: 4%;
-  -o-border-radius: 4%;
+  /* width: 250px; */
 }
 #ProfilePic {
   order: 3;
@@ -26,8 +20,9 @@
   background-color: darkgrey;
   border-radius: 4%;
   border: 3px solid black;
-  width: 250px;
-  height: 350px;
+  width: 25vw;
+  height: 44vh;
+  overflow: auto;
   -webkit-border-radius: 4%;
   -moz-border-radius: 4%;
   -ms-border-radius: 4%;

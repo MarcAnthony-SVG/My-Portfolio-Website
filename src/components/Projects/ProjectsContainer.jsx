@@ -1,5 +1,5 @@
 import React from "react";
-import CorkBoard from "../Projects/Images/Corkboard.jpg"
+import CorkBoard from "../Projects/Images/Corkboard.jpg";
 import { Card } from "./Card";
 import Projects from "../../Data/Projects.js";
 import update from "immutability-helper";
@@ -12,6 +12,7 @@ const constainerStyle = {
   backgroundImage: "url(" + CorkBoard + ")",
   backgroundRepeat: "repeat",
   imageRendering: "high-quality",
+  overflow: "auto",
 };
 
 function buildCardData() {
@@ -26,9 +27,8 @@ function buildCardData() {
     };
     cardsById[card.id] = card;
     cardsByIndex[i] = card;
-    console.log("id", cardsById)
-    console.log("index",cardsByIndex)
-
+    console.log("id", cardsById);
+    console.log("index", cardsByIndex);
   }
   return {
     cardsById,
@@ -70,7 +70,15 @@ export default class ProjectsContainer extends React.Component {
   render() {
     const { cardsByIndex } = this.state;
     return (
-      <div className="Projects" style={{ backgroundColor: "goldenrod" , border: '10px solid black' , width: "99%"}}>
+      <div
+        className="Projects"
+        style={{
+          overflow: "auto",
+          backgroundColor: "goldenrod",
+          border: "10px solid black",
+          width: "99%",
+        }}
+      >
         <div className="title">
           <h1>Projects</h1>
           {/* <p>Quote</p> */}

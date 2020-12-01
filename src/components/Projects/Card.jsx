@@ -4,12 +4,14 @@ import { ItemTypes } from "../../Utilities/ItemTypes";
 
 const cardStyle = {
   border: "1px solid black",
-  width: "22%",
-  height: "60%",
+  width: "30vw",
+  height: "60vh",
   margin: "1%",
   padding: "0.5rem 1rem",
   backgroundColor: "white",
   cursor: "move",
+  overflow: "auto"
+
 };
 export const Card = memo(({ id, text, title, image, moveCard }) => {
   const ref = useRef(null);

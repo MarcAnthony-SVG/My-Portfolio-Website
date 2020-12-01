@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 var Style = {
-  margin: 2,
   position: "fixed",
   right: "10px",
   top: "46%",

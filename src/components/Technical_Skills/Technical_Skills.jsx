@@ -1,5 +1,9 @@
 import React from "react";
 
+const Inline = {
+  display: "inline",
+};
+
 function TechnicalSkills(props) {
   return (
     <div className="TechnicalSkills" style={{ backgroundColor: "#cfe2e2" }}>
@@ -12,13 +16,13 @@ function TechnicalSkills(props) {
             textAlign: "left",
           }}
         >
-          <h4 style={{ display: "inline" }}>Front End </h4>
+          <h4 style={Inline}>Front End </h4>
           <p1>​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap</p1>
           <br></br>
-          <h4 style={{ display: "inline" }}>Back End </h4>
+          <h4 style={Inline}>Back End </h4>
           <p1> Node.js, Express, MySQL, S3, D3, Graphql, Apollo-Server </p1>
           <br></br>
-          <h4 style={{ display: "inline" }}>Developer Tools</h4>
+          <h4 style={Inline}>Developer Tools</h4>
 
           <p1>:​ React Debugger, Git, npm, Webpack, Babel </p1>
         </div>

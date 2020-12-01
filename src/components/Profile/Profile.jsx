@@ -34,17 +34,12 @@ function Profile(props) {
         <section id="About_Me" className="Information_Box">
           <h2 id="Title">About me</h2>
           <p>
-            I am an allround web developer. I am a senior programmer with good
-            knowledge of front-end techniques. I love structure and order and I
-            also stand for quality. I love spending time on fixing little
-            details and optimizing web apps. Also I like working in a team,
-            you'll learn faster and much more. As the saying goes: 'two heads
-            are better than one'.
+            Welcome to my personal website, I first was introduced to computer programming when I was in middle school.
           </p>
         </section>
         <Image
           src={profilePic}
-          style={{ height: "350px", width: "auto", borderRadius: "10%" }}
+          style={{ height: "44.5vh", width: "auto", borderRadius: "10%" }}
           id="ProfilePic"
           thumbnail
         />

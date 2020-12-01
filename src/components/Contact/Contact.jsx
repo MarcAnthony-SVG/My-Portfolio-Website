@@ -7,8 +7,9 @@ var linkStyle = {
   margin: 2,
   width: "auto",
   border: "2px solid silver",
-  flex: 0.15,
+  flex: "auto",
   textAlign: "center",
+  overflow: "auto"
 };
 
 function ContactInfo(props) {
@@ -16,7 +17,7 @@ function ContactInfo(props) {
   return (
     <div
       className="Contact"
-      style={{ backgroundColor: "#cfe2e2", height: "300px" }}
+      style={{ backgroundColor: "#cfe2e2", height: "auto" , width:"auto" }}
     >
       <h1 style={{ marginBlockStart: "0.1em" }}>Contact</h1>
       {/* <div>{animation}</div> */}
@@ -24,7 +25,7 @@ function ContactInfo(props) {
         “If I had asked people what they wanted, they would have said faster
         horses. ” - Henry Ford
       </p1>
-      <div className="LinksContainer" style={{ display: "flex" }}>
+      <div className="LinksContainer" style={{ display: "flex" , height:"auto" }}>
         <div style={linkStyle}>
           <AiFillLinkedin size="2em" />
           <a href="https://www.linkedin.com/in/marcrodriguez2020/">
