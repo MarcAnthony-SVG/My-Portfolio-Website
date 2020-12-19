@@ -11,22 +11,22 @@ function Title(props) {
         display: "flex",
         margin: "auto",
         color: "grey",
-        backgroundImage: `url(${Background})`
+        backgroundImage: `url(${Background})`,
       }}
     >
       <div
         id="Title"
         className="item"
         style={{
+          fontFamily: "crackedCode",
           width: "auto",
           display: "flex",
           margin: "auto",
           fontSize: "5vmax",
         }}
-        > 
+      >
         Marc Anthony Rodriguez
       </div>
-      
     </div>
   );
 }

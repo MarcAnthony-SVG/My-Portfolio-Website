@@ -13,6 +13,10 @@
     -webkit-animation: Homepage-logo-spin infinite 20s linear;
   }
 }
+@font-face {
+  font-family: crackedCode;
+  src: url(../src/components/Title/Cracked\ Code.ttf);
+}
 
 /* .Homepage-header { */
   /* background-color: #282c34;

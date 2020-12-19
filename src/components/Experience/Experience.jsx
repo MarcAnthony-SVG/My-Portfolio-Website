@@ -8,13 +8,12 @@ import Image from "react-bootstrap/Image";
 const Parent_Container = {
   borderStyle: "solid",
   height: "auto",
-  width: "300px",
+  width: "350px",
   padding: "10px",
   margin: "10px",
-  backgroundColor: "silver",
+  backgroundColor: "lightgrey",
   borderRadius: "0.9%",
-  overflow: "auto"
-
+  overflow: "auto",
 };
 const Photo_Style = {
   height: "13vh",
@@ -26,16 +25,14 @@ function Experience(props) {
     <div
       className="Experience"
       style={{
-        backgroundColor: "#cfe2e2",
+        backgroundColor: "white",
         height: "923px",
         textAlign: "center",
         border: "65px inset darkred",
-        overflow: "auto"
-
+        overflow: "auto",
       }}
     >
-      <h1 style={{ marginBlockStart: "0.1em" }}>Work Experience</h1>
-      <hr></hr>
+      <h1 style={{ marginBlockStart: "1em" }}>Work Experience</h1>
 
       <div
         style={{
@@ -53,7 +50,7 @@ function Experience(props) {
               style={Photo_Style}
             />
             <h4>Galvanize Inc</h4>
-            <p3>4 Months</p3>
+            <p3>5 Months</p3>
           </div>
           <div className="ChildContainer">
             <h4>Software Engineering Specialist</h4>
@@ -74,11 +71,7 @@ function Experience(props) {
         </div>
         <div className="ParentContainer" style={Parent_Container}>
           <div className="ChildContainer">
-            <Image
-              src={ArmyLogo}
-              alt="Army Logo"
-              style={Photo_Style}
-            />
+            <Image src={ArmyLogo} alt="Army Logo" style={Photo_Style} />
             <h4>US Army</h4>
             <p3> 5 Years 8 Months</p3>
           </div>

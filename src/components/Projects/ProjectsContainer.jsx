@@ -14,7 +14,7 @@ const constainerStyle = {
   imageRendering: "high-quality",
   overflow: "auto",
 };
-
+console.log("DELETETHIS");
 function buildCardData() {
   const cardsById = [];
   const cardsByIndex = [];
@@ -74,18 +74,19 @@ export default class ProjectsContainer extends React.Component {
         className="Projects"
         style={{
           overflow: "auto",
-          backgroundColor: "goldenrod",
+          backgroundColor: "black",
           border: "10px solid black",
           width: "99%",
         }}
       >
-        <div className="title">
-          <h1>Projects</h1>
+        <div className="title" style={{ textAlign: "center" }}>
+          <h1 style={{ color: "white" }}>Projects</h1>
           {/* <p>Quote</p> */}
         </div>
         <div style={constainerStyle}>
           {cardsByIndex.map((card) => (
             <Card
+              // style={{textAlign:"center"}}
               key={card.id}
               id={card.id}
               image={card.image}

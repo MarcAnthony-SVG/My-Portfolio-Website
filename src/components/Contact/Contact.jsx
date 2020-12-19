@@ -29,7 +29,7 @@ function ContactInfo(props) {
         <div style={linkStyle}>
           <AiFillLinkedin size="2em" />
           <a href="https://www.linkedin.com/in/marcrodriguez2020/">
-            marcrodriguez2020
+            
           </a>
         </div>
         <div style={linkStyle}>

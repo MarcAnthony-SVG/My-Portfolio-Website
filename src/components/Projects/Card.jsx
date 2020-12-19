@@ -10,8 +10,7 @@ const cardStyle = {
   padding: "0.5rem 1rem",
   backgroundColor: "white",
   cursor: "move",
-  overflow: "auto"
-
+  overflow: "auto",
 };
 export const Card = memo(({ id, text, title, image, moveCard }) => {
   const ref = useRef(null);
@@ -39,7 +38,7 @@ export const Card = memo(({ id, text, title, image, moveCard }) => {
   return (
     <div ref={ref} style={containerStyle}>
       <img src={image} style={{ height: "45%", width: "100%" }}></img>
-      <h3>{title}</h3>
+      <h3 style={{ textAlign: "center" }}>{title}</h3>
       {text}
     </div>
   );

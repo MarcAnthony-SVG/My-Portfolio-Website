@@ -16,6 +16,7 @@ function Profile(props) {
       id="Profile"
       style={{
         backgroundColor: "#cfe2e2",
+        width: "auto",
         height: "730px",
         textAlign: "center",
         border: "65px inset darkslategrey",
@@ -29,7 +30,6 @@ function Profile(props) {
         <h1 style={{ marginBlockStart: "0em" }}>Profile</h1>
         <p>I'm a creative Javascript Developer</p>
       </div>
-      <hr></hr>
       <div style={containerStyle}>
         <section id="About_Me" className="Information_Box">
           <h2 id="Title">About me</h2>
