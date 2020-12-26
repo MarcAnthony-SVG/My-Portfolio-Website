@@ -4,5 +4,6 @@
         "animejs",
         "browserslist",
         "predeploy"
-    ]
+    ],
+    "npm-scripts.showStartNotification": false
 }
