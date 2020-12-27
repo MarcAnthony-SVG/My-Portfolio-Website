@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
+import { Waypoint } from "react-waypoint";
+import { useSpring, animated } from "react-spring";
 import GalvanizeLogo from "./../../Data/Images/Galvanize Logo.jpg";
 import ArmyLogo from "./../../Data/Images/U.S. Army Logo.png";
 
@@ -21,6 +23,11 @@ const Photo_Style = {
   borderRadius: "10%",
 };
 function Experience(props) {
+  const [isVisible,setVisibility] = useState(false);
+
+  const animation = useSpring({
+    opacity: isVisible ? 1 : 0,
+  });
   return (
     <div
       className="Experience"
@@ -31,8 +38,10 @@ function Experience(props) {
         border: "65px inset darkred",
         overflow: "auto",
       }}
-    >
-      <h1 style={{ marginBlockStart: "1em" }}>Work Experience</h1>
+    >   <Waypoint
+    onEnter={()=>{setVisibility(!isVisible)}}
+  />
+      <animated.h1 style={animation}>Work Experience</animated.h1>
 
       <div
         style={{

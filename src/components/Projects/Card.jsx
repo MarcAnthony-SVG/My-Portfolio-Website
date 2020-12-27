@@ -1,4 +1,6 @@
 import React, { memo, useMemo, useRef } from "react";
+import { Waypoint } from "react-waypoint";
+
 import { useDrag, useDrop } from "react-dnd";
 import { ItemTypes } from "../../Utilities/ItemTypes";
 
