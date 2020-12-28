@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 // import { Jumbotron, Button } from "react-bootstrap";
 import Title from "./components/Title/Title.jsx";
-import ReactSpringTest from "./components/reactspring";
+// import ReactSpringTest from "./components/reactspring";
 import Profile from "./components/Profile/Profile.jsx";
 import Experience from "./components/Experience/Experience.jsx";
 // import Projects from "./components/OldProjects/OldProjects.jsx";
@@ -10,15 +10,15 @@ import ContactInfo from "./components/Contact/Contact.jsx";
 import ProjectsContainer from "./components/Projects/ProjectsContainer.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/NavigationBar/NavBar.jsx";
-import * as Scroll from "react-scroll";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+// import * as Scroll from "react-scroll";
+// import {
+//   Link,
+//   Element,
+//   Events,
+//   animateScroll as scroll,
+//   scrollSpy,
+//   scroller,
+// } from "react-scroll";
 
 // import "./Homepage.css";
 
@@ -41,7 +41,7 @@ const Homepage = () => {
       {/* <ReactSpringTest /> */}
       <Title title="Title" dark={true} id="Title" />
       <Profile title="Profile" dark={false} id="Profile" />
-      <Experience title="Experience" dark={true} id="Experience" />
+      <Experience title="Experience" dark={false} id="Experience" />
       <ProjectsContainer title="Projects" dark={false} id="Projects" />
       <ContactInfo title="Contact" dark={true} id="Contact" />
     </div>

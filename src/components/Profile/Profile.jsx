@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Waypoint } from "react-waypoint";
 import { useSpring, animated } from "react-spring";
 
@@ -14,10 +14,20 @@ const containerStyle = {
 };
 
 function Profile(props) {
-  const [isVisible,setVisibility] = useState(false);
+  const [isVisible, setVisibility] = useState(false);
 
-  const animation = useSpring({
+  const fadeAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
+  });
+  const photoAnimation = useSpring({
+    opacity: isVisible ? 1 : 0,
+    width: '24vw',
+    borderRadius: "10%", 
+    height: "43.5vh",
+  });
+
+  const { x } = useSpring({
+    x: isVisible ? 0 : 100,
   });
   return (
     <div
@@ -28,6 +38,7 @@ function Profile(props) {
         height: "730px",
         textAlign: "center",
         border: "65px inset darkslategrey",
+        overflow:"hidden"
       }}
     >
       <div
@@ -35,14 +46,26 @@ function Profile(props) {
         // className="item"
       >
         <Waypoint
-          onEnter={()=>{setVisibility(true)}}
+          // bottomOffSet="40%"
+          onEnter={() => {
+            setVisibility(true);
+          }}
+          onLeave={() => {
+            setVisibility(false);
+          }}
         />
 
-        <animated.h1 style={animation}>Profile</animated.h1>
+        <animated.h1 style={fadeAnimation}>Profile</animated.h1>
         <p>I'm a creative Javascript Developer</p>
       </div>
       <div style={containerStyle}>
-        <section id="About_Me" className="Information_Box">
+        <animated.section
+          id="About_Me"
+          className="Information_Box"
+          style={{
+            transform: x.interpolate((x) => `translate3d(${x * -11}%,0,0`),
+          }}
+        >
           <h2 id="Title">About me</h2>
           <p style={{ padding: "10px" }}>
             Welcome to my website, which is continually being updated with new
@@ -61,14 +84,21 @@ function Profile(props) {
             problems and showing off my ability to problem-solve and come up
             with creative solutions to everyday issues.
           </p>
-        </section>
-        <Image
-          src={profilePic}
-          style={{ height: "44.5vh", width: "auto", borderRadius: "10%" }}
-          id="ProfilePic"
-          thumbnail
-        />
-        <section id="Details" className="Information_Box">
+        </animated.section>
+        <div style={{ height: "44.5vh", width: "auto", }}id="ProfilePic">
+          <animated.img
+            src={profilePic}
+            style={photoAnimation}
+            thumbnail
+          />
+        </div>
+        <animated.section
+          id="Details"
+          className="Information_Box"
+          style={{
+            transform: x.interpolate((x) => `translate3d(${x * 11}%,0,0`),
+          }}
+        >
           <h2>Details</h2>
           <div
             style={{
@@ -97,7 +127,7 @@ function Profile(props) {
             <h3 style={{ display: "inline" }}>Phone Number</h3>
             <p style={{ display: "inline" }}>:210-745-8744</p>
           </div>
-        </section>
+        </animated.section>
       </div>
     </div>
   );

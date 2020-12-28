@@ -1,15 +1,32 @@
-import React from "react";
+import React, {useState} from "react";
+import { Waypoint } from "react-waypoint";
+import { useSpring, animated } from "react-spring";
 
 const Inline = {
   display: "inline",
 };
 
 function TechnicalSkills(props) {
+  const [isVisible, setVisibility] = useState(false);
+
+  const fadeAnimation = useSpring({
+    opacity: isVisible ? 1 : 0,
+  });
   return (
     <div className="TechnicalSkills" style={{ backgroundColor: "white" }}>
-      <h1 style={{ marginBlockStart: "1em" }}>Technical Skills</h1>
+         <Waypoint
+          scrollableAncestor={window}
+          onEnter={() => {
+            setVisibility(true);
+            console.log("Technical Skills");
+          }}
+          onLeave={() => {
+            setVisibility(false);
+          }}
+        />
+      <animated.h1 style={fadeAnimation}>Technical Skills</animated.h1>
 
-      <section>
+      <animated.section style={fadeAnimation}>
         <div
           style={{
             textAlign: "center",
@@ -24,7 +41,7 @@ function TechnicalSkills(props) {
           <h4 style={Inline}>Developer Tools </h4>
           <p1>:​ React Debugger, Git, npm, Webpack, Babel </p1>
         </div>
-      </section>
+      </animated.section>
       {/* <section>
         <h1>Languages</h1>
       </section> */}

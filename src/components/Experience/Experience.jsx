@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Waypoint } from "react-waypoint";
 import { useSpring, animated } from "react-spring";
 import GalvanizeLogo from "./../../Data/Images/Galvanize Logo.jpg";
@@ -7,27 +7,32 @@ import ArmyLogo from "./../../Data/Images/U.S. Army Logo.png";
 import TechnicalSkills from "../Technical_Skills/Technical_Skills.jsx";
 import Image from "react-bootstrap/Image";
 
-const Parent_Container = {
-  borderStyle: "solid",
-  height: "auto",
-  width: "350px",
-  padding: "10px",
-  margin: "10px",
-  backgroundColor: "lightgrey",
-  borderRadius: "0.9%",
-  overflow: "auto",
-};
+// const Parent_Container = {
+//   borderStyle: "solid",
+//   height: "auto",
+//   width: "350px",
+//   padding: "10px",
+//   margin: "10px",
+//   backgroundColor: "lightgrey",
+//   borderRadius: "0.9%",
+//   overflow: "auto",
+// };
 const Photo_Style = {
   height: "13vh",
   width: "auto",
   borderRadius: "10%",
 };
 function Experience(props) {
-  const [isVisible,setVisibility] = useState(false);
+  const [isVisible, setVisibility] = useState(false);
 
-  const animation = useSpring({
+  const fadeAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
   });
+
+  const { x } = useSpring({
+    x: isVisible ? 0 : 100,
+    config: { mass: 5, tension: 500, friction: 80, duration: 1000}});
+
   return (
     <div
       className="Experience"
@@ -36,13 +41,22 @@ function Experience(props) {
         height: "923px",
         textAlign: "center",
         border: "65px inset darkred",
-        overflow: "auto",
+        overflow:"hidden"
       }}
-    >   <Waypoint
-    onEnter={()=>{setVisibility(!isVisible)}}
-  />
-      <animated.h1 style={animation}>Work Experience</animated.h1>
-
+    >
+      <div>
+        <Waypoint
+          scrollableAncestor={window}
+          onEnter={() => {
+            setVisibility(true);
+            console.log(4);
+          }}
+          onLeave={() => {
+            setVisibility(false);
+          }}
+        />
+        <animated.h1 style={fadeAnimation}>Work Experience</animated.h1>
+      </div>
       <div
         style={{
           display: "flex",
@@ -51,7 +65,19 @@ function Experience(props) {
           // alignItems: "center",
         }}
       >
-        <div className="ParentContainer" style={Parent_Container}>
+        <animated.div
+          className="ParentContainer"
+          style={{
+            transform: x.interpolate((x) => `translate3d(${x * -11}%,0,0`),
+            borderStyle: "solid",
+            height: "auto",
+            width: "350px",
+            padding: "10px",
+            margin: "10px",
+            backgroundColor: "lightgrey",
+            borderRadius: "0.9%",
+          }}
+        >
           <div className="ChildContainer">
             <Image
               src={GalvanizeLogo}
@@ -77,8 +103,20 @@ function Experience(props) {
               </p3>
             </div>
           </div>
-        </div>
-        <div className="ParentContainer" style={Parent_Container}>
+        </animated.div>
+        <animated.div
+          className="ParentContainer"
+          style={{
+            transform: x.interpolate((x) => `translate3d(${x * 11}%,0,0`),
+            borderStyle: "solid",
+            height: "auto",
+            width: "350px",
+            padding: "10px",
+            margin: "10px",
+            backgroundColor: "lightgrey",
+            borderRadius: "0.9%",
+          }}
+        >
           <div className="ChildContainer">
             <Image src={ArmyLogo} alt="Army Logo" style={Photo_Style} />
             <h4>US Army</h4>
@@ -106,7 +144,7 @@ function Experience(props) {
               </p3>
             </div>
           </div>
-        </div>
+        </animated.div>
       </div>
       <TechnicalSkills></TechnicalSkills>
     </div>

@@ -14,7 +14,6 @@ const constainerStyle = {
   imageRendering: "high-quality",
   overflow: "auto",
 };
-console.log("DELETETHIS");
 function buildCardData() {
   const cardsById = [];
   const cardsByIndex = [];
@@ -73,10 +72,11 @@ export default class ProjectsContainer extends React.Component {
       <div
         className="Projects"
         style={{
-          overflow: "auto",
+          // overflow: "auto",
           backgroundColor: "black",
           border: "10px solid black",
           width: "99%",
+          overflow:"hidden"
         }}
       >
         <div className="title" style={{ textAlign: "center" }}>

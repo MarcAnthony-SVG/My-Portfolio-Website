@@ -74,6 +74,7 @@ function Title(props) {
         backgroundImage: `url(${Background})`,
         display: "flex",
         alignItems: "center",
+        position:"relative"
       }}
     >
       <Waypoint onEnter={()=>{reset()}}/>

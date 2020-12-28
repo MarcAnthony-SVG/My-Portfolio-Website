@@ -9,7 +9,7 @@ var linkStyle = {
   border: "2px solid silver",
   flex: "auto",
   textAlign: "center",
-  overflow: "auto"
+  // overflow: "auto"
 };
 
 function ContactInfo(props) {
