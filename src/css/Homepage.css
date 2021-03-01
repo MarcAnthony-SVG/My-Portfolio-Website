@@ -32,12 +32,11 @@
 .Homepage-link {
   color: #61dafb;
 }
-
-@keyframes Homepage-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  background-image: url('wood.jpg');
+}
+.Contact {
+  background-color: 'red';
+  height: 'auto';
+  width: 'auto';
 }

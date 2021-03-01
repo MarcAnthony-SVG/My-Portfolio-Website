@@ -30,3 +30,6 @@ code {
   border-radius: "0.9%";
   overflow: "auto";
 } */
+.title {
+  background-image: url('../components/Projects/Images/wood.jpg');
+}

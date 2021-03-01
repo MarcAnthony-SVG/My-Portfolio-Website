@@ -1,5 +1,4 @@
 import React from "react";
-
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -9,6 +8,7 @@ var linkStyle = {
   border: "2px solid silver",
   flex: "auto",
   textAlign: "center",
+  // overflow: "auto"
 };
 
 function ContactInfo(props) {

@@ -1,26 +1,16 @@
-import React, { useState } from "react";
-import { Waypoint } from "react-waypoint";
-import { useSpring, animated } from "react-spring";
-import GalvanizeLogo from "./../../Data/Images/Galvanize Logo.jpg";
-import ArmyLogo from "./../../Data/Images/U.S. Army Logo.png";
+import React, { useState } from 'react';
+import { Waypoint } from 'react-waypoint';
+import { useSpring, animated } from 'react-spring';
+import GalvanizeLogo from './../../Data/Images/Galvanize Logo.jpg';
+import ArmyLogo from './../../Data/Images/U.S. Army Logo.png';
 
-import TechnicalSkills from "../Technical_Skills/Technical_Skills.jsx";
-import Image from "react-bootstrap/Image";
+import TechnicalSkills from '../Technical_Skills/Technical_Skills.jsx';
+import Image from 'react-bootstrap/Image';
 
-// const Parent_Container = {
-//   borderStyle: "solid",
-//   height: "auto",
-//   width: "350px",
-//   padding: "10px",
-//   margin: "10px",
-//   backgroundColor: "lightgrey",
-//   borderRadius: "0.9%",
-//   overflow: "auto",
-// };
 const Photo_Style = {
-  height: "13vh",
-  width: "auto",
-  borderRadius: "10%",
+  height: '13vh',
+  width: 'auto',
+  borderRadius: '10%',
 };
 function Experience(props) {
   const [isVisible, setVisibility] = useState(false);
@@ -31,17 +21,18 @@ function Experience(props) {
 
   const { x } = useSpring({
     x: isVisible ? 0 : 100,
-    config: { mass: 5, tension: 500, friction: 80, duration: 1000}});
+    config: { mass: 5, tension: 500, friction: 80, duration: 1000 },
+  });
 
   return (
     <div
       className="Experience"
       style={{
-        backgroundColor: "white",
-        height: "923px",
-        textAlign: "center",
-        border: "65px inset darkred",
-        overflow:"hidden"
+        backgroundColor: 'white',
+        height: '923px',
+        textAlign: 'center',
+        border: '65px inset darkred',
+        overflow: 'hidden',
       }}
     >
       <div>
@@ -59,8 +50,8 @@ function Experience(props) {
       </div>
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
+          display: 'flex',
+          justifyContent: 'center',
 
           // alignItems: "center",
         }}
@@ -69,13 +60,13 @@ function Experience(props) {
           className="ParentContainer"
           style={{
             transform: x.interpolate((x) => `translate3d(${x * -11}%,0,0`),
-            borderStyle: "solid",
-            height: "auto",
-            width: "350px",
-            padding: "10px",
-            margin: "10px",
-            backgroundColor: "lightgrey",
-            borderRadius: "0.9%",
+            borderStyle: 'solid',
+            height: 'auto',
+            width: '350px',
+            padding: '10px',
+            margin: '10px',
+            backgroundColor: 'lightgrey',
+            borderRadius: '0.9%',
           }}
         >
           <div className="ChildContainer">
@@ -108,13 +99,13 @@ function Experience(props) {
           className="ParentContainer"
           style={{
             transform: x.interpolate((x) => `translate3d(${x * 11}%,0,0`),
-            borderStyle: "solid",
-            height: "auto",
-            width: "350px",
-            padding: "10px",
-            margin: "10px",
-            backgroundColor: "lightgrey",
-            borderRadius: "0.9%",
+            borderStyle: 'solid',
+            height: 'auto',
+            width: '350px',
+            padding: '10px',
+            margin: '10px',
+            backgroundColor: 'lightgrey',
+            borderRadius: '0.9%',
           }}
         >
           <div className="ChildContainer">

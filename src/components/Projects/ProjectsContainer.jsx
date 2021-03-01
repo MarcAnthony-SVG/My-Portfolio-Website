@@ -3,6 +3,7 @@ import CorkBoard from '../Projects/Images/Corkboard.jpg';
 import { Card } from './Card';
 import Projects from '../../Data/Projects.js';
 import update from 'immutability-helper';
+import wood from './Images/wood.jpg';
 
 const constainerStyle = {
   width: '100%',
@@ -72,17 +73,20 @@ export default class ProjectsContainer extends React.Component {
       <div
         className="Projects"
         style={{
-          // overflow: "auto",
           backgroundColor: 'black',
           border: '10px solid black',
           width: '99%',
           overflow: 'hidden',
         }}
       >
-        <div className="title" style={{ textAlign: 'center' }}>
-          <h1 style={{ color: 'white' }}>Projects</h1>
-          {/* <p>Quote</p> */}
-        </div>
+        <body className="title">
+          <h1 style={{ color: 'white',position: "center" }}>Projects</h1>
+          {/* <img
+            src={wood}
+            alt="wood"
+            style={{ width: '100%', height: '100px' }}
+          /> */}
+        </body>
         <div style={constainerStyle}>
           {cardsByIndex.map((card) => (
             <Card
