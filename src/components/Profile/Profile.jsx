@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { Waypoint } from "react-waypoint";
-import { useSpring, animated } from "react-spring";
+import React, { useState } from 'react';
+import { Waypoint } from 'react-waypoint';
+import { useSpring, animated } from 'react-spring';
 
-import profilePic from "./Images/profilePic.jpeg";
-import "./Profile.css";
-import Image from "react-bootstrap/Image";
+import profilePic from './Images/profilePic.jpeg';
+import './Profile.css';
+import Image from 'react-bootstrap/Image';
 
 const containerStyle = {
-  display: "flex",
-  flexDirection: "row",
-  width: "auto",
-  height: "auto",
+  display: 'flex',
+  flexDirection: 'row',
+  width: 'auto',
+  height: 'auto',
 };
 
 function Profile(props) {
@@ -21,9 +21,9 @@ function Profile(props) {
   });
   const photoAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
-    width: '24vw',
-    borderRadius: "10%", 
-    height: "43.5vh",
+    width: '300px',
+    borderRadius: '10%',
+    height: '43.5vh',
   });
 
   const { x } = useSpring({
@@ -33,12 +33,12 @@ function Profile(props) {
     <div
       id="Profile"
       style={{
-        backgroundColor: "#cfe2e2",
-        width: "auto",
-        height: "730px",
-        textAlign: "center",
-        border: "65px inset darkslategrey",
-        overflow:"hidden"
+        backgroundColor: '#cfe2e2',
+        width: 'auto',
+        height: '730px',
+        textAlign: 'center',
+        border: '65px inset darkslategrey',
+        overflow: 'hidden',
       }}
     >
       <div
@@ -67,7 +67,7 @@ function Profile(props) {
           }}
         >
           <h2 id="Title">About me</h2>
-          <p style={{ padding: "10px" }}>
+          <p style={{ padding: '10px' }}>
             Welcome to my website, which is continually being updated with new
             and exciting features that I've learned from my experience while
             working as a developer. From a young age, I always had an affinity
@@ -85,12 +85,8 @@ function Profile(props) {
             with creative solutions to everyday issues.
           </p>
         </animated.section>
-        <div style={{ height: "44.5vh", width: "auto", }}id="ProfilePic">
-          <animated.img
-            src={profilePic}
-            style={photoAnimation}
-            thumbnail
-          />
+        <div style={{ height: '44.5vh', width: 'auto' }} id="ProfilePic">
+          <animated.img src={profilePic} style={photoAnimation} thumbnail />
         </div>
         <animated.section
           id="Details"
@@ -102,30 +98,30 @@ function Profile(props) {
           <h2>Details</h2>
           <div
             style={{
-              textAlign: "left",
-              padding: "10px",
+              textAlign: 'left',
+              padding: '10px',
             }}
           >
-            <h3 style={{ display: "inline" }}>Occupation</h3>
-            <p style={{ display: "inline" }}>:Software Engineer</p>
+            <h3 style={{ display: 'inline' }}>Occupation</h3>
+            <p style={{ display: 'inline' }}>:Software Engineer</p>
             <br></br>
 
-            <h4 style={{ display: "inline" }}>Name</h4>
-            <p style={{ display: "inline" }}>: Marc Rodriguez</p>
+            <h4 style={{ display: 'inline' }}>Name</h4>
+            <p style={{ display: 'inline' }}>: Marc Rodriguez</p>
             <br></br>
-            <h3 style={{ display: "inline" }}>Age</h3>
-            <p style={{ display: "inline" }}>:28</p>
+            <h3 style={{ display: 'inline' }}>Age</h3>
+            <p style={{ display: 'inline' }}>:28</p>
             <br></br>
-            <h3 style={{ display: "inline" }}>Location</h3>
-            <p style={{ display: "inline" }}>:San Antonio, Texas</p>
+            <h3 style={{ display: 'inline' }}>Location</h3>
+            <p style={{ display: 'inline' }}>:San Antonio, Texas</p>
             <br></br>
-            <h3 style={{ display: "inline" }}>Email</h3>
-            <p style={{ display: "inline" }}>
+            <h3 style={{ display: 'inline' }}>Email</h3>
+            <p style={{ display: 'inline' }}>
               :Marcanthonyrodriguez95@gmail.com
             </p>
             <br></br>
-            <h3 style={{ display: "inline" }}>Phone Number</h3>
-            <p style={{ display: "inline" }}>:210-745-8744</p>
+            <h3 style={{ display: 'inline' }}>Phone Number</h3>
+            <p style={{ display: 'inline' }}>:210-745-8744</p>
           </div>
         </animated.section>
       </div>

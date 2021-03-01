@@ -1,18 +1,18 @@
-import React from "react";
-import CorkBoard from "../Projects/Images/Corkboard.jpg";
-import { Card } from "./Card";
-import Projects from "../../Data/Projects.js";
-import update from "immutability-helper";
+import React from 'react';
+import CorkBoard from '../Projects/Images/Corkboard.jpg';
+import { Card } from './Card';
+import Projects from '../../Data/Projects.js';
+import update from 'immutability-helper';
 
 const constainerStyle = {
-  width: "100%",
-  display: "flex",
-  height: "930px",
-  justifyContent: "center",
-  backgroundImage: "url(" + CorkBoard + ")",
-  backgroundRepeat: "repeat",
-  imageRendering: "high-quality",
-  overflow: "auto",
+  width: '100%',
+  display: 'flex',
+  height: '830px',
+  justifyContent: 'center',
+  backgroundImage: 'url(' + CorkBoard + ')',
+  backgroundRepeat: 'repeat',
+  imageRendering: 'high-quality',
+  overflow: 'auto',
 };
 function buildCardData() {
   const cardsById = [];
@@ -26,8 +26,8 @@ function buildCardData() {
     };
     cardsById[card.id] = card;
     cardsByIndex[i] = card;
-    console.log("id", cardsById);
-    console.log("index", cardsByIndex);
+    console.log('id', cardsById);
+    console.log('index', cardsByIndex);
   }
   return {
     cardsById,
@@ -73,14 +73,14 @@ export default class ProjectsContainer extends React.Component {
         className="Projects"
         style={{
           // overflow: "auto",
-          backgroundColor: "black",
-          border: "10px solid black",
-          width: "99%",
-          overflow:"hidden"
+          backgroundColor: 'black',
+          border: '10px solid black',
+          width: '99%',
+          overflow: 'hidden',
         }}
       >
-        <div className="title" style={{ textAlign: "center" }}>
-          <h1 style={{ color: "white" }}>Projects</h1>
+        <div className="title" style={{ textAlign: 'center' }}>
+          <h1 style={{ color: 'white' }}>Projects</h1>
           {/* <p>Quote</p> */}
         </div>
         <div style={constainerStyle}>
