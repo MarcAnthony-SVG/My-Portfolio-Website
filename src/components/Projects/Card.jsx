@@ -1,5 +1,4 @@
 import React, { memo, useMemo, useRef } from "react";
-import { Waypoint } from "react-waypoint";
 
 import { useDrag, useDrop } from "react-dnd";
 import { ItemTypes } from "../../Utilities/ItemTypes";
@@ -39,7 +38,7 @@ export const Card = memo(({ id, text, title, image, moveCard }) => {
   const containerStyle = useMemo(() => ({ ...cardStyle, opacity }), [opacity]);
   return (
     <div ref={ref} style={containerStyle}>
-      <img src={image} style={{ height: "45%", width: "100%" }}></img>
+      <img src={image} alt="img" style={{ height: "45%", width: "100%" }}/>
       <h3 style={{ textAlign: "center" }}>{title}</h3>
       {text}
     </div>

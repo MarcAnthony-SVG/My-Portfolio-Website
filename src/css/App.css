@@ -1,0 +1,9 @@
+.profileContainer {
+    background-color: 'red';
+    width: 'auto';
+    height: '90vh';
+    text-align: 'center';
+    border: '65px inset darkslategrey';
+    overflow: 'hidden';
+  }
+  

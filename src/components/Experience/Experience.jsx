@@ -14,6 +14,7 @@ const Photo_Style = {
 };
 function Experience(props) {
   const [isVisible, setVisibility] = useState(false);
+  // const [on, toggle] = useState(false);
 
   const fadeAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
@@ -29,7 +30,7 @@ function Experience(props) {
       className="Experience"
       style={{
         backgroundColor: 'white',
-        height: '923px',
+        height: '88vh',
         textAlign: 'center',
         border: '65px inset darkred',
         overflow: 'hidden',
@@ -37,23 +38,22 @@ function Experience(props) {
     >
       <div>
         <Waypoint
-          scrollableAncestor={window}
+          // scrollableAncestor={window}
           onEnter={() => {
-            setVisibility(true);
+            if(!isVisible)setVisibility(true);
             console.log(4);
           }}
           onLeave={() => {
-            setVisibility(false);
+            if(isVisible)setVisibility(false);
+            // setVisibility(false);
           }}
         />
-        <animated.h1 style={fadeAnimation}>Work Experience</animated.h1>
+        <animated.h1 style={fadeAnimation}>Experience</animated.h1>
       </div>
       <div
         style={{
           display: 'flex',
           justifyContent: 'center',
-
-          // alignItems: "center",
         }}
       >
         <animated.div
@@ -76,22 +76,22 @@ function Experience(props) {
               style={Photo_Style}
             />
             <h4>Galvanize Inc</h4>
-            <p3>5 Months</p3>
+            <p>5 Months</p>
           </div>
           <div className="ChildContainer">
             <h4>Software Engineering Specialist</h4>
-            <p3>Full-Time </p3>
-            <p3>
+            <p>Full-Time </p>
+            <p>
               Sep 2020 – Present Employment Duration
               <br></br>3 Months Location Austin, Texas, United States
-            </p3>
+            </p>
             <div className="ChildContainer">
               <h4>Software Engineer</h4>
-              <p3>Internship</p3>
-              <p3>
+              <p>Internship</p>
+              <p>
                 Aug 2020 – Sep 2020 Employment Duration
                 <br></br>2 Months Location Austin, Texas, United States
-              </p3>
+              </p>
             </div>
           </div>
         </animated.div>
@@ -111,28 +111,28 @@ function Experience(props) {
           <div className="ChildContainer">
             <Image src={ArmyLogo} alt="Army Logo" style={Photo_Style} />
             <h4>US Army</h4>
-            <p3> 5 Years 8 Months</p3>
+            <p> 5 Years 8 Months</p>
           </div>
           <div className="ChildContainer">
             <h4>All-Source Analyst</h4>
-            <p3>Full-time</p3>
-            <p3>
+            <p>Full-time</p>
+            <p>
               Prepared All-Source Intelligence products to support combat
               commanders. <br></br>
               Assessed the significance and reliability of incoming information
               with current intelligence.<br></br> Established and maintained
               systematic cross-reference intelligence records and files.
-            </p3>
+            </p>
             <div className="ChildContainer">
               <h4>Full Motion Video (FMV) Intelligence Analyst</h4>
-              <p3>Full-Time</p3>
-              <p3>
+              <p>Full-Time</p>
+              <p>
                 Produced detailed analytical products to build Patterns of Life
                 (PoL) and target descriptions.
                 <br></br>Conducted order of battle analysis, Activity-Based
                 Intelligence (ABI), Battle Damage Assessment (BDA), Storyboards,
                 Vehicle Follows, and 360-degree graphics.
-              </p3>
+              </p>
             </div>
           </div>
         </animated.div>

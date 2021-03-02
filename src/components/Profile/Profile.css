@@ -1,9 +1,38 @@
+/*Base*/
+.ProfileContainer {
+  background-color: #cfe2e2;
+  width: auto;
+  height: 90vh;
+  text-align: center;
+  border: 65px inset darkslategrey;
+  overflow: hidden;
+}
+.TitleContainer {
+  width: 100%;
+  height: 99.5vh;
+  /* backgroundimage: url(${Background}); */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.TitleText {
+  width: 500px;
+  background: black;
+  fontfamily: apple system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  background: transparent;
+  cursor: default;
+  display: flex;
+  position: absolute;
+  top: 46%;
+  left: 27%;
+}
+
 #About_Me {
   order: 2;
   text-align: justify;
   margin-left: 1.4%;
   width: 80vw;
-
 }
 
 #Details {
@@ -19,7 +48,7 @@
   margin-right: 5vw;
 }
 #Title {
-  textalign: "center";
+  textalign: 'center';
 }
 
 .Information_Box {

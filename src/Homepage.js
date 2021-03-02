@@ -1,27 +1,24 @@
-import React, { useState } from "react";
-import { useSpring, animated } from "react-spring";
-// import { Jumbotron, Button } from "react-bootstrap";
-import Title from "./components/Title/Title.jsx";
-// import ReactSpringTest from "./components/reactspring";
-import Profile from "./components/Profile/Profile.jsx";
-import Experience from "./components/Experience/Experience.jsx";
-// import Projects from "./components/OldProjects/OldProjects.jsx";
-import ContactInfo from "./components/Contact/Contact.jsx";
-import ProjectsContainer from "./components/Projects/ProjectsContainer.jsx";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./components/NavigationBar/NavBar.jsx";
-// import * as Scroll from "react-scroll";
+import React, { useState } from 'react';
+import { useSpring, animated } from 'react-spring';
+import Title from './components/Home/Home.jsx';
+import Profile from './components/Profile/Profile.jsx';
+import Experience from './components/Experience/Experience.jsx';
+import Contact from './components/Contact/Contact.jsx';
+import Projects from './components/Projects/Projects.jsx';
 // import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
 //   Link,
-//   Element,
-//   Events,
-//   animateScroll as scroll,
-//   scrollSpy,
-//   scroller,
-// } from "react-scroll";
-
-// import "./Homepage.css";
-
+//   Redirect,
+//   useLocation,
+//   useParams,
+// } from 'react-router-dom';
+// import {
+//   TransitionGroup,
+//   CSSTransition
+// } from "react-transition-group";
+import Navbar from './components/NavigationBar/NavBar.jsx';
 const Homepage = () => {
   const [isNavOpen, setNavOpen] = useState(false);
   const navAnimation = useSpring({
@@ -30,20 +27,20 @@ const Homepage = () => {
 
   return (
     <div className="App">
+      <Title title="Title" dark={true} id="Title" />
       <animated.div
         onMouseEnter={() => {
-          setNavOpen(true);
+          if(!isNavOpen)setNavOpen(true);
         }}
-        onMouseLeave={() => setNavOpen(false)}
+        onMouseLeave={() => {if(isNavOpen)setNavOpen(false)}}
       >
         <Navbar style={navAnimation} />
       </animated.div>
       {/* <ReactSpringTest /> */}
-      <Title title="Title" dark={true} id="Title" />
       <Profile title="Profile" dark={false} id="Profile" />
       <Experience title="Experience" dark={false} id="Experience" />
-      <ProjectsContainer title="Projects" dark={false} id="Projects" />
-      <ContactInfo title="Contact" dark={true} id="Contact" />
+      <Projects title="Projects" dark={false} id="Projects" />
+      <Contact title="Contact" dark={true} id="Contact" />
     </div>
   );
 };

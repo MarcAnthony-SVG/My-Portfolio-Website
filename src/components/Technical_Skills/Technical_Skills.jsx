@@ -1,71 +1,47 @@
-import React, {useState} from "react";
-import { Waypoint } from "react-waypoint";
-import { useSpring, animated } from "react-spring";
+import React, { useState } from 'react';
+import { Waypoint } from 'react-waypoint';
+import { useSpring, animated } from 'react-spring';
 
 const Inline = {
-  display: "inline",
+  display: 'inline',
 };
 
 function TechnicalSkills(props) {
   const [isVisible, setVisibility] = useState(false);
-
   const fadeAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
+    display: 'inline',
   });
   return (
-    <div className="TechnicalSkills" style={{ backgroundColor: "white" }}>
-         <Waypoint
-          scrollableAncestor={window}
-          onEnter={() => {
-            setVisibility(true);
-            console.log("Technical Skills");
-          }}
-          onLeave={() => {
-            setVisibility(false);
-          }}
-        />
+    <div className="TechnicalSkills" style={{ backgroundColor: 'white' }}>
+      <Waypoint
+        scrollableAncestor={window}
+        onEnter={() => {
+          if (!isVisible) setVisibility(true);
+          console.log('Technical Skills');
+        }}
+        onLeave={() => {
+          if (isVisible) setVisibility(false);
+        }}
+      />
       <animated.h1 style={fadeAnimation}>Technical Skills</animated.h1>
 
       <animated.section style={fadeAnimation}>
-        <div
-          style={{
-            textAlign: "center",
-          }}
-        >
+        <div>
           <h4 style={Inline}>Front End </h4>
-          <p1>​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap</p1>
+          <p style={Inline}>
+            ​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap
+          </p>
           <br></br>
           <h4 style={Inline}>Back End </h4>
-          <p1>: Node.js, Express, MySQL, S3, D3, Graphql, Apollo-Server, PHP </p1>
+          <p style={Inline}>
+            : Node.js, Express, MySQL, S3, D3, Graphql, Apollo-Server, PHP{' '}
+          </p>
           <br></br>
           <h4 style={Inline}>Developer Tools </h4>
-          <p1>:​ React Debugger, Git, npm, Webpack, Babel </p1>
+          <p style={Inline}>:​ React Debugger, Git, npm, Webpack, Babel </p>
         </div>
       </animated.section>
-      {/* <section>
-        <h1>Languages</h1>
-      </section> */}
-      {/* <hr></hr> */}
-      {/* 
-      <section>
-        <h1>Tools</h1>
-        <p>
-          VS Code
-          <span></span>
-        </p>
-        <p>
-          VS Code
-          <span></span>
-        </p>
-        <p>
-          VS Code
-          <span></span>
-        </p>
-        <p>
-          VS Code
-          <span></span>
-        </p>
-      </section> */}
     </div>
   );
 }

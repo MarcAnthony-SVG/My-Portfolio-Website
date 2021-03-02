@@ -1,6 +1,7 @@
 // const placeholder = require("../components/OldProjects/images/placeholder.png");
 const RealEstate = require('../components/Projects/Images/RealEstateApp.png');
 const MentorMii = require('../components/Projects/Images/MentorMii.png');
+const TattooM3 = require('../components/Projects/Images/TattooM3.png');
 
 var Projects = [
   {
@@ -31,7 +32,7 @@ and improve upon my skills.`,
   },
   {
     id: 4,
-    image: 'image',
+    image: TattooM3,
     title: `Tattoo M3`,
     text: `Newest Addition: Coming Soon.`,
   },

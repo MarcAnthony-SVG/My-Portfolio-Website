@@ -1,6 +1,5 @@
 import React from "react";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
-import { Link, animateScroll as scroll } from "react-scroll";
 
 var linkStyle = {
   margin: 2,
@@ -8,10 +7,9 @@ var linkStyle = {
   border: "2px solid silver",
   flex: "auto",
   textAlign: "center",
-  // overflow: "auto"
 };
 
-function ContactInfo(props) {
+function Contact(props) {
 
   return (
     <div
@@ -19,11 +17,10 @@ function ContactInfo(props) {
       style={{ backgroundColor: "#cfe2e2", height: "auto" , width:"auto" }}
     >
       <h1 style={{ marginBlockStart: "0.1em" }}>Contact</h1>
-      {/* <div>{animation}</div> */}
-      <p1>
+      <p>
         “If I had asked people what they wanted, they would have said faster
         horses. ” - Henry Ford
-      </p1>
+      </p>
       <div className="LinksContainer" style={{ display: "flex" , height:"auto" }}>
         <div style={linkStyle}>
           <AiFillLinkedin size="2em" />
@@ -45,4 +42,4 @@ function ContactInfo(props) {
     </div>
   );
 }
-export default ContactInfo;
+export default Contact;
