@@ -106,7 +106,6 @@ export default class ProjectsContainer extends React.Component {
         <div style={constainerStyle}>
           {cardsByIndex.map((card) => (
             <Card
-              // style={{textAlign:"center"}}
               key={card.id}
               id={card.id}
               image={card.image}

@@ -1,6 +1,6 @@
 // const placeholder = require("../components/OldProjects/images/placeholder.png");
-const RealEstate = require("../components/Projects/Images/RealEstateApp.png");
-const MentorMii = require("../components/Projects/Images/MentorMii.png");
+const RealEstate = require('../components/Projects/Images/RealEstateApp.png');
+const MentorMii = require('../components/Projects/Images/MentorMii.png');
 
 var Projects = [
   {
@@ -24,10 +24,16 @@ and improve upon my skills.`,
   },
   {
     id: 3,
-    image: "image",
+    image: 'image',
     title: `RottenHuevos`,
     text: `A full-stack e-commerce application and alternative to Newegg.
         I served as a software developer focusing on the front-end.`,
+  },
+  {
+    id: 4,
+    image: 'image',
+    title: `Tattoo M3`,
+    text: `Newest Addition: Coming Soon.`,
   },
 ];
 
