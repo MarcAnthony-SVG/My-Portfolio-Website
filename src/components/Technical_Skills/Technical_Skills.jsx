@@ -8,9 +8,13 @@ const Inline = {
 
 function TechnicalSkills(props) {
   const [isVisible, setVisibility] = useState(false);
-  const fadeAnimation = useSpring({
+  const componentFadeAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
-    display: 'inline',
+    textAlign: 'center',
+  });
+  const sectionFadeAnimation = useSpring({
+    opacity: isVisible ? 1 : 0,
+    textAlign: 'left',
   });
   return (
     <div className="TechnicalSkills" style={{ backgroundColor: 'white' }}>
@@ -18,16 +22,16 @@ function TechnicalSkills(props) {
         scrollableAncestor={window}
         onEnter={() => {
           if (!isVisible) setVisibility(true);
-          console.log('Technical Skills');
+          console.log('Show me the Technical Skills');
         }}
         onLeave={() => {
           if (isVisible) setVisibility(false);
         }}
       />
-      <animated.h1 style={fadeAnimation}>Technical Skills</animated.h1>
+      <animated.h1 style={componentFadeAnimation}>Technical Skills</animated.h1>
 
-      <animated.section style={fadeAnimation}>
-        <div>
+      <animated.section style={sectionFadeAnimation}>
+        <div style={{ position: 'absolute', left: '38vw', textAlign: 'left' }}>
           <h4 style={Inline}>Front End </h4>
           <p style={Inline}>
             ​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap
