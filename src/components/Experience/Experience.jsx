@@ -30,7 +30,7 @@ function Experience(props) {
       className="Experience"
       style={{
         backgroundColor: 'white',
-        height: '88vh',
+        height: '103vh',
         textAlign: 'center',
         border: '65px inset darkred',
         overflow: 'hidden',
@@ -40,11 +40,11 @@ function Experience(props) {
         <Waypoint
           // scrollableAncestor={window}
           onEnter={() => {
-            if(!isVisible)setVisibility(true);
+            if (!isVisible) setVisibility(true);
             console.log(4);
           }}
           onLeave={() => {
-            if(isVisible)setVisibility(false);
+            if (isVisible) setVisibility(false);
             // setVisibility(false);
           }}
         />

@@ -27,8 +27,6 @@ function buildCardData() {
     };
     cardsById[card.id] = card;
     cardsByIndex[i] = card;
-    console.log('id', cardsById);
-    console.log('index', cardsByIndex);
   }
   return {
     cardsById,

@@ -1,42 +1,73 @@
-import React from "react";
-import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import React, { useState, useEffect } from 'react';
+import './contact.css';
+import Email from './Mailto';
+
+import { AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
 
 var linkStyle = {
-  margin: 2,
-  width: "auto",
-  border: "2px solid silver",
-  flex: "auto",
-  textAlign: "center",
+  // margin: 2,
+  // width: 'auto',
+  // border: '2px solid silver',
+  // flex: 'auto',
+  // textAlign: 'center',
 };
 
 function Contact(props) {
+  const [clicked, setClicked] = useState(false);
 
+  useEffect(() => {
+    if (clicked) {
+      // do something meaningful, Promises, if/else, whatever, and then
+      window.location.assign(this);
+    }
+  });
   return (
     <div
       className="Contact"
-      style={{ backgroundColor: "#cfe2e2", height: "auto" , width:"auto" }}
+      style={{ backgroundColor: '#cfe2e2', height: 'auto', width: 'auto' }}
     >
-      <h1 style={{ marginBlockStart: "0.1em" }}>Contact</h1>
+      <h1 style={{ marginBlockStart: '0.1em' }}>Contact</h1>
       <p>
         “If I had asked people what they wanted, they would have said faster
         horses. ” - Henry Ford
       </p>
-      <div className="LinksContainer" style={{ display: "flex" , height:"auto" }}>
-        <div style={linkStyle}>
+      <div
+        className="LinksContainer"
+        style={{ display: 'flex', height: 'auto' }}
+      >
+        <div
+          onClick={(e) =>
+            (window.location = 'https://www.linkedin.com/in/marcrodriguez2020/')
+          }
+          className="button-link"
+        >
           <AiFillLinkedin size="2em" />
-          <a href="https://www.linkedin.com/in/marcrodriguez2020/">
-            
-          </a>
         </div>
-        <div style={linkStyle}>
+        <div
+          onClick={(e) =>
+            (window.location = 'https://www.facebook.com/MarcRodriguez20')
+          }
+          className="button-link"
+        >
           <AiFillFacebook size="2em" />
-          <a href="https://www.facebook.com/MarcRodriguez20">MarcRodriguez20</a>
         </div>
-        <div style={linkStyle}>
-          <a href=" ">Website</a>
+        <div
+          onClick={(e) =>
+            (window.location =
+              'https://marcanthony-svg.github.io/My-Portfolio-Website/')
+          }
+          className="button-link"
+        >
+          {' '}
+          Website
         </div>
-        <div style={linkStyle}>
-          <a href="FILL ME IN">marcanthonyrodriguez95@gmail.com</a>
+        <div
+          onClick={(e) =>
+            (window.location = 'marcanthonyrodriguez95@gmail.com')
+          }
+          className="button-link"
+        >
+          <Email></Email>
         </div>
       </div>
     </div>
