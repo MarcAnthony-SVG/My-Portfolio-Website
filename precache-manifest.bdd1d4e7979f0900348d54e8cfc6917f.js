@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "279d10579d44beb7f165e55738d4b0c4",
+    "revision": "b516e2176b1195071ba94007169d2f3f",
     "url": "/My-Portfolio-Website/index.html"
   },
   {
-    "revision": "1647a98597b55c71f00b",
-    "url": "/My-Portfolio-Website/static/css/main.b500025c.chunk.css"
+    "revision": "4e07be35d56f2eee8a9b",
+    "url": "/My-Portfolio-Website/static/css/main.2f7c3910.chunk.css"
   },
   {
-    "revision": "62cbf817c229826d103f",
-    "url": "/My-Portfolio-Website/static/js/2.cae1d788.chunk.js"
+    "revision": "7c8d305c49848e73e0e6",
+    "url": "/My-Portfolio-Website/static/js/2.036d717a.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/My-Portfolio-Website/static/js/2.cae1d788.chunk.js.LICENSE.txt"
+    "url": "/My-Portfolio-Website/static/js/2.036d717a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1647a98597b55c71f00b",
-    "url": "/My-Portfolio-Website/static/js/main.a2b36686.chunk.js"
+    "revision": "4e07be35d56f2eee8a9b",
+    "url": "/My-Portfolio-Website/static/js/main.15d9e6e9.chunk.js"
   },
   {
     "revision": "d89dd0dd18eaa9b77f0d",
@@ -44,8 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/My-Portfolio-Website/static/media/RealEstateApp.77bab1d7.png"
   },
   {
+    "revision": "4f566b1b2349d2167f5f5d764c31d972",
+    "url": "/My-Portfolio-Website/static/media/TattooM3.4f566b1b.png"
+  },
+  {
     "revision": "92f211733eff83fe7cee6061f884aed7",
     "url": "/My-Portfolio-Website/static/media/U.S. Army Logo.92f21173.png"
+  },
+  {
+    "revision": "3535b79c5559bba4b81ee4c39e0f333e",
+    "url": "/My-Portfolio-Website/static/media/Wood.3535b79c.jpg"
   },
   {
     "revision": "6c35e602ab1cd72867541ecf360a5a32",
