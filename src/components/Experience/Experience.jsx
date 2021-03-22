@@ -103,7 +103,7 @@ function Experience(props) {
             transform: x.interpolate((x) => `translate3d(${x * 11}%,0,0`),
             borderStyle: 'solid',
             height: 'auto',
-            width: '350px',
+            width: '20%',
             padding: '10px',
             margin: '10px',
             backgroundColor: 'lightgrey',

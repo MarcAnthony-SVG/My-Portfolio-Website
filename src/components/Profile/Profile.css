@@ -49,7 +49,7 @@
   margin-right: 3%;
 }
 #Title {
-  textalign: 'center';
+  text-align: 'center';
 }
 
 .Information_Box {
@@ -57,11 +57,11 @@
   background-color: darkgrey;
   border-radius: 4%;
   border: 3px solid black;
-  width: 25vw;
-  height: 44vh;
+  /* width: 25vw; */
+  /* height: 44vh; */
   overflow: auto;
-  -webkit-border-radius: 4%;
-  -moz-border-radius: 4%;
-  -ms-border-radius: 4%;
-  -o-border-radius: 4%;
+  /* -webkit-border-radius: 4%; */
+  /* -moz-border-radius: 4%; */
+  /* -ms-border-radius: 4%; */
+  /* -o-border-radius: 4%; */
 }

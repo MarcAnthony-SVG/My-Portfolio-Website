@@ -5,6 +5,7 @@ import { Waypoint } from 'react-waypoint';
 const Background = require('./Images/Artistic-4K-Wallpaper-3840x2160.jpg');
 //Styles////////////////////
 const HomeContainer = {
+  border: '3px solid red',
   width: '100%',
   height: '99.5vh',
   backgroundImage: `url(${Background})`,
@@ -13,7 +14,9 @@ const HomeContainer = {
   position: 'relative',
 };
 const HomeText = {
-  width: '500px',
+  border: '3px solid red',
+
+  // width: '73%',
   fontFamily:
     'apple system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif',
   background: 'transparent',
@@ -38,7 +41,6 @@ const HomeText = {
 // };
 ////////////////////////////
 function Home(props) {
-
   const ref = useRef([]);
   const [items, set] = useState([]);
   const transitions = useTransition(items, null, {
@@ -48,7 +50,7 @@ function Home(props) {
       innerHeight: '100px',
       color: '#F8F8FF',
       padding: '5px',
-      fontSize: '4em',
+      fontSize: '500%',
       top: '3%',
       fontWeight: 'bold',
     },
@@ -88,14 +90,8 @@ function Home(props) {
       />
       <div className="HomeText" style={HomeText}>
         {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
-          <animated.div
-            key={key}
-            style={rest}
-          >
-            <animated.div
-            >
-              {item}
-            </animated.div>
+          <animated.div key={key} style={rest}>
+            <animated.div>{item}</animated.div>
           </animated.div>
         ))}
       </div>

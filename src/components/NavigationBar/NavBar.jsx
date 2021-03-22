@@ -6,7 +6,7 @@ var Style = {
   right: "10px",
   top: "46%",
   backgroundColor: "#708090",
-  width: "120px",
+  width: "7%",
   height: "125px",
   border: "2px solid silver",
   textAlign: "center",
