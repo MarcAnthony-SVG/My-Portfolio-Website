@@ -62,7 +62,7 @@ function Experience(props) {
             transform: x.interpolate((x) => `translate3d(${x * -11}%,0,0`),
             borderStyle: 'solid',
             height: 'auto',
-            width: '350px',
+            width: '20%',
             padding: '10px',
             margin: '10px',
             backgroundColor: 'lightgrey',
@@ -83,14 +83,16 @@ function Experience(props) {
             <p>Full-Time </p>
             <p>
               Sep 2020 – Present Employment Duration
-              <br></br>3 Months Location Austin, Texas, United States
+              <br></br>3 Months
+              <br></br>Location Austin, Texas, United States
             </p>
             <div className="ChildContainer">
               <h4>Software Engineer</h4>
               <p>Internship</p>
               <p>
                 Aug 2020 – Sep 2020 Employment Duration
-                <br></br>2 Months Location Austin, Texas, United States
+                <br></br>2 Months 
+                <br></br>Location Austin, Texas, United States
               </p>
             </div>
           </div>

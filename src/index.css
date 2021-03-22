@@ -47,3 +47,8 @@ code {
   border: '65px inset darkslategrey';
   overflow: 'hidden';
 }
+/* Delete to center */
+img {
+  max-width: 100%;
+  display: block;
+}

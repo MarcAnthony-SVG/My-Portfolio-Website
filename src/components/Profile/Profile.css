@@ -16,7 +16,7 @@
   position: relative;
 }
 .TitleText {
-  width: 500px;
+  width: 100%;
   background: black;
   fontfamily: apple system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
@@ -31,21 +31,22 @@
 #About_Me {
   order: 2;
   text-align: justify;
-  margin-left: 1.4%;
-  width: 80vw;
+  margin-left: 5%;
+  width: 40%;
 }
 
 #Details {
   order: 4;
-  width: 80vw;
+  margin-right: 5%;
+  width: 40%;
 }
 #ProfilePic {
   order: 3;
   /* position: absolute; */
   /* left:50%; */
   margin-top: 1%;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 #Title {
   textalign: 'center';

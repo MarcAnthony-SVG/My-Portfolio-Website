@@ -40,3 +40,7 @@
   height: 'auto';
   width: 'auto';
 }
+img {
+  width: 10%;
+  display: block;
+}

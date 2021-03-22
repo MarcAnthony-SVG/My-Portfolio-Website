@@ -73,7 +73,7 @@ export default class ProjectsContainer extends React.Component {
         style={{
           backgroundColor: 'black',
           border: '5px solid black',
-          width: '99.59vw',
+          width: '100%',
           overflow: 'hidden',
         }}
       >
@@ -81,7 +81,7 @@ export default class ProjectsContainer extends React.Component {
           className="ProjectsContainer"
           style={{
             background: `url(${Wood})`,
-            width: '100vw',
+            width: '100%',
             height: '5vh',
             marginTop: "-15px",
             marginBottom: '10px',
