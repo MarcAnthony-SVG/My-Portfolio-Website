@@ -15,8 +15,7 @@ function TechnicalSkills(props) {
   const sectionFadeAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
     textAlign: 'left',
-    display: 'inline-block' || 'inline-block'
-
+    display: 'inline-block' || 'inline-block',
   });
   return (
     <div
@@ -36,7 +35,7 @@ function TechnicalSkills(props) {
       <animated.h1 style={componentFadeAnimation}>Technical Skills</animated.h1>
 
       <animated.section style={sectionFadeAnimation}>
-        <div style={{textAlign: 'left' }}>
+        <div style={{ textAlign: 'left' }}>
           <h4 style={Inline}>Front End </h4>
           <p style={Inline}>
             ​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap, Material UI,

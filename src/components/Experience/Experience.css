@@ -1,14 +1,15 @@
 .CareerContainer {
-  border: 2px solid teal;
+  /* border: 2px solid teal; */
   overflow: auto;
 }
 .CenterContainer {
   display: inline-flex;
   flex-direction: row;
-  border: 2px solid rgb(196, 86, 23);
+  /* border: 2px solid rgb(196, 86, 23); */
 }
 .CareerDetails {
-  border: 2px solid rgb(196, 86, 23);
+  border: 2px solid rgb(56, 54, 52);
+  margin: 1%;
   overflow: auto;
 }
 .SkillsList {

@@ -78,23 +78,20 @@ function Experience(props) {
               style={Photo_Style}
             />
             <h4>Galvanize Inc</h4>
-            <p>5 Months</p>
+            <h5>7 Months</h5>
           </div>
           <div className="ChildContainer">
             <h4>Software Engineering Specialist</h4>
-            <p>Full-Time </p>
             <p>
-              Sep 2020 – Present Employment Duration
-              <br></br>3 Months
-              <br></br>Location Austin, Texas, United States
+              Duration: Sep 2020 – Mar 2021
+              <br></br>Location: Austin, Texas, United States
             </p>
             <div className="ChildContainer">
               <h4>Software Engineer</h4>
               <p>Internship</p>
               <p>
-                Aug 2020 – Sep 2020 Employment Duration
-                <br></br>2 Months
-                <br></br>Location Austin, Texas, United States
+                Duration: Aug 2020 – Sep 2020
+                <br></br>Location: Austin, Texas, United States
               </p>
             </div>
           </div>

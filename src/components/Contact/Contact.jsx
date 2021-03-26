@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './contact.css';
-// import Email from './Mailto';
+import Email from './Mailto';
 
 import { AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
 
@@ -67,7 +67,7 @@ function Contact(props) {
           }
           className="button-link"
         >
-          {/* <Email></Email> */}
+          <Email></Email>
         </div>
       </div>
     </div>

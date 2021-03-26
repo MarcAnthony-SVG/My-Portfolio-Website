@@ -52,7 +52,7 @@ function Profile(props) {
           />
 
           <animated.h1 style={fadeAnimation}>Profile</animated.h1>
-          <p>I'm a creative Javascript Developer</p>
+          <h3>I'm a creative Javascript Developer</h3>
         </div>
         <div style={containerStyle}>
           <animated.section
