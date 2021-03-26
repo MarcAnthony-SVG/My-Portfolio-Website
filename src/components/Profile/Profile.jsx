@@ -5,14 +5,14 @@ import { useSpring, animated } from 'react-spring';
 import profilePic from './Images/profilePic.jpeg';
 import './Profile.css';
 //Styles////////////////////
-// const profileContainer = {
-//   backgroundColor: '#cfe2e2',
-//   width: 'auto',
-//   height: '90vh',
-//   textAlign: 'center',
-//   border: '65px inset darkslategrey',
-//   overflow: 'hidden',
-// };
+const profileContainer = {
+  backgroundColor: '#cfe2e2',
+  // width: '100%',
+  height: '90vh',
+  textAlign: 'center',
+  border: '65px inset darkslategrey',
+  overflow: 'hidden',
+};
 const containerStyle = {
   display: 'flex',
   flexDirection: 'row',
@@ -27,16 +27,16 @@ function Profile(props) {
   });
   const photoAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
-    width: '300px',
+    width: 300,
     borderRadius: '2%',
-    height: '43.5vh',
+    height: '100%',
   });
 
   const { x } = useSpring({
     x: isVisible ? 0 : 100,
   });
   return (
-    <div className="ProfileContainer">
+    <div style={profileContainer}>
       <animated.div>
         <div
           id="Profile"
@@ -83,7 +83,7 @@ function Profile(props) {
             </p>
           </animated.section>
           <div style={{ height: '44.5vh', width: 'auto' }} id="ProfilePic">
-            <animated.img src={profilePic} style={photoAnimation}/>
+            <animated.img src={profilePic} style={photoAnimation} />
           </div>
           <animated.section
             id="Details"

@@ -15,9 +15,14 @@ function TechnicalSkills(props) {
   const sectionFadeAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
     textAlign: 'left',
+    display: 'inline-block' || 'inline-block'
+
   });
   return (
-    <div className="TechnicalSkills" style={{ backgroundColor: 'white' }}>
+    <div
+      className="TechnicalSkills"
+      style={{ backgroundColor: 'white', position: '10px' }}
+    >
       <Waypoint
         scrollableAncestor={window}
         onEnter={() => {
@@ -31,15 +36,17 @@ function TechnicalSkills(props) {
       <animated.h1 style={componentFadeAnimation}>Technical Skills</animated.h1>
 
       <animated.section style={sectionFadeAnimation}>
-        <div style={{ position: 'absolute', left: '38vw', textAlign: 'left' }}>
+        <div style={{textAlign: 'left' }}>
           <h4 style={Inline}>Front End </h4>
           <p style={Inline}>
-            ​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap
+            ​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap, Material UI,
+            Apollo-Client, Next.js
           </p>
           <br></br>
           <h4 style={Inline}>Back End </h4>
           <p style={Inline}>
-            : Node.js, Express, MySQL, S3, D3, Graphql, Apollo-Server, PHP{' '}
+            : Node.js, Express, MySQL,MongoDB, S3, D3, Graphql, Apollo-Server,
+            PHP
           </p>
           <br></br>
           <h4 style={Inline}>Developer Tools </h4>

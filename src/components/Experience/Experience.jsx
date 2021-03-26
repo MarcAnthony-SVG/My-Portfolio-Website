@@ -3,10 +3,10 @@ import { Waypoint } from 'react-waypoint';
 import { useSpring, animated } from 'react-spring';
 import GalvanizeLogo from './../../Data/Images/Galvanize Logo.jpg';
 import ArmyLogo from './../../Data/Images/U.S. Army Logo.png';
-
+import './Experience.css';
 import TechnicalSkills from '../Technical_Skills/Technical_Skills.jsx';
 import Image from 'react-bootstrap/Image';
-
+// import PullRelease from "./Details"
 const Photo_Style = {
   height: '13vh',
   width: 'auto',
@@ -30,8 +30,9 @@ function Experience(props) {
       className="Experience"
       style={{
         backgroundColor: 'white',
-        height: '103vh',
         textAlign: 'center',
+        // width: '100%',
+        height: '86.1vh',
         border: '65px inset darkred',
         overflow: 'hidden',
       }}
@@ -54,6 +55,7 @@ function Experience(props) {
         style={{
           display: 'flex',
           justifyContent: 'center',
+          height: 560,
         }}
       >
         <animated.div
@@ -61,12 +63,12 @@ function Experience(props) {
           style={{
             transform: x.interpolate((x) => `translate3d(${x * -11}%,0,0`),
             borderStyle: 'solid',
-            height: 'auto',
             width: '20%',
             padding: '10px',
             margin: '10px',
             backgroundColor: 'lightgrey',
             borderRadius: '0.9%',
+            overflow: 'auto',
           }}
         >
           <div className="ChildContainer">
@@ -91,7 +93,7 @@ function Experience(props) {
               <p>Internship</p>
               <p>
                 Aug 2020 – Sep 2020 Employment Duration
-                <br></br>2 Months 
+                <br></br>2 Months
                 <br></br>Location Austin, Texas, United States
               </p>
             </div>
@@ -102,39 +104,55 @@ function Experience(props) {
           style={{
             transform: x.interpolate((x) => `translate3d(${x * 11}%,0,0`),
             borderStyle: 'solid',
-            height: 'auto',
-            width: '20%',
+            width: '50%',
             padding: '10px',
             margin: '10px',
             backgroundColor: 'lightgrey',
             borderRadius: '0.9%',
+            overflow: 'auto',
           }}
         >
-          <div className="ChildContainer">
+          <div className="CareerContainer">
             <Image src={ArmyLogo} alt="Army Logo" style={Photo_Style} />
-            <h4>US Army</h4>
-            <p> 5 Years 8 Months</p>
+            <h4>United States Army</h4>
+            <h5>5 Years 8 Months</h5>
           </div>
-          <div className="ChildContainer">
-            <h4>All-Source Analyst</h4>
-            <p>Full-time</p>
-            <p>
+          <div className="CenterContainer">
+            <div className="CareerDetails">
+              <h4>All-Source Intelligence Analyst (MI) / Sergeant</h4>
+              <p>
+                Graduated Advanced Individual Training (AIT) for intelligence
+                analyst after completing 10-week Basic Training. <br></br>
+                Classroom and field instruction covers topics including:
+              </p>
+              <ul className="SkillsList">
+                <li> Critical thinking</li>
+                <li> Military symbology</li>
+                <li> Using computer systems</li>
+                <li> Intelligence Collection</li>
+                <li> Intelligence Analysis</li>
+                <li> Record Keeping</li>
+                <li> Preparing maps, charts and intelligence reports</li>
+              </ul>
+            </div>
+            <div className="CareerDetails">
+              {/* <p>
               Prepared All-Source Intelligence products to support combat
               commanders. <br></br>
               Assessed the significance and reliability of incoming information
               with current intelligence.<br></br> Established and maintained
               systematic cross-reference intelligence records and files.
-            </p>
-            <div className="ChildContainer">
-              <h4>Full Motion Video (FMV) Intelligence Analyst</h4>
-              <p>Full-Time</p>
-              <p>
-                Produced detailed analytical products to build Patterns of Life
-                (PoL) and target descriptions.
-                <br></br>Conducted order of battle analysis, Activity-Based
-                Intelligence (ABI), Battle Damage Assessment (BDA), Storyboards,
-                Vehicle Follows, and 360-degree graphics.
-              </p>
+            </p> */}
+              <div>
+                <h4>Full Motion Video (FMV) Analyst</h4>
+                <p>
+                  Produced detailed analytical products to build Patterns of
+                  Life (PoL) and target descriptions.
+                  <br></br>Conducted order of battle analysis, Activity-Based
+                  Intelligence (ABI), Battle Damage Assessment (BDA),
+                  Storyboards, Vehicle Follows, and 360-degree graphics.
+                </p>
+              </div>
             </div>
           </div>
         </animated.div>

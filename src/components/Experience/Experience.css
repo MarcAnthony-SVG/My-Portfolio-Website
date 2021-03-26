@@ -1,0 +1,35 @@
+.CareerContainer {
+  border: 2px solid teal;
+  overflow: auto;
+}
+.CenterContainer {
+  display: inline-flex;
+  flex-direction: row;
+  border: 2px solid rgb(196, 86, 23);
+}
+.CareerDetails {
+  border: 2px solid rgb(196, 86, 23);
+  overflow: auto;
+}
+.SkillsList {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: auto;
+}
+p {
+  text-align: left;
+}
+li {
+  text-align: left;
+  flex-basis: 50%; /* or width: 50% */
+}
+
+#test {
+  width: 400px;
+  height: 400px;
+  background: hotpink;
+  border-radius: 16px;
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+}

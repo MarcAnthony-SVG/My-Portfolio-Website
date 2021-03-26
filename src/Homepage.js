@@ -5,40 +5,76 @@ import Profile from './components/Profile/Profile.jsx';
 import Experience from './components/Experience/Experience.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Projects from './components/Projects/Projects.jsx';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link,
-//   Redirect,
-//   useLocation,
-//   useParams,
-// } from 'react-router-dom';
-// import {
-//   TransitionGroup,
-//   CSSTransition
-// } from "react-transition-group";
 import Navbar from './components/NavigationBar/NavBar.jsx';
-const Homepage = () => {
-  const [isNavOpen, setNavOpen] = useState(false);
-  const navAnimation = useSpring({
-    transform: isNavOpen ? `translate3d(0,0,0)` : `translate3d(100%,0,0)`,
-  });
+import FadeIn from './components/Transitions/FadeIn.jsx';
+import { Waypoint } from 'react-waypoint';
 
+// import PullRelease from "./components/Experience/Details"
+
+const Homepage = () => {
+  // const [isNavOpen, setNavOpen] = useState(false);
+  // const navAnimation = useSpring({
+  //   transform: isNavOpen ? `translate3d(10%,0,0)` : `translate3d(100%,0,0)`,
+  // });
+  const [isDisplayed, setDisplay] = useState(false);
+
+  const firstFadeOut = useSpring({
+    to: [
+      {
+        opacity: 1,
+        padding: '50%',
+        height: '100%',
+        background: 'linear-gradient(to right, #09010e, #101c2c)',
+        borderBottom: '10px solid #2D3747',
+        textShadow: '0px 5px 15px rgba(255,255,255,0.5)',
+      },
+      {
+        opacity: 1,
+        padding: '0%',
+        height: '0%',
+        background: 'linear-gradient(to right, #101c2c, #101c2c)',
+        borderBottom: '0px solid #2D3747',
+        textShadow: '0px 0px 0px rgba(255,255,255,0.5)',
+      },
+    ],
+    from: {
+      opacity: isDisplayed ? '1' : '0',
+      padding: '100%',
+      height: '100%',
+      background: 'linear-gradient(to right, #09010e, #101c2c)',
+      borderBottom: '10px solid #2D3747',
+      textShadow: '0px 5px 15px rgba(255,255,255,0.5)',
+    },
+  });
   return (
     <div className="App">
       <Title title="Title" dark={true} id="Title" />
-      <animated.div
+      {/* <animated.div
         onMouseEnter={() => {
-          if(!isNavOpen)setNavOpen(true);
+          if (!isNavOpen) setNavOpen(true);
         }}
-        onMouseLeave={() => {if(isNavOpen)setNavOpen(false)}}
-      >
-        <Navbar style={navAnimation} />
-      </animated.div>
+        onMouseLeave={() => {
+          if (isNavOpen) setNavOpen(false);
+        }}
+      /> */}
+        <Navbar />
+        <Waypoint
+          onEnter={() => {
+            console.log('Top');
+            if (!isDisplayed) setDisplay(true);
+          }}
+        />
+        <animated.div style={firstFadeOut} />
+        <Waypoint
+          onLeave={() => {
+            console.log('Bottom');
+            if (isDisplayed) setDisplay(false);
+          }}
+        />
+       <Profile title="Profile" dark={false} id="Profile" />
       {/* <ReactSpringTest /> */}
-      <Profile title="Profile" dark={false} id="Profile" />
-      <Experience title="Experience" dark={false} id="Experience" />
+      {/* <FadeIn /> */}
+      <Experience title="Experience" dark={false} id="Experience" /> 
       <Projects title="Projects" dark={false} id="Projects" />
       <Contact title="Contact" dark={true} id="Contact" />
     </div>

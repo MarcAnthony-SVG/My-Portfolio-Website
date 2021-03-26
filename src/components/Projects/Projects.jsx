@@ -6,7 +6,7 @@ import update from 'immutability-helper';
 import Wood from '../Projects/Images/Wood.jpg';
 
 const constainerStyle = {
-  width: '100%',
+  width: 'auto',
   display: 'flex',
   height: '830px',
   justifyContent: 'center',
@@ -69,11 +69,10 @@ export default class ProjectsContainer extends React.Component {
     const { cardsByIndex } = this.state;
     return (
       <div
-        className="Projects"
         style={{
           backgroundColor: 'black',
           border: '5px solid black',
-          width: '100%',
+          // width: '100%',
           overflow: 'hidden',
         }}
       >
@@ -81,19 +80,18 @@ export default class ProjectsContainer extends React.Component {
           className="ProjectsContainer"
           style={{
             background: `url(${Wood})`,
-            width: '100%',
             height: '5vh',
-            marginTop: "-15px",
+            marginTop: '-15px',
             marginBottom: '10px',
             backgroundPosition: 'center',
             backgroundSize: '170vh 14vh',
-            backgroundRepeat: 'repeat'
+            backgroundRepeat: 'repeat',
           }}
         >
           <h1
             className="Title"
             style={{
-              paddingTop:"10px",
+              paddingTop: '10px',
               color: 'white',
               textAlign: 'center',
             }}

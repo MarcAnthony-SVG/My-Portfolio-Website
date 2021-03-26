@@ -5,8 +5,9 @@ import { Waypoint } from 'react-waypoint';
 const Background = require('./Images/Artistic-4K-Wallpaper-3840x2160.jpg');
 //Styles////////////////////
 const HomeContainer = {
+  overflow: 'hidden',
   border: '3px solid red',
-  width: '100%',
+  // width: '100%',
   height: '99.5vh',
   backgroundImage: `url(${Background})`,
   display: 'flex',
@@ -14,9 +15,11 @@ const HomeContainer = {
   position: 'relative',
 };
 const HomeText = {
-  border: '3px solid red',
+  overflow: 'hidden',
 
-  // width: '73%',
+  border: '3px solid red',
+  width: '73%',
+  fontSize: '55%',
   fontFamily:
     'apple system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif',
   background: 'transparent',
@@ -26,36 +29,35 @@ const HomeText = {
   top: '46%',
   left: '27%',
 };
-// const transforms = {
-//   overflow: 'hidden',
-//   width: '100%',
-//   color: 'white',
-//   display: 'flex',
-//   justifyContent: 'flex start',
-//   alignItems: 'center',
-//   fontWeight: 'bold',
-//   textTransform: 'uppercase',
-//   willChange: 'transform, opacity, height',
-//   whiteSpace: 'nowrap',
-//   cursor: 'pointer',
-// };
+const words = [
+  ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}>Marc Anthony Rodriguez</animated.div>,
+  ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}>Software Developer</animated.div>,
+  ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}>Ready For Hire</animated.div>,
+]
 ////////////////////////////
 function Home(props) {
   const ref = useRef([]);
   const [items, set] = useState([]);
   const transitions = useTransition(items, null, {
     from: {
+      
       opacity: '100%',
       height: '70%',
       innerHeight: '100px',
       color: '#F8F8FF',
-      padding: '5px',
+      padding: '0.2%',
       fontSize: '500%',
       top: '3%',
       fontWeight: 'bold',
     },
     enter: [
-      { opacity: '60%', height: '100%', innerHeight: '100px', top: '55%' },
+      {
+        opacity: '60%',
+        height: '100%',
+        innerHeight: '100px',
+        top: '55%',
+        // left: '0px',
+      },
       // { transform: 'perspective(130px) rotateX(180deg)', color: 'silver' },
       // { transform: 'perspective(880px) rotateX(10deg)' },
     ],
@@ -82,7 +84,7 @@ function Home(props) {
   useEffect(() => void reset(), [reset]);
 
   return (
-    <div className="HomeContainer" style={HomeContainer}>
+    <div style={HomeContainer}>
       <Waypoint
         onEnter={() => {
           reset();

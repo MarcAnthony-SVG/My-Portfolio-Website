@@ -1,0 +1,35 @@
+.script-box {
+  will-change: width, height, left, top;
+  position: relative;
+  border: 2px solid slateblue;
+  /* background: #c72020; */
+  /* height: 1000px; */
+}
+.FadeInContainer {
+  /* height: 99.4vh; */
+  /* border: 2px solid red; */
+  /* overflow: hidden; */
+
+}
+.TitleOfComponent {
+  position: relative;
+  left: 50%;
+  top: 40%;
+}
+.Title {
+  left: 50%;
+}
+.simple-trans-main > div {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 25em;
+  will-change: transform, opacity;
+  text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+}

@@ -1,14 +1,13 @@
 /*Base*/
 .ProfileContainer {
   background-color: #cfe2e2;
-  width: auto;
   height: 90vh;
   text-align: center;
   border: 65px inset darkslategrey;
   overflow: hidden;
 }
 .TitleContainer {
-  width: 100%;
+  width: 90%;
   height: 99.5vh;
   /* backgroundimage: url(${Background}); */
   display: flex;
@@ -16,7 +15,7 @@
   position: relative;
 }
 .TitleText {
-  width: 100%;
+  width: 90%;
   background: black;
   fontfamily: apple system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
@@ -25,7 +24,7 @@
   display: flex;
   position: absolute;
   top: 46%;
-  left: 27%;
+  left: 7%;
 }
 
 #About_Me {

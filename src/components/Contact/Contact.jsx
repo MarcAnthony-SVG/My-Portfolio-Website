@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './contact.css';
-import Email from './Mailto';
+// import Email from './Mailto';
 
 import { AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
 
@@ -24,9 +24,9 @@ function Contact(props) {
   return (
     <div
       className="Contact"
-      style={{ backgroundColor: '#cfe2e2', height: 'auto', width: 'auto' }}
+      style={{ backgroundColor: '#cfe2e2', height: 'auto', width: '100%' }}
     >
-      <h1 style={{ marginBlockStart: '0.1em' }}>Contact</h1>
+      <h1>Contact</h1>
       <p>
         “If I had asked people what they wanted, they would have said faster
         horses. ” - Henry Ford
@@ -67,7 +67,7 @@ function Contact(props) {
           }
           className="button-link"
         >
-          <Email></Email>
+          {/* <Email></Email> */}
         </div>
       </div>
     </div>
