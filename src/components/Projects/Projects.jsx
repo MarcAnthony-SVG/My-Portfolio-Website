@@ -8,7 +8,7 @@ import Wood from '../Projects/Images/Wood.jpg';
 const constainerStyle = {
   width: 'auto',
   display: 'flex',
-  height: '830px',
+  height: '877px',
   justifyContent: 'center',
   backgroundImage: 'url(' + CorkBoard + ')',
   backgroundRepeat: 'repeat',

@@ -13,7 +13,12 @@ function Contact(props) {
   return (
     <div
       className="Contact"
-      style={{ backgroundColor: '#cfe2e2', height: 'auto', width: '100%' }}
+      style={{
+        backgroundColor: '#cfe2e2',
+        height: 'auto',
+        width: '100%',
+        padding: '0.1px',
+      }}
     >
       <h1>Contact</h1>
       <div

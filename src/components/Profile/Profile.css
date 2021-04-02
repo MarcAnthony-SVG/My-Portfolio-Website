@@ -37,14 +37,20 @@
 }
 
 #About_Me {
-  order: 2;
+  /* order: 2; */
   /* text-align: justify; */
   /* margin-left: 5%; */
   /* width: 40%; */
 }
 #ProfilePic {
   order: 3;
-  margin-inline: auto; /* left:50%; */
+
+  width: 99%;
+  /* padding: 10px; */
+  background-color: darkgrey;
+  border: 3px solid black;
+  height: 46vh;
+  /* margin-inline: auto; left:50%; */
 }
 #Details {
   order: 4;
@@ -55,27 +61,62 @@
 }
 
 .Information_Box {
-  float: left;
-  width: 24vw; /*Don't use percentages*/
+  width: 30%; /*Don't use percentages*/
   padding: 10px;
   background-color: darkgrey;
   border: 3px solid black;
   height: 44vh;
   overflow: hidden;
-  margin-inline: 0.4%;
+  margin-inline: 4.1vw;
+}
+@media screen and (max-width: 1400px) {
+  .containerStyle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    height: auto;
+  }
+  .Information_Box {
+    width: 25%;
+    padding: 1px;
+    height: 50vh;
+    /* height: 100%; */
+    overflow: auto;
+    margin-inline: 2.5vw;
+  }
+  #Details {
+    width: auto;
+    height: auto;
+  }
+  #ProfilePic {
+    /* margin-left: 2%; */
+    width: 98%;
+  }
 }
 @media screen and (max-width: 600px) {
   .Information_Box {
     width: 100%; /*Don't use percentages*/
     overflow: hidden;
+    margin: 2%;
   }
   .Root_Container {
     height: auto;
   }
-  h2{
+  #ProfilePic {
+    margin-left: 2%;
+    height: 100%;
+    width: 93.4%;
+  }
+  #Details {
+    width: 92.6%;
+    margin-top: 4%;
+    height: auto;
+  }
+  h2 {
     font-size: small;
   }
-  h3{
+  h3 {
     font-size: small;
   }
   p {

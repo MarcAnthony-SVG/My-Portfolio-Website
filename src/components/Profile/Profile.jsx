@@ -4,9 +4,6 @@ import { useSpring, animated } from 'react-spring';
 
 import profilePic from './Images/profilePic.jpeg';
 import './Profile.css';
-//Styles////////////////////
-
-////////////////////////////
 function Profile(props) {
   const [isVisible, setVisibility] = useState(false);
   const fadeAnimation = useSpring({
@@ -14,9 +11,8 @@ function Profile(props) {
   });
   const photoAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
-    width: 300,
-    // borderRadius: '2%',
-    height: '100%',
+    // width: 289,
+    // height: '99%',
   });
 
   const { x } = useSpring({
@@ -30,7 +26,7 @@ function Profile(props) {
   });
   return (
     <div className="Root_Container">
-      <div>
+      {/* <div> */}
         <Waypoint
           onEnter={() => {
             console.log('3');
@@ -38,7 +34,7 @@ function Profile(props) {
           }}
         />
         <animated.h1 style={fadeAnimation}>Profile</animated.h1>
-        <h3>I'm a creative Javascript Developer</h3>
+        <h3>I'm a creative Software Developer</h3>
         <div className="containerStyle">
           <animated.section
             id="About_Me"
@@ -68,7 +64,7 @@ function Profile(props) {
               issues.
             </p>
           </animated.section>
-          <div className="Information_Box">
+          <div >
             <animated.img
               src={profilePic}
               id="ProfilePic"
@@ -112,7 +108,7 @@ function Profile(props) {
             </div>
           </animated.section>
         </div>
-      </div>
+      {/* </div> */}
 
       <Waypoint
         bottomOffset={'4px'}

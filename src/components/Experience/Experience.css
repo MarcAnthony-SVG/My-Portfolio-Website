@@ -1,8 +1,8 @@
 .Experience {
   background-color: white;
-  /* // textAlign: 'center', */
+  text-align: center;
   /* // width: 'auto', */
-  height: 86.1vh;
+  height: 86.4vh;
   border: 65px inset darkred;
 }
 .CareerContainer {
@@ -60,7 +60,7 @@ li {
   .Experience {
     background-color: rgb(255, 255, 255);
     height: auto;
-    border: 35px inset darkred;
+    border: 45px inset darkred;
   }
   .CareerContainer {
     width: 100%; /*Don't use percentages*/
