@@ -26,9 +26,9 @@ const ReactSpringTest = () => {
           setToggle(!isToggled);
         }}
       >
-        toggle
-      </button>
+      </button> 
     </div>
   );
 };
 export default ReactSpringTest;
+ 

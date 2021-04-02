@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
-
 import { useSpring, animated } from 'react-spring';
 import Profile from '../Profile/Profile';
 import './styles.css';
 
 const FadeIn = () => {
-  // var slideCount = 0;
   const [isDisplayed, setDisplay] = useState(false);
   const visibleAnimation2 = useSpring({
     height: isDisplayed ? '200vh' : '0',

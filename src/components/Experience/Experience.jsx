@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated } from 'react-spring';
 import GalvanizeLogo from './../../Data/Images/Galvanize Logo.jpg';
@@ -24,19 +24,14 @@ function Experience(props) {
     x: isVisible ? 0 : 100,
     config: { mass: 5, tension: 500, friction: 80, duration: 1000 },
   });
-
+  const [clicked, setClicked] = useState(false);
+  useEffect(() => {
+    if (clicked) {
+      window.location.assign(this);
+    }
+  });
   return (
-    <div
-      className="Experience"
-      style={{
-        backgroundColor: 'white',
-        textAlign: 'center',
-        // width: '100%',
-        height: '86.1vh',
-        border: '65px inset darkred',
-        overflow: 'hidden',
-      }}
-    >
+    <div className="Experience">
       <div>
         <Waypoint
           // scrollableAncestor={window}
@@ -44,31 +39,14 @@ function Experience(props) {
             if (!isVisible) setVisibility(true);
             console.log(4);
           }}
-          onLeave={() => {
-            if (isVisible) setVisibility(false);
-            // setVisibility(false);
-          }}
         />
         <animated.h1 style={fadeAnimation}>Experience</animated.h1>
       </div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          height: 560,
-        }}
-      >
+      <div className="InfoContainer">
         <animated.div
           className="ParentContainer"
           style={{
             transform: x.interpolate((x) => `translate3d(${x * -11}%,0,0`),
-            borderStyle: 'solid',
-            width: '20%',
-            padding: '10px',
-            margin: '10px',
-            backgroundColor: 'lightgrey',
-            borderRadius: '0.9%',
-            overflow: 'auto',
           }}
         >
           <div className="ChildContainer">
@@ -100,13 +78,6 @@ function Experience(props) {
           className="ParentContainer"
           style={{
             transform: x.interpolate((x) => `translate3d(${x * 11}%,0,0`),
-            borderStyle: 'solid',
-            width: '50%',
-            padding: '10px',
-            margin: '10px',
-            backgroundColor: 'lightgrey',
-            borderRadius: '0.9%',
-            overflow: 'auto',
           }}
         >
           <div className="CareerContainer">
@@ -155,6 +126,12 @@ function Experience(props) {
         </animated.div>
       </div>
       <TechnicalSkills></TechnicalSkills>
+      <Waypoint
+        onLeave={() => {
+          if (isVisible) setVisibility(false);
+          setVisibility(false);
+        }}
+      ></Waypoint>
     </div>
   );
 }

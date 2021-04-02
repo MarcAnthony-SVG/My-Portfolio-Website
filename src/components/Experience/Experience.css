@@ -1,3 +1,10 @@
+.Experience {
+  background-color: white;
+  /* // textAlign: 'center', */
+  /* // width: 'auto', */
+  height: 86.1vh;
+  border: 65px inset darkred;
+}
 .CareerContainer {
   /* border: 2px solid teal; */
   overflow: auto;
@@ -6,6 +13,21 @@
   display: inline-flex;
   flex-direction: row;
   /* border: 2px solid rgb(196, 86, 23); */
+}
+.InfoContainer{
+  display: flex;
+  justify-Content: center;
+  height: 60vh;
+  overflow: hidden;
+}
+.ParentContainer {
+  border-style: solid;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  background-color: lightgrey;
+  border-radius: 0.9%;
+  overflow: auto;
 }
 .CareerDetails {
   border: 2px solid rgb(56, 54, 52);
@@ -33,4 +55,48 @@ li {
   touch-action: none;
   user-select: none;
   cursor: grab;
+}
+@media screen and (max-width: 600px) {
+  .Experience {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    border: 35px inset darkred;
+  }
+  .CareerContainer {
+    width: 100%; /*Don't use percentages*/
+    overflow: hidden;
+  }
+  .CenterContainer {
+    height: auto;
+  }
+  .CareerDetails {
+    width: 100%; /*Don't use percentages*/
+  }
+    
+  .InfoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    overflow: hidden;
+    height: auto;
+  }
+  .ParentContainer {
+    border-style: solid;
+    width: 100%;
+    /* padding: 10px; */
+    margin: 0px;
+    background-color: lightgrey;
+    border-radius: 0.9%;
+    overflow: auto;
+  }
+  h2 {
+    font-size: small;
+  }
+  h3 {
+    font-size: small;
+  }
+  p {
+    font-size: small;
+  }
 }

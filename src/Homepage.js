@@ -8,7 +8,7 @@ import Projects from './components/Projects/Projects.jsx';
 import Navbar from './components/NavigationBar/NavBar.jsx';
 import FadeIn from './components/Transitions/FadeIn.jsx';
 import { Waypoint } from 'react-waypoint';
-
+import './index.css';
 // import PullRelease from "./components/Experience/Details"
 
 const Homepage = () => {
@@ -49,34 +49,23 @@ const Homepage = () => {
   return (
     <div className="App">
       <Title title="Title" dark={true} id="Title" />
-      {/* <animated.div
-        onMouseEnter={() => {
-          if (!isNavOpen) setNavOpen(true);
+      <Navbar />
+      <Waypoint
+        onEnter={() => {
+          // console.log('Top');
+          if (!isDisplayed) setDisplay(true);
         }}
-        onMouseLeave={() => {
-          if (isNavOpen) setNavOpen(false);
+      />
+      <animated.div style={firstFadeOut} />
+      <Waypoint
+        onLeave={() => {
+          if (isDisplayed) setDisplay(false);
         }}
-      /> */}
-        <Navbar />
-        <Waypoint
-          onEnter={() => {
-            console.log('Top');
-            if (!isDisplayed) setDisplay(true);
-          }}
-        />
-        <animated.div style={firstFadeOut} />
-        <Waypoint
-          onLeave={() => {
-            console.log('Bottom');
-            if (isDisplayed) setDisplay(false);
-          }}
-        />
-       <Profile title="Profile" dark={false} id="Profile" />
-      {/* <ReactSpringTest /> */}
-      {/* <FadeIn /> */}
-      <Experience title="Experience" dark={false} id="Experience" /> 
+      />
+      <Profile title="Profile" dark={false} id="Profile" />
+      <Experience title="Experience" dark={false} id="Experience" />
       <Projects title="Projects" dark={false} id="Projects" />
-      <Contact title="Contact" dark={true} id="Contact" />
+      <Contact title="Contact" dark={false} id="Contact" />
     </div>
   );
 };

@@ -1,23 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './contact.css';
 import Email from './Mailto';
-
 import { AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
-
-var linkStyle = {
-  // margin: 2,
-  // width: 'auto',
-  // border: '2px solid silver',
-  // flex: 'auto',
-  // textAlign: 'center',
-};
 
 function Contact(props) {
   const [clicked, setClicked] = useState(false);
-
   useEffect(() => {
     if (clicked) {
-      // do something meaningful, Promises, if/else, whatever, and then
       window.location.assign(this);
     }
   });
@@ -27,10 +16,6 @@ function Contact(props) {
       style={{ backgroundColor: '#cfe2e2', height: 'auto', width: '100%' }}
     >
       <h1>Contact</h1>
-      <p>
-        “If I had asked people what they wanted, they would have said faster
-        horses. ” - Henry Ford
-      </p>
       <div
         className="LinksContainer"
         style={{ display: 'flex', height: 'auto' }}
@@ -58,7 +43,6 @@ function Contact(props) {
           }
           className="button-link"
         >
-          {' '}
           Website
         </div>
         <div

@@ -6,8 +6,7 @@ const Background = require('./Images/Artistic-4K-Wallpaper-3840x2160.jpg');
 //Styles////////////////////
 const HomeContainer = {
   overflow: 'hidden',
-  border: '3px solid red',
-  // width: '100%',
+  // border: '3px solid red',
   height: '99.5vh',
   backgroundImage: `url(${Background})`,
   display: 'flex',
@@ -17,7 +16,7 @@ const HomeContainer = {
 const HomeText = {
   overflow: 'hidden',
 
-  border: '3px solid red',
+  // border: '3px solid red',
   width: '73%',
   fontSize: '55%',
   fontFamily:
@@ -82,9 +81,15 @@ function Home(props) {
   }, []);
 
   useEffect(() => void reset(), [reset]);
-
+  const [clicked, setClicked] = useState(false);
+  useEffect(() => {
+    if (clicked) {
+      window.location.assign(this);
+    }
+  });
   return (
-    <div style={HomeContainer}>
+    <div className="Home"
+    style={HomeContainer}>
       <Waypoint
         onEnter={() => {
           reset();

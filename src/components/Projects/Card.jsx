@@ -5,8 +5,8 @@ import { ItemTypes } from "../../Utilities/ItemTypes";
 
 const cardStyle = {
   border: "1px solid black",
-  width: "30vw",
-  height: "60vh",
+  width: "70%",
+  height: "70%",
   margin: "1%",
   padding: "0.5rem 1rem",
   backgroundColor: "white",
@@ -38,7 +38,7 @@ export const Card = memo(({ id, text, title, image, moveCard }) => {
   const containerStyle = useMemo(() => ({ ...cardStyle, opacity }), [opacity]);
   return (
     <div ref={ref} style={containerStyle}>
-      <img src={image} alt="img" style={{ height: "45%", width: "100%" }}/>
+      <img src={image} alt="img" style={{ height: "45%", width: "auto" }}/>
       <h3 style={{ textAlign: "center" }}>{title}</h3>
       {text}
     </div>

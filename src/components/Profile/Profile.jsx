@@ -1,24 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated } from 'react-spring';
 
 import profilePic from './Images/profilePic.jpeg';
 import './Profile.css';
 //Styles////////////////////
-const profileContainer = {
-  backgroundColor: '#cfe2e2',
-  // width: '100%',
-  height: '90vh',
-  textAlign: 'center',
-  border: '65px inset darkslategrey',
-  overflow: 'hidden',
-};
-const containerStyle = {
-  display: 'flex',
-  flexDirection: 'row',
-  width: 'auto',
-  height: 'auto',
-};
+
 ////////////////////////////
 function Profile(props) {
   const [isVisible, setVisibility] = useState(false);
@@ -28,38 +15,37 @@ function Profile(props) {
   const photoAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
     width: 300,
-    borderRadius: '2%',
+    // borderRadius: '2%',
     height: '100%',
   });
 
   const { x } = useSpring({
     x: isVisible ? 0 : 100,
   });
+  const [clicked, setClicked] = useState(false);
+  useEffect(() => {
+    if (clicked) {
+      window.location.assign(this);
+    }
+  });
   return (
-    <div style={profileContainer}>
-      <animated.div>
-        <div
-          id="Profile"
-          // className="item"
-        >
-          <Waypoint
-            onEnter={() => {
-              if (!isVisible) setVisibility(true);
-            }}
-            onLeave={() => {
-              if (isVisible) setVisibility(false);
-            }}
-          />
-
-          <animated.h1 style={fadeAnimation}>Profile</animated.h1>
-          <h3>I'm a creative Javascript Developer</h3>
-        </div>
-        <div style={containerStyle}>
+    <div className="Root_Container">
+      <div>
+        <Waypoint
+          onEnter={() => {
+            console.log('3');
+            if (!isVisible) setVisibility(true);
+          }}
+        />
+        <animated.h1 style={fadeAnimation}>Profile</animated.h1>
+        <h3>I'm a creative Javascript Developer</h3>
+        <div className="containerStyle">
           <animated.section
             id="About_Me"
             className="Information_Box"
             style={{
               transform: x.interpolate((x) => `translate3d(${x * -11}%,0,0`),
+              // overflow:'hidden'
             }}
           >
             <h2 id="Title">About me</h2>
@@ -82,8 +68,12 @@ function Profile(props) {
               issues.
             </p>
           </animated.section>
-          <div style={{ height: '44.5vh', width: 'auto' }} id="ProfilePic">
-            <animated.img src={profilePic} style={photoAnimation} />
+          <div className="Information_Box">
+            <animated.img
+              src={profilePic}
+              id="ProfilePic"
+              style={photoAnimation}
+            />
           </div>
           <animated.section
             id="Details"
@@ -96,7 +86,7 @@ function Profile(props) {
             <div
               style={{
                 textAlign: 'left',
-                padding: '10px',
+                // padding: '10px',
               }}
             >
               <h3 style={{ display: 'inline' }}>Occupation</h3>
@@ -122,7 +112,15 @@ function Profile(props) {
             </div>
           </animated.section>
         </div>
-      </animated.div>
+      </div>
+
+      <Waypoint
+        bottomOffset={'4px'}
+        onLeave={() => {
+          console.log('Leaves');
+          if (isVisible) setVisibility(false);
+        }}
+      />
     </div>
   );
 }

@@ -1,16 +1,25 @@
 /*Base*/
-.ProfileContainer {
+
+.Root_Container {
   background-color: #cfe2e2;
   height: 90vh;
   text-align: center;
   border: 65px inset darkslategrey;
+  /* overflow: auto; */
+}
+.containerStyle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
   overflow: hidden;
+  height: auto;
 }
 .TitleContainer {
   width: 90%;
   height: 99.5vh;
   /* backgroundimage: url(${Background}); */
-  display: flex;
+  /* display: flex; */
   align-items: center;
   position: relative;
 }
@@ -29,38 +38,47 @@
 
 #About_Me {
   order: 2;
-  text-align: justify;
-  margin-left: 5%;
-  width: 40%;
-}
-
-#Details {
-  order: 4;
-  margin-right: 5%;
-  width: 40%;
+  /* text-align: justify; */
+  /* margin-left: 5%; */
+  /* width: 40%; */
 }
 #ProfilePic {
   order: 3;
-  /* position: absolute; */
-  /* left:50%; */
-  margin-top: 1%;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-inline: auto; /* left:50%; */
 }
+#Details {
+  order: 4;
+}
+
 #Title {
   text-align: 'center';
 }
 
 .Information_Box {
-  margin: 1%;
+  float: left;
+  width: 24vw; /*Don't use percentages*/
+  padding: 10px;
   background-color: darkgrey;
-  border-radius: 4%;
   border: 3px solid black;
-  /* width: 25vw; */
-  /* height: 44vh; */
-  overflow: auto;
-  /* -webkit-border-radius: 4%; */
-  /* -moz-border-radius: 4%; */
-  /* -ms-border-radius: 4%; */
-  /* -o-border-radius: 4%; */
+  height: 44vh;
+  overflow: hidden;
+  margin-inline: 0.4%;
+}
+@media screen and (max-width: 600px) {
+  .Information_Box {
+    width: 100%; /*Don't use percentages*/
+    overflow: hidden;
+  }
+  .Root_Container {
+    height: auto;
+  }
+  h2{
+    font-size: small;
+  }
+  h3{
+    font-size: small;
+  }
+  p {
+    font-size: small;
+  }
 }

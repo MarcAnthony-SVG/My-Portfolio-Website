@@ -21,6 +21,7 @@
     "react-router-hash-link": "^2.2.2",
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
+    "react-sizeme": "^3.0.1",
     "react-spring": "^8.0.27",
     "react-transition-group": "^4.4.1",
     "react-use-gesture": "^9.1.3",

@@ -1,29 +1,30 @@
-import React from "react";
-import { Link } from "react-scroll";
-import {animated} from "react-spring"
+import React from 'react';
+import { Link } from 'react-scroll';
+import { animated } from 'react-spring';
 var Style = {
-  position: "fixed",
-  right: "10px",
-  top: "46%",
-  backgroundColor: "#708090",
-  height: "104px",
-  border: "2px solid silver",
-  textAlign: "center",
-  borderRadius: "10%"
+  position: 'fixed',
+  right: '10px',
+  top: '46%',
+  backgroundColor: '#708090',
+  height: '104px',
+  border: '2px solid silver',
+  textAlign: 'center',
+  borderRadius: '7px',
+  zIndex: '1',
 };
 
 const Navbar = () => {
   return (
-    <animated.nav className="nav" id="navbar"style={Style}>
+    <animated.nav className="nav" id="navbar" style={Style}>
       <div className="nav-content">
         <div className="nav-items">
           <div>
             <Link
               activeClass="active"
-              to="HomeContainer"
+              to="Home"
               spy={true}
               smooth={true}
-              offset={10}
+              offset={1}
               duration={1000}
             >
               Title
@@ -32,7 +33,7 @@ const Navbar = () => {
           <div>
             <Link
               activeClass="active"
-              to="ProfileContainer"
+              to="Root_Container"
               spy={true}
               smooth={true}
               offset={1}
@@ -56,7 +57,7 @@ const Navbar = () => {
           <div>
             <Link
               activeClass="active"
-              to="Projects"
+              to="ProjectsContainer"
               spy={true}
               smooth={true}
               offset={1}

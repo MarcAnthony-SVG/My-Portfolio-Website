@@ -17,7 +17,9 @@
   font-family: crackedCode;
   src: url(../src/components/Title/Cracked\ Code.ttf);
 }
-
+#Profile {
+  height: 3vh;
+}
 /* .Homepage-header { */
 /* background-color: #282c34;
   min-height: 100vh;
