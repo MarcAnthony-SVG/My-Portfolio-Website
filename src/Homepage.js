@@ -48,9 +48,9 @@ const Homepage = () => {
   });
   return (
     <div className="App">
-      <Title title="Title" dark={true} id="Title" />
-      <Navbar />
-      <Waypoint
+      {/* <Title title="Title" dark={true} id="Title" /> */}
+      {/* <Navbar /> */}
+      {/* <Waypoint
         onEnter={() => {
           // console.log('Top');
           if (!isDisplayed) setDisplay(true);
@@ -61,11 +61,11 @@ const Homepage = () => {
         onLeave={() => {
           if (isDisplayed) setDisplay(false);
         }}
-      />
+      /> */}
       <Profile title="Profile" dark={false} id="Profile" />
       <Experience title="Experience" dark={false} id="Experience" />
-      <Projects title="Projects" dark={false} id="Projects" />
-      <Contact title="Contact" dark={false} id="Contact" />
+      {/* <Projects title="Projects" dark={false} id="Projects" /> */}
+      {/* <Contact title="Contact" dark={false} id="Contact" /> */}
     </div>
   );
 };

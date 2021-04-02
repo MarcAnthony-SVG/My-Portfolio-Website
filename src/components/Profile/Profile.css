@@ -44,8 +44,7 @@
 }
 #ProfilePic {
   order: 3;
-
-  width: 99%;
+  /* width: 15vw; */
   /* padding: 10px; */
   background-color: darkgrey;
   border: 3px solid black;
@@ -72,18 +71,18 @@
 @media screen and (max-width: 1400px) {
   .containerStyle {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-between;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* align-content: space-between; */
     height: auto;
   }
   .Information_Box {
-    width: 25%;
+    width: 35%;
     padding: 1px;
-    height: 50vh;
+    height: 45vh;
     /* height: 100%; */
     overflow: auto;
-    margin-inline: 2.5vw;
+    margin-inline: 4.1vw;
   }
   #Details {
     width: auto;
@@ -91,7 +90,8 @@
   }
   #ProfilePic {
     /* margin-left: 2%; */
-    width: 98%;
+    /* height: 100%; */
+    /* width: 25%; */
   }
 }
 @media screen and (max-width: 600px) {
