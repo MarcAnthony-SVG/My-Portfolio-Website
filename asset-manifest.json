@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/My-Portfolio-Website/static/css/main.3d661014.chunk.css",
-    "main.js": "/My-Portfolio-Website/static/js/main.6990a4c1.chunk.js",
-    "main.js.map": "/My-Portfolio-Website/static/js/main.6990a4c1.chunk.js.map",
+    "main.css": "/My-Portfolio-Website/static/css/main.b78af69a.chunk.css",
+    "main.js": "/My-Portfolio-Website/static/js/main.ec080405.chunk.js",
+    "main.js.map": "/My-Portfolio-Website/static/js/main.ec080405.chunk.js.map",
     "runtime-main.js": "/My-Portfolio-Website/static/js/runtime-main.b312d3d9.js",
     "runtime-main.js.map": "/My-Portfolio-Website/static/js/runtime-main.b312d3d9.js.map",
-    "static/js/2.ae1ec509.chunk.js": "/My-Portfolio-Website/static/js/2.ae1ec509.chunk.js",
-    "static/js/2.ae1ec509.chunk.js.map": "/My-Portfolio-Website/static/js/2.ae1ec509.chunk.js.map",
+    "static/js/2.8785c703.chunk.js": "/My-Portfolio-Website/static/js/2.8785c703.chunk.js",
+    "static/js/2.8785c703.chunk.js.map": "/My-Portfolio-Website/static/js/2.8785c703.chunk.js.map",
     "index.html": "/My-Portfolio-Website/index.html",
-    "precache-manifest.28803d3eab3b505f72167ff27650d5e0.js": "/My-Portfolio-Website/precache-manifest.28803d3eab3b505f72167ff27650d5e0.js",
+    "precache-manifest.5a624dc248283ed5a618b4033818dfbe.js": "/My-Portfolio-Website/precache-manifest.5a624dc248283ed5a618b4033818dfbe.js",
     "service-worker.js": "/My-Portfolio-Website/service-worker.js",
-    "static/css/main.3d661014.chunk.css.map": "/My-Portfolio-Website/static/css/main.3d661014.chunk.css.map",
-    "static/js/2.ae1ec509.chunk.js.LICENSE.txt": "/My-Portfolio-Website/static/js/2.ae1ec509.chunk.js.LICENSE.txt",
+    "static/css/main.b78af69a.chunk.css.map": "/My-Portfolio-Website/static/css/main.b78af69a.chunk.css.map",
+    "static/js/2.8785c703.chunk.js.LICENSE.txt": "/My-Portfolio-Website/static/js/2.8785c703.chunk.js.LICENSE.txt",
     "static/media/Artistic-4K-Wallpaper-3840x2160.jpg": "/My-Portfolio-Website/static/media/Artistic-4K-Wallpaper-3840x2160.6a375215.jpg",
     "static/media/Corkboard.jpg": "/My-Portfolio-Website/static/media/Corkboard.950a8410.jpg",
     "static/media/Galvanize Logo.jpg": "/My-Portfolio-Website/static/media/Galvanize Logo.e8acad94.jpg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b312d3d9.js",
-    "static/js/2.ae1ec509.chunk.js",
-    "static/css/main.3d661014.chunk.css",
-    "static/js/main.6990a4c1.chunk.js"
+    "static/js/2.8785c703.chunk.js",
+    "static/css/main.b78af69a.chunk.css",
+    "static/js/main.ec080405.chunk.js"
   ]
 }
