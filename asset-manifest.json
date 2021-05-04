@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/My-Portfolio-Website/static/css/main.a961659f.chunk.css",
-    "main.js": "/My-Portfolio-Website/static/js/main.4d9c52de.chunk.js",
-    "main.js.map": "/My-Portfolio-Website/static/js/main.4d9c52de.chunk.js.map",
+    "main.css": "/My-Portfolio-Website/static/css/main.102fc5a6.chunk.css",
+    "main.js": "/My-Portfolio-Website/static/js/main.50a3b0ce.chunk.js",
+    "main.js.map": "/My-Portfolio-Website/static/js/main.50a3b0ce.chunk.js.map",
     "runtime-main.js": "/My-Portfolio-Website/static/js/runtime-main.b312d3d9.js",
     "runtime-main.js.map": "/My-Portfolio-Website/static/js/runtime-main.b312d3d9.js.map",
-    "static/js/2.8785c703.chunk.js": "/My-Portfolio-Website/static/js/2.8785c703.chunk.js",
-    "static/js/2.8785c703.chunk.js.map": "/My-Portfolio-Website/static/js/2.8785c703.chunk.js.map",
+    "static/js/2.4a3a54ee.chunk.js": "/My-Portfolio-Website/static/js/2.4a3a54ee.chunk.js",
+    "static/js/2.4a3a54ee.chunk.js.map": "/My-Portfolio-Website/static/js/2.4a3a54ee.chunk.js.map",
     "index.html": "/My-Portfolio-Website/index.html",
-    "precache-manifest.b49a9a37219bd7c0993838792ae5262a.js": "/My-Portfolio-Website/precache-manifest.b49a9a37219bd7c0993838792ae5262a.js",
+    "precache-manifest.5754614080a83b883177c75b0b2bf596.js": "/My-Portfolio-Website/precache-manifest.5754614080a83b883177c75b0b2bf596.js",
     "service-worker.js": "/My-Portfolio-Website/service-worker.js",
-    "static/css/main.a961659f.chunk.css.map": "/My-Portfolio-Website/static/css/main.a961659f.chunk.css.map",
-    "static/js/2.8785c703.chunk.js.LICENSE.txt": "/My-Portfolio-Website/static/js/2.8785c703.chunk.js.LICENSE.txt",
+    "static/css/main.102fc5a6.chunk.css.map": "/My-Portfolio-Website/static/css/main.102fc5a6.chunk.css.map",
+    "static/js/2.4a3a54ee.chunk.js.LICENSE.txt": "/My-Portfolio-Website/static/js/2.4a3a54ee.chunk.js.LICENSE.txt",
+    "static/media/ArmyLogo.png": "/My-Portfolio-Website/static/media/ArmyLogo.92f21173.png",
     "static/media/Artistic-4K-Wallpaper-3840x2160.jpg": "/My-Portfolio-Website/static/media/Artistic-4K-Wallpaper-3840x2160.6a375215.jpg",
     "static/media/Corkboard.jpg": "/My-Portfolio-Website/static/media/Corkboard.950a8410.jpg",
-    "static/media/Galvanize Logo.jpg": "/My-Portfolio-Website/static/media/Galvanize Logo.e8acad94.jpg",
+    "static/media/GalvanizeLogo.jpg": "/My-Portfolio-Website/static/media/GalvanizeLogo.e8acad94.jpg",
     "static/media/MentorMii.png": "/My-Portfolio-Website/static/media/MentorMii.e1a2dc19.png",
     "static/media/RealEstateApp.png": "/My-Portfolio-Website/static/media/RealEstateApp.77bab1d7.png",
     "static/media/TattooM3.png": "/My-Portfolio-Website/static/media/TattooM3.4f566b1b.png",
-    "static/media/U.S. Army Logo.png": "/My-Portfolio-Website/static/media/U.S. Army Logo.92f21173.png",
     "static/media/Wood.jpg": "/My-Portfolio-Website/static/media/Wood.3535b79c.jpg",
     "static/media/profilePic.jpeg": "/My-Portfolio-Website/static/media/profilePic.6c35e602.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.b312d3d9.js",
-    "static/js/2.8785c703.chunk.js",
-    "static/css/main.a961659f.chunk.css",
-    "static/js/main.4d9c52de.chunk.js"
+    "static/js/2.4a3a54ee.chunk.js",
+    "static/css/main.102fc5a6.chunk.css",
+    "static/js/main.50a3b0ce.chunk.js"
   ]
 }
