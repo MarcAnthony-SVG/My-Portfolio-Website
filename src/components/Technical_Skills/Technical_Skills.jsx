@@ -38,7 +38,7 @@ function TechnicalSkills(props) {
         <div style={{ textAlign: 'left' }}>
           <h4 style={Inline}>Front End </h4>
           <p style={Inline}>
-            ​: JavaScript, HTML5, CSS3, React, Axios, Bootstrap, Material UI,
+            ​: JavaScript, HTML5, CSS3, React.js,Angular, jQuery, Axios, Bootstrap, Material UI,
             Apollo-Client, Next.js
           </p>
           <br></br>

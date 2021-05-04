@@ -1,4 +1,3 @@
-// const placeholder = require("../components/OldProjects/images/placeholder.png");
 const RealEstate = require('../components/Projects/Images/RealEstateApp.png');
 const MentorMii = require('../components/Projects/Images/MentorMii.png');
 const TattooM3 = require('../components/Projects/Images/TattooM3.png');
@@ -34,7 +33,9 @@ and improve upon my skills.`,
     id: 4,
     image: TattooM3,
     title: `Tattoo M3`,
-    text: `Newest Addition: Coming Soon.`,
+    text: `A website that came about from me and my wife's love of tattoos. 
+    It was created using Next.js, GraphQL and Apollo-Client/Server. 
+    The main concept behind the site was to display images of tattoos from several apis using technologies that I hadn't used before.`,
   },
 ];
 

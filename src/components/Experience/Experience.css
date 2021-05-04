@@ -9,16 +9,30 @@
   /* border: 2px solid teal; */
   overflow: auto;
 }
+.Experience-UpperContainer {
+  display: inline-flex;
+  flex-direction: row;
+}
+.Experience-UpperContainer-list {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
+.Experience-MidContainer {
+  display: inline-flex;
+  flex-direction: row;
+}
+
 .CenterContainer {
   display: inline-flex;
   flex-direction: row;
   /* border: 2px solid rgb(196, 86, 23); */
 }
-.InfoContainer{
+.InfoContainer {
   display: flex;
-  justify-Content: center;
-  height: 60vh;
-  overflow: hidden;
+  justify-content: center;
+  height: 64vh;
+  /* overflow: hidden; */
 }
 .ParentContainer {
   border-style: solid;
@@ -28,6 +42,12 @@
   background-color: lightgrey;
   border-radius: 0.9%;
   overflow: auto;
+}
+.ParentContainer:hover {
+  transform: scaleY(1.2);
+  /* height: auto; */
+  position:relative;
+  z-index: 1;
 }
 .CareerDetails {
   border: 2px solid rgb(56, 54, 52);
@@ -72,8 +92,8 @@ li {
   .CareerDetails {
     width: 100%; /*Don't use percentages*/
   }
-    
-  .InfoContainer{
+
+  .InfoContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -90,6 +110,7 @@ li {
     border-radius: 0.9%;
     overflow: auto;
   }
+
   h2 {
     font-size: small;
   }

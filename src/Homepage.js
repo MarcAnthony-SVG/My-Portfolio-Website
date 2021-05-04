@@ -2,20 +2,14 @@ import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import Title from './components/Home/Home.jsx';
 import Profile from './components/Profile/Profile.jsx';
-import Experience from './components/Experience/Experience.jsx';
+import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Navbar from './components/NavigationBar/NavBar.jsx';
-import FadeIn from './components/Transitions/FadeIn.jsx';
 import { Waypoint } from 'react-waypoint';
 import './index.css';
-// import PullRelease from "./components/Experience/Details"
 
 const Homepage = () => {
-  // const [isNavOpen, setNavOpen] = useState(false);
-  // const navAnimation = useSpring({
-  //   transform: isNavOpen ? `translate3d(10%,0,0)` : `translate3d(100%,0,0)`,
-  // });
   const [isDisplayed, setDisplay] = useState(false);
 
   const firstFadeOut = useSpring({
@@ -48,11 +42,10 @@ const Homepage = () => {
   });
   return (
     <div className="App">
-      {/* <Title title="Title" dark={true} id="Title" /> */}
-      {/* <Navbar /> */}
-      {/* <Waypoint
+      <Title title="Title" dark={true} id="Title" />
+      <Navbar />
+      <Waypoint
         onEnter={() => {
-          // console.log('Top');
           if (!isDisplayed) setDisplay(true);
         }}
       />
@@ -61,11 +54,11 @@ const Homepage = () => {
         onLeave={() => {
           if (isDisplayed) setDisplay(false);
         }}
-      /> */}
+      />
       <Profile title="Profile" dark={false} id="Profile" />
-      <Experience title="Experience" dark={false} id="Experience" />
-      {/* <Projects title="Projects" dark={false} id="Projects" /> */}
-      {/* <Contact title="Contact" dark={false} id="Contact" /> */}
+      <Experience title="Experience" dark={false} id="Experience" ></Experience>
+      <Projects title="Projects" dark={false} id="Projects" />
+      <Contact title="Contact" dark={false} id="Contact" />
     </div>
   );
 };

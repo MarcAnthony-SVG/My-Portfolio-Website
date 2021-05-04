@@ -11,8 +11,6 @@ function Profile(props) {
   });
   const photoAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
-    // width: 289,
-    // height: '99%',
   });
 
   const { x } = useSpring({
@@ -26,7 +24,6 @@ function Profile(props) {
   });
   return (
     <div className="Root_Container">
-      {/* <div> */}
         <Waypoint
           onEnter={() => {
             console.log('3');
@@ -41,24 +38,16 @@ function Profile(props) {
             className="Information_Box"
             style={{
               transform: x.interpolate((x) => `translate3d(${x * -11}%,0,0`),
-              // overflow:'hidden'
             }}
           >
             <h2 id="Title">About me</h2>
             <p style={{ padding: '10px' }}>
               Welcome to my website, which is continually being updated with new
               and exciting features that I've learned from my experience while
-              working as a developer. From a young age, I always had an affinity
-              for problem-solving, working with others, being creative, and
-              pursuing my dreams. When it comes to picking a career, I've always
-              been one to say, "do something that you have a passion for, and
-              that will bring you great happiness." So far, I've had two
-              careers, both of which I love. In my first career, I was a soldier
-              trained as an intelligence analyst, and in my current position,
-              I'm a software engineer. I always knew I wanted to be a software
+              working as a developer.  I always knew I wanted to be a software
               engineer, but I never had the means to pursue it until one day,
               the opportunity came, and I took it. Since then, I've enjoyed
-              working with a great variety of mentors and colleges, solving
+              working with a great variety of mentors and colleagues, solving
               mundane and exciting problems and showing off my ability to
               problem-solve and come up with creative solutions to everyday
               issues.
@@ -82,7 +71,6 @@ function Profile(props) {
             <div
               style={{
                 textAlign: 'left',
-                // padding: '10px',
               }}
             >
               <h3 style={{ display: 'inline' }}>Occupation</h3>
@@ -108,8 +96,6 @@ function Profile(props) {
             </div>
           </animated.section>
         </div>
-      {/* </div> */}
-
       <Waypoint
         bottomOffset={'4px'}
         onLeave={() => {
