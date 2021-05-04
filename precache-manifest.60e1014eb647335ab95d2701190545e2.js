@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c4e0ee718a4ce90edb6fab18d4d5027",
+    "revision": "863c1194df1556b480b757ff681f07e0",
     "url": "/My-Portfolio-Website/index.html"
   },
   {
-    "revision": "c8a1cd662e9cff347de0",
-    "url": "/My-Portfolio-Website/static/css/main.102fc5a6.chunk.css"
+    "revision": "6156bedf2efb9d29d38f",
+    "url": "/My-Portfolio-Website/static/css/main.aae23deb.chunk.css"
   },
   {
-    "revision": "b0e77dc4add5b717ed3d",
-    "url": "/My-Portfolio-Website/static/js/2.4a3a54ee.chunk.js"
+    "revision": "81caa03ffa4f61ce1ea7",
+    "url": "/My-Portfolio-Website/static/js/2.61b7c298.chunk.js"
   },
   {
-    "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
-    "url": "/My-Portfolio-Website/static/js/2.4a3a54ee.chunk.js.LICENSE.txt"
+    "revision": "9b318b6fb13190fe82c0677e9264b3c7",
+    "url": "/My-Portfolio-Website/static/js/2.61b7c298.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c8a1cd662e9cff347de0",
-    "url": "/My-Portfolio-Website/static/js/main.50a3b0ce.chunk.js"
+    "revision": "6156bedf2efb9d29d38f",
+    "url": "/My-Portfolio-Website/static/js/main.2a659493.chunk.js"
   },
   {
     "revision": "d89dd0dd18eaa9b77f0d",
     "url": "/My-Portfolio-Website/static/js/runtime-main.b312d3d9.js"
-  },
-  {
-    "revision": "92f211733eff83fe7cee6061f884aed7",
-    "url": "/My-Portfolio-Website/static/media/ArmyLogo.92f21173.png"
   },
   {
     "revision": "6a375215e2efa0ef8bfdd27468f0759f",
@@ -34,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "950a841015f92d4cf192dfe0beb1d895",
     "url": "/My-Portfolio-Website/static/media/Corkboard.950a8410.jpg"
-  },
-  {
-    "revision": "e8acad948840f317387374c78223f4fe",
-    "url": "/My-Portfolio-Website/static/media/GalvanizeLogo.e8acad94.jpg"
   },
   {
     "revision": "e1a2dc19ddaa0ed6f0fbfed5df48b6bd",
