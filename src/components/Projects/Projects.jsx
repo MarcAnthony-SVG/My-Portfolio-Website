@@ -72,7 +72,6 @@ export default class ProjectsContainer extends React.Component {
         style={{
           backgroundColor: 'black',
           border: '5px solid black',
-          // width: '100%',
           overflow: 'hidden',
         }}
       >

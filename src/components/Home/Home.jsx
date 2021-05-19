@@ -6,7 +6,6 @@ const Background = require('./Images/Artistic-4K-Wallpaper-3840x2160.jpg');
 //Styles////////////////////
 const HomeContainer = {
   overflow: 'hidden',
-  // border: '3px solid red',
   height: '99.5vh',
   backgroundImage: `url(${Background})`,
   display: 'flex',
@@ -15,8 +14,6 @@ const HomeContainer = {
 };
 const HomeText = {
   overflow: 'hidden',
-
-  // border: '3px solid red',
   width: '73%',
   fontSize: '55%',
   fontFamily:
@@ -29,17 +26,28 @@ const HomeText = {
   left: '27%',
 };
 const words = [
-  ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}>Marc Anthony Rodriguez</animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}>Software Developer</animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}>Ready For Hire</animated.div>,
-]
+  ({ style }) => (
+    <animated.div style={{ ...style, background: 'lightpink' }}>
+      Marc Anthony Rodriguez
+    </animated.div>
+  ),
+  ({ style }) => (
+    <animated.div style={{ ...style, background: 'lightblue' }}>
+      Software Developer
+    </animated.div>
+  ),
+  ({ style }) => (
+    <animated.div style={{ ...style, background: 'lightgreen' }}>
+      Ready For Hire
+    </animated.div>
+  ),
+];
 ////////////////////////////
 function Home(props) {
   const ref = useRef([]);
   const [items, set] = useState([]);
   const transitions = useTransition(items, null, {
     from: {
-      
       opacity: '100%',
       height: '70%',
       innerHeight: '100px',
@@ -55,10 +63,7 @@ function Home(props) {
         height: '100%',
         innerHeight: '100px',
         top: '55%',
-        // left: '0px',
       },
-      // { transform: 'perspective(130px) rotateX(180deg)', color: 'silver' },
-      // { transform: 'perspective(880px) rotateX(10deg)' },
     ],
     leave: [
       { color: '#F5F5F5' },
@@ -80,16 +85,15 @@ function Home(props) {
     ref.current.push(setTimeout(() => set(['Ready', 'For', 'Hire']), 9000));
   }, []);
 
-  useEffect(() => void reset(), [reset]);
-  const [clicked, setClicked] = useState(false);
-  useEffect(() => {
-    if (clicked) {
-      window.location.assign(this);
-    }
-  });
+  // useEffect(() => void reset(), [reset]);
+  // const [clicked, setClicked] = useState(false);
+  // useEffect(() => {
+  //   if (clicked) {
+  //     window.location.assign(this);
+  //   }
+  // });
   return (
-    <div className="Home"
-    style={HomeContainer}>
+    <div className="Home" style={HomeContainer}>
       <Waypoint
         onEnter={() => {
           reset();

@@ -14,15 +14,14 @@ function Experience() {
             <div className="ChildContainer">
               <div className="Experience-UpperContainer">
                 <img
+                  className="logos"
                   src={job.CompanyLogo}
                   alt="{job.CompanyLogo}"
-                  width="25%"
-                  height="25%"
                 />
                 <ul className="Experience-UpperContainer-list">
                   <li>Company: {job.Company}</li>
                   <li>Duration: {job.Duration}</li>
-                  <li>Location: {job.Location}</li> 
+                  <li>Location: {job.Location}</li>
                 </ul>
               </div>
               <div className="Experience-MidContainer">
@@ -39,7 +38,6 @@ function Experience() {
             </div>
           </div>
         ))}
-        
       </div>
     </div>
   );

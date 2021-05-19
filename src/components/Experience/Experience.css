@@ -12,6 +12,7 @@
 .Experience-UpperContainer {
   display: inline-flex;
   flex-direction: row;
+  align-items: center;
 }
 .Experience-UpperContainer-list {
   list-style-type: none;
@@ -46,7 +47,7 @@
 .ParentContainer:hover {
   transform: scaleY(1.2);
   /* height: auto; */
-  position:relative;
+  position: relative;
   z-index: 1;
 }
 .CareerDetails {
@@ -76,6 +77,10 @@ li {
   user-select: none;
   cursor: grab;
 }
+.logos {
+  width: 25%;
+  height: 25%;
+}
 @media screen and (max-width: 600px) {
   .Experience {
     background-color: rgb(255, 255, 255);
@@ -93,6 +98,99 @@ li {
     width: 100%; /*Don't use percentages*/
   }
 
+  .InfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    overflow: hidden;
+    height: auto;
+  }
+  .ParentContainer {
+    border-style: solid;
+    width: 100%;
+    /* padding: 10px; */
+    margin: 0px;
+    background-color: lightgrey;
+    border-radius: 0.9%;
+    overflow: auto;
+  }
+
+  h2 {
+    font-size: small;
+  }
+  h3 {
+    font-size: small;
+  }
+  p {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 736px) {
+  .Experience {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    border: 45px inset darkred;
+  }
+  .CareerContainer {
+    width: 100%; /*Don't use percentages*/
+    overflow: hidden;
+  }
+  .CenterContainer {
+    height: auto;
+  }
+  .CareerDetails {
+    width: 100%; /*Don't use percentages*/
+  }
+  .logos {
+    width: 9%;
+  }
+  .InfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    overflow: hidden;
+    height: auto;
+  }
+  .ParentContainer {
+    border-style: solid;
+    width: 100%;
+    margin: 0px;
+    background-color: lightgrey;
+    border-radius: 0.9%;
+    overflow: auto;
+  }
+
+  h2 {
+    font-size: small;
+  }
+  h3 {
+    font-size: small;
+  }
+  p {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 1336px) {
+  .Experience {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    border: 45px inset darkred;
+  }
+  .CareerContainer {
+    width: 100%; /*Don't use percentages*/
+    overflow: hidden;
+  }
+  .CenterContainer {
+    height: auto;
+  }
+  .CareerDetails {
+    width: 100%; /*Don't use percentages*/
+  }
+  .logos {
+    width: 10%;
+  }
   .InfoContainer {
     display: flex;
     flex-wrap: wrap;
