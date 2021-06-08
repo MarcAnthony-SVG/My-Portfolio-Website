@@ -1,15 +1,15 @@
-.HomeContainer{
+/* .HomeContainer{
     overflow: hidden;
-    /* border: 3px solid red; */
+    border: 3px solid red;
     height: 99.5vh;
-    /* background-image: url(${Background}); */
+    background-image: url(${Background});
     display: flex;
     align-items: center;
     position: relative;
-  };
-.HomeText {
+  }; */
+/* .HomeText {
     overflow: hidden;
-    /* border: 3px solid red; */
+    border: 3px solid red;
     width: 73%;
     font-Size: 55%;
     background: transparent;
@@ -18,4 +18,4 @@
     position: absolute;
     top: 46%;
     left: 27%;
-  };
+  }; */

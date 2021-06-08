@@ -26,7 +26,7 @@ function TechnicalSkills(props) {
         scrollableAncestor={window}
         onEnter={() => {
           if (!isVisible) setVisibility(true);
-          console.log('Show me the Technical Skills');
+          console.log('Enter Technical Skills');
         }}
         onLeave={() => {
           if (isVisible) setVisibility(false);

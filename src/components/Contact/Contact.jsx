@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './contact.css';
+import './Contact.css';
 import Email from './Mailto';
 import { AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
 
-function Contact(props) {
+function Contact() {
   const [clicked, setClicked] = useState(false);
   useEffect(() => {
     if (clicked) {
@@ -11,20 +11,9 @@ function Contact(props) {
     }
   });
   return (
-    <div
-      className="Contact"
-      style={{
-        backgroundColor: '#cfe2e2',
-        height: 'auto',
-        width: '100%',
-        padding: '0.1px',
-      }}
-    >
+    <div className="Contact">
       <h1>Contact</h1>
-      <div
-        className="LinksContainer"
-        style={{ display: 'flex', height: 'auto' }}
-      >
+      <div className="LinksContainer">
         <div
           onClick={(e) =>
             (window.location = 'https://www.linkedin.com/in/marcrodriguez2020/')

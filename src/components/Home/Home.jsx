@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { useTransition, animated } from 'react-spring';
 import { Waypoint } from 'react-waypoint';
 
-const Background = require('./Images/Artistic-4K-Wallpaper-3840x2160.jpg');
+const Background = require('./Images/BlueBackground.jpg');
 //Styles////////////////////
 const HomeContainer = {
   overflow: 'hidden',
@@ -43,7 +43,7 @@ const words = [
   ),
 ];
 ////////////////////////////
-function Home(props) {
+function Home() {
   const ref = useRef([]);
   const [items, set] = useState([]);
   const transitions = useTransition(items, null, {
@@ -93,13 +93,13 @@ function Home(props) {
   //   }
   // });
   return (
-    <div className="Home" style={HomeContainer}>
+    <div style={HomeContainer}>
       <Waypoint
         onEnter={() => {
           reset();
         }}
       />
-      <div className="HomeText" style={HomeText}>
+      <div style={HomeText}>
         {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
           <animated.div key={key} style={rest}>
             <animated.div>{item}</animated.div>

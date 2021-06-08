@@ -5,13 +5,12 @@
   height: 90vh;
   text-align: center;
   border: 65px inset darkslategrey;
-  /* overflow: auto; */
 }
 .containerStyle {
+  align-content: space-between;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-content: space-between;
   overflow: hidden;
   height: auto;
 }
@@ -36,23 +35,13 @@
   left: 7%;
 }
 
-#About_Me {
-  /* order: 2; */
-  /* text-align: justify; */
-  /* margin-left: 5%; */
-  /* width: 40%; */
-}
+
 #ProfilePic {
   order: 3;
   /* width: 15vw; */
-  /* padding: 10px; */
   background-color: darkgrey;
   border: 3px solid black;
   height: 46vh;
-  /* margin-inline: auto; left:50%; */
-}
-#Details {
-  order: 4;
 }
 
 #Title {
@@ -71,23 +60,16 @@
 @media screen and (max-width: 1400px) {
   .containerStyle {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    /* align-content: space-between; */
     height: auto;
   }
   .Information_Box {
     width: 35%;
     padding: 1px;
     height: 45vh;
-    /* height: 100%; */
     overflow: auto;
     margin-inline: 4.1vw;
   }
-  #Details {
-    width: auto;
-    height: auto;
-  }
+
   #ProfilePic {
     /* margin-left: 2%; */
     /* height: 100%; */
@@ -108,11 +90,7 @@
     height: 100%;
     width: 93.4%;
   }
-  #Details {
-    width: 92.6%;
-    margin-top: 4%;
-    height: auto;
-  }
+
   h2 {
     font-size: small;
   }

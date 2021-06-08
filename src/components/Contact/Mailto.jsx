@@ -1,7 +1,7 @@
 import Mailto from 'react-mailto';
 import React from 'react';
 
-const email = () => {
+const Email = () => {
   return (
     <Mailto
       email="marcanthonyrodriguez95@gmail.com"
@@ -12,4 +12,4 @@ const email = () => {
     </Mailto>
   );
 };
-export default email;
+export default Email;

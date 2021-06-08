@@ -44,7 +44,7 @@ const Homepage = () => {
     <div className="App">
       <Title title="Title" dark={true} id="Title" />
       <Navbar />
-      <Waypoint
+      {/* <Waypoint
         onEnter={() => {
           if (!isDisplayed) setDisplay(true);
         }}
@@ -54,7 +54,7 @@ const Homepage = () => {
         onLeave={() => {
           if (isDisplayed) setDisplay(false);
         }}
-      />
+      /> */}
       <Profile title="Profile" dark={false} id="Profile" />
       <Experience title="Experience" dark={false} id="Experience" ></Experience>
       <Projects title="Projects" dark={false} id="Projects" />

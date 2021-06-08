@@ -1,3 +1,13 @@
+.Contact {
+  background-color: #cfe2e2;
+  height: auto;
+  width: 100%;
+  padding: 0.1px;
+}
+.LinksContainer {
+  display: flex;
+  height: auto;
+}
 .bigblue {
   color: DodgerBlue;
   padding: 42px;
