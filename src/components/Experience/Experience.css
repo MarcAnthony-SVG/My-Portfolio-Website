@@ -1,41 +1,17 @@
-.Experience {
+.experience-section {
   background-color: white;
   text-align: center;
   /* // width: 'auto', */
   height: 86.4vh;
   border: 65px inset darkred;
 }
-.CareerContainer {
-  /* border: 2px solid teal; */
-  overflow: auto;
-}
-.Experience-UpperContainer {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-}
-.Experience-UpperContainer-list {
-  list-style-type: none;
-  margin: 10px;
-  padding: 10px;
-}
-.Experience-MidContainer {
-  display: inline-flex;
-  flex-direction: row;
-}
-
-.CenterContainer {
-  display: inline-flex;
-  flex-direction: row;
-  /* border: 2px solid rgb(196, 86, 23); */
-}
-.InfoContainer {
+.info-container {
   display: flex;
   justify-content: center;
   height: 64vh;
   /* overflow: hidden; */
 }
-.ParentContainer {
+.parent-container {
   border-style: solid;
   width: 50%;
   padding: 10px;
@@ -44,22 +20,29 @@
   border-radius: 0.9%;
   overflow: auto;
 }
-.ParentContainer:hover {
+
+.experience-uppercontainer {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.experience-uppercontainer-list {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
+.experience-midcontainer{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.parent-container:hover {
   transform: scaleY(1.2);
   /* height: auto; */
   position: relative;
   z-index: 1;
 }
-.CareerDetails {
-  border: 2px solid rgb(56, 54, 52);
-  margin: 1%;
-  overflow: auto;
-}
-.SkillsList {
-  display: flex;
-  flex-flow: row wrap;
-  overflow: auto;
-}
+
 p {
   text-align: left;
 }
@@ -82,23 +65,12 @@ li {
   height: 25%;
 }
 @media screen and (max-width: 600px) {
-  .Experience {
+  .experience-section {
     background-color: rgb(255, 255, 255);
     height: auto;
     border: 45px inset darkred;
   }
-  .CareerContainer {
-    width: 100%; /*Don't use percentages*/
-    overflow: hidden;
-  }
-  .CenterContainer {
-    height: auto;
-  }
-  .CareerDetails {
-    width: 100%; /*Don't use percentages*/
-  }
-
-  .InfoContainer {
+  .info-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -106,7 +78,7 @@ li {
     overflow: hidden;
     height: auto;
   }
-  .ParentContainer {
+  .parent-container {
     border-style: solid;
     width: 100%;
     /* padding: 10px; */
@@ -127,25 +99,15 @@ li {
   }
 }
 @media screen and (max-width: 736px) {
-  .Experience {
+  .experience-section {
     background-color: rgb(255, 255, 255);
     height: auto;
     border: 45px inset darkred;
   }
-  .CareerContainer {
-    width: 100%; /*Don't use percentages*/
-    overflow: hidden;
-  }
-  .CenterContainer {
-    height: auto;
-  }
-  .CareerDetails {
-    width: 100%; /*Don't use percentages*/
-  }
   .logos {
     width: 9%;
   }
-  .InfoContainer {
+  .info-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -153,7 +115,7 @@ li {
     overflow: hidden;
     height: auto;
   }
-  .ParentContainer {
+  .parent-container {
     border-style: solid;
     width: 100%;
     margin: 0px;
@@ -173,25 +135,15 @@ li {
   }
 }
 @media screen and (max-width: 1336px) {
-  .Experience {
+  .experience-section {
     background-color: rgb(255, 255, 255);
     height: auto;
     border: 45px inset darkred;
   }
-  .CareerContainer {
-    width: 100%; /*Don't use percentages*/
-    overflow: hidden;
-  }
-  .CenterContainer {
-    height: auto;
-  }
-  .CareerDetails {
-    width: 100%; /*Don't use percentages*/
-  }
   .logos {
     width: 10%;
   }
-  .InfoContainer {
+  .info-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -199,7 +151,7 @@ li {
     overflow: hidden;
     height: auto;
   }
-  .ParentContainer {
+  .parent-container {
     border-style: solid;
     width: 100%;
     /* padding: 10px; */

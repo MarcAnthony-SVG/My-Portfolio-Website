@@ -1,6 +1,7 @@
 const RealEstate = require('../components/Projects/Images/RealEstateApp.png');
 const MentorMii = require('../components/Projects/Images/MentorMii.png');
 const TattooM3 = require('../components/Projects/Images/TattooM3.png');
+const RottenHuevos = require('../components/Projects/Images/RottenHuevos.png');
 
 var Projects = [
   {
@@ -24,7 +25,7 @@ and improve upon my skills.`,
   },
   {
     id: 3,
-    image: 'image',
+    image: RottenHuevos,
     title: `RottenHuevos`,
     text: `A full-stack e-commerce application and alternative to Newegg.
         I served as a software developer focusing on the front-end.`,

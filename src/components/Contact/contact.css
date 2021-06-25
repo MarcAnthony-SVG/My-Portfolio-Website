@@ -1,25 +1,12 @@
-.Contact {
+.contact-section {
   background-color: #cfe2e2;
   height: auto;
   width: 100%;
   padding: 0.1px;
 }
-.LinksContainer {
+.link-container {
   display: flex;
   height: auto;
-}
-.bigblue {
-  color: DodgerBlue;
-  padding: 42px;
-  font-family: Arial;
-  text-align: center;
-}
-.links {
-  margin: 2;
-  width: 'auto';
-  border: 2px solid silver;
-  flex: 'auto';
-  text-align: 'center';
 }
 .button-link {
   background-color: rgb(200, 209, 188);

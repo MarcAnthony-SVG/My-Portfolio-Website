@@ -10,15 +10,6 @@ code {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.profileContainer {
-  background-color: 'red';
-  width: 'auto';
-  height: '90vh';
-  text-align: 'center';
-  border: '65px inset darkslategrey';
-  overflow: 'hidden';
-}
-
 /* Delete to center */
 img {
   max-width: 100%;

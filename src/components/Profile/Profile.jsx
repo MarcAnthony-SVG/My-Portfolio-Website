@@ -23,23 +23,23 @@ function Profile() {
     }
   });
   return (
-    <div className="Root_Container">
+    <section className="profile-section">
       <Waypoint
         onEnter={() => {
-          console.log('Entering Profile');
           if (!isVisible) setVisibility(true);
+          console.log('Entering the profile section');
         }}
       />
       <animated.h1 style={fadeAnimation}>Profile</animated.h1>
       <h3>I'm a creative Software Developer</h3>
-      <div className="containerStyle">
-        <animated.section
-          className="Information_Box"
+      <article className="container-article">
+        <animated.article
+          className="info-article"
           style={{
             transform: x.interpolate((x) => `translate3d(${x * -11}%,0,0`),
           }}
         >
-          <h2 id="Title">About me</h2>
+          <h2 id="title">About me</h2>
           <p>
             Welcome to my website, which is continually being updated with new
             and exciting features that I've learned from my experience while
@@ -50,16 +50,16 @@ function Profile() {
             exciting problems and showing off my ability to problem-solve and
             come up with creative solutions to everyday issues.
           </p>
-        </animated.section>
+        </animated.article>
         <div>
           <animated.img
             src={profilePic}
-            id="ProfilePic"
+            id="profile-pic"
             style={photoAnimation}
           />
         </div>
-        <animated.section
-          className="Information_Box"
+        <animated.article
+          className="info-article"
           style={{
             transform: x.interpolate((x) => `translate3d(${x * 11}%,0,0`),
           }}
@@ -85,16 +85,16 @@ function Profile() {
               <b>Phone Number</b>:210-745-8744
             </li>
           </ul>
-        </animated.section>
-      </div>
+        </animated.article>
+      </article>
       <Waypoint
         bottomOffset={'4px'}
         onLeave={() => {
-          console.log('Leaving Profile');
           if (isVisible) setVisibility(false);
+          console.log('Leaving the profile section');
         }}
       />
-    </div>
+    </section>
   );
 }
 export default Profile;

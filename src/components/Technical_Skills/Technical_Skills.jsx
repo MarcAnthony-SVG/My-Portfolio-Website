@@ -6,7 +6,7 @@ const Inline = {
   display: 'inline',
 };
 
-function TechnicalSkills(props) {
+function TechnicalSkills() {
   const [isVisible, setVisibility] = useState(false);
   const componentFadeAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
@@ -18,8 +18,8 @@ function TechnicalSkills(props) {
     display: 'inline-block' || 'inline-block',
   });
   return (
-    <div
-      className="TechnicalSkills"
+    <section
+      className="technical-skills-section"
       style={{ backgroundColor: 'white', position: '10px' }}
     >
       <Waypoint
@@ -34,7 +34,7 @@ function TechnicalSkills(props) {
       />
       <animated.h1 style={componentFadeAnimation}>Technical Skills</animated.h1>
 
-      <animated.section style={sectionFadeAnimation}>
+      <animated.article style={sectionFadeAnimation}>
         <div style={{ textAlign: 'left' }}>
           <h4 style={Inline}>Front End </h4>
           <p style={Inline}>
@@ -51,8 +51,8 @@ function TechnicalSkills(props) {
           <h4 style={Inline}>Developer Tools </h4>
           <p style={Inline}>:​ React Debugger, Git, npm, Webpack, Babel </p>
         </div>
-      </animated.section>
-    </div>
+      </animated.article>
+    </section>
   );
 }
 export default TechnicalSkills;

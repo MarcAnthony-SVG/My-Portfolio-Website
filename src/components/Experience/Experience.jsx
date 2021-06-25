@@ -4,31 +4,31 @@ import '../Experience/Experience.css';
 function Experience() {
   const careers = Jobs;
   return (
-    <div className="Experience">
+    <section className="experience-section">
       <div>
         <h1>Experience</h1>
       </div>
-      <div className="InfoContainer">
+      <div className="info-container">
         {careers.map((job) => (
-          <div className="ParentContainer">
-            <div className="ChildContainer">
-              <div className="Experience-UpperContainer">
+          <div className="parent-container">
+            {/* <div className="child-container"> */}
+              <div className="experience-uppercontainer">
                 <img
                   className="logos"
                   src={job.CompanyLogo}
                   alt="{job.CompanyLogo}"
                 />
-                <ul className="Experience-UpperContainer-list">
+                <ul className="experience-uppercontainer-list">
                   <li>Company: {job.Company}</li>
                   <li>Duration: {job.Duration}</li>
                   <li>Location: {job.Location}</li>
                 </ul>
               </div>
-              <div className="Experience-MidContainer">
-                <div className="Experience-Details">
+              <div className="experience-midcontainer">
+                <div className="experience-details">
                   <h4>{job.Position}</h4>
                   <p>{job.Purpose}</p>
-                  <ul className="Experience-SkillsList">
+                  <ul className="experience-skills-list">
                     {job.BulletPoints.map((bp) => (
                       <li>{bp}</li>
                     ))}
@@ -36,10 +36,10 @@ function Experience() {
                 </div>
               </div>
             </div>
-          </div>
+          // </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 export default Experience;

@@ -11,9 +11,9 @@ function Contact() {
     }
   });
   return (
-    <div className="Contact">
+    <section className="contact-section">
       <h1>Contact</h1>
-      <div className="LinksContainer">
+      <div className="link-container">
         <div
           onClick={(e) =>
             (window.location = 'https://www.linkedin.com/in/marcrodriguez2020/')
@@ -48,7 +48,7 @@ function Contact() {
           <Email></Email>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Contact;

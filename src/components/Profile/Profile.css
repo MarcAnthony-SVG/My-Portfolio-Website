@@ -1,12 +1,12 @@
 /*Base*/
 
-.Root_Container {
+.profile-section {
   background-color: #cfe2e2;
   height: 90vh;
   text-align: center;
   border: 65px inset darkslategrey;
 }
-.containerStyle {
+.container-article {
   align-content: space-between;
   display: flex;
   flex-wrap: wrap;
@@ -14,29 +14,8 @@
   overflow: hidden;
   height: auto;
 }
-.TitleContainer {
-  width: 90%;
-  height: 99.5vh;
-  /* backgroundimage: url(${Background}); */
-  /* display: flex; */
-  align-items: center;
-  position: relative;
-}
-.TitleText {
-  width: 90%;
-  background: black;
-  fontfamily: apple system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  background: transparent;
-  cursor: default;
-  display: flex;
-  position: absolute;
-  top: 46%;
-  left: 7%;
-}
 
-
-#ProfilePic {
+#profile-pic {
   order: 3;
   /* width: 15vw; */
   background-color: darkgrey;
@@ -44,11 +23,11 @@
   height: 46vh;
 }
 
-#Title {
+#title {
   text-align: 'center';
 }
 
-.Information_Box {
+.info-article {
   width: 30%; /*Don't use percentages*/
   padding: 10px;
   background-color: darkgrey;
@@ -58,11 +37,11 @@
   margin-inline: 4.1vw;
 }
 @media screen and (max-width: 1400px) {
-  .containerStyle {
+  .container-article {
     display: flex;
     height: auto;
   }
-  .Information_Box {
+  .info-article {
     width: 35%;
     padding: 1px;
     height: 45vh;
@@ -70,22 +49,22 @@
     margin-inline: 4.1vw;
   }
 
-  #ProfilePic {
+  #profile-pic {
     /* margin-left: 2%; */
     /* height: 100%; */
     /* width: 25%; */
   }
 }
 @media screen and (max-width: 600px) {
-  .Information_Box {
+  .info-article {
     width: 100%; /*Don't use percentages*/
     overflow: hidden;
     margin: 2%;
   }
-  .Root_Container {
+  .profile-section {
     height: auto;
   }
-  #ProfilePic {
+  #profile-pic {
     margin-left: 2%;
     height: 100%;
     width: 93.4%;
