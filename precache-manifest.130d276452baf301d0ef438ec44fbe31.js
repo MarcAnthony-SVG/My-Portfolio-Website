@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5535656742216a4f614ffcee445f982",
+    "revision": "a0173534b43dfb6e4ffbf96f88ffe267",
     "url": "/My-Portfolio-Website/index.html"
   },
   {
-    "revision": "8fb25f57569ca3ecab80",
-    "url": "/My-Portfolio-Website/static/css/main.6fe1dcee.chunk.css"
+    "revision": "242998e4571292a804c4",
+    "url": "/My-Portfolio-Website/static/css/main.f990b674.chunk.css"
   },
   {
-    "revision": "543a68759418a8c97947",
-    "url": "/My-Portfolio-Website/static/js/2.1d202e30.chunk.js"
+    "revision": "ac44d724c2e8ddfa4689",
+    "url": "/My-Portfolio-Website/static/js/2.fcbcafd8.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/My-Portfolio-Website/static/js/2.1d202e30.chunk.js.LICENSE.txt"
+    "url": "/My-Portfolio-Website/static/js/2.fcbcafd8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8fb25f57569ca3ecab80",
-    "url": "/My-Portfolio-Website/static/js/main.cbdcac81.chunk.js"
+    "revision": "242998e4571292a804c4",
+    "url": "/My-Portfolio-Website/static/js/main.c4d13826.chunk.js"
   },
   {
     "revision": "d89dd0dd18eaa9b77f0d",
@@ -25,7 +25,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "6a375215e2efa0ef8bfdd27468f0759f",
-    "url": "/My-Portfolio-Website/static/media/Artistic-4K-Wallpaper-3840x2160.6a375215.jpg"
+    "url": "/My-Portfolio-Website/static/media/BlueBackground.6a375215.jpg"
   },
   {
     "revision": "950a841015f92d4cf192dfe0beb1d895",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "77bab1d77254fe3fc36ae470fdec3986",
     "url": "/My-Portfolio-Website/static/media/RealEstateApp.77bab1d7.png"
+  },
+  {
+    "revision": "1267ec8e3f841e8efdbd97f65654f5df",
+    "url": "/My-Portfolio-Website/static/media/RottenHuevos.1267ec8e.png"
   },
   {
     "revision": "4f566b1b2349d2167f5f5d764c31d972",
