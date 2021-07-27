@@ -21,7 +21,7 @@ const Navbar = () => {
           <div>
             <Link
               activeClass="active"
-              to="Home"
+              to="home"
               spy={true}
               smooth={true}
               offset={1}
@@ -33,7 +33,7 @@ const Navbar = () => {
           <div>
             <Link
               activeClass="active"
-              to="Root_Container"
+              to="profile-section"
               spy={true}
               smooth={true}
               offset={1}
@@ -45,7 +45,7 @@ const Navbar = () => {
           <div>
             <Link
               activeClass="active"
-              to="Experience"
+              to="experience-section"
               spy={true}
               smooth={true}
               offset={1}
@@ -69,7 +69,7 @@ const Navbar = () => {
           <div>
             <Link
               activeClass="active"
-              to="Contact"
+              to="contact-section"
               spy={true}
               smooth={true}
               offset={1}

@@ -11,6 +11,7 @@ var Projects = [
     text: `A website I created to use libraries, frameworks, and APIs
 that I hadn’t used before, to challenge myself as a developer
 and improve upon my skills.`,
+    link: 'https://master.d2bv1yyxa7mtkl.amplifyapp.com/',
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ and improve upon my skills.`,
         team of six developers, managed tickets with Trello,
         facilitated workflow, and tracked performance and progress,
         ensuring completion of the application.`,
+    link: '',
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ and improve upon my skills.`,
     title: `RottenHuevos`,
     text: `A full-stack e-commerce application and alternative to Newegg.
         I served as a software developer focusing on the front-end.`,
+    link: '',
   },
   {
     id: 4,
@@ -37,6 +40,7 @@ and improve upon my skills.`,
     text: `A website that came about from me and my wife's love of tattoos. 
     It was created using Next.js, GraphQL and Apollo-Client/Server. 
     The main concept behind the site was to display images of tattoos from several apis using technologies that I hadn't used before.`,
+    link: 'https://tattoo-m3-marcanthony-svg.vercel.app/',
   },
 ];
 

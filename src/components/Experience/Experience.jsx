@@ -11,7 +11,6 @@ function Experience() {
       <div className="info-container">
         {careers.map((job) => (
           <div className="parent-container">
-            {/* <div className="child-container"> */}
               <div className="experience-uppercontainer">
                 <img
                   className="logos"
@@ -36,7 +35,6 @@ function Experience() {
                 </div>
               </div>
             </div>
-          // </div>
         ))}
       </div>
     </section>

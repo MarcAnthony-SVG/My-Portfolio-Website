@@ -93,7 +93,7 @@ function Home() {
   //   }
   // });
   return (
-    <div style={HomeContainer}>
+    <div  className="home"style={HomeContainer}>
       <Waypoint
         onEnter={() => {
           reset();

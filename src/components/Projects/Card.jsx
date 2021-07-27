@@ -1,17 +1,17 @@
-import React, { memo, useMemo, useRef } from "react";
+import React, { memo, useMemo, useRef } from 'react';
 
-import { useDrag, useDrop } from "react-dnd";
-import { ItemTypes } from "../../Utilities/ItemTypes";
+import { useDrag, useDrop } from 'react-dnd';
+import { ItemTypes } from '../../Utilities/ItemTypes';
 
 const cardStyle = {
-  border: "1px solid black",
-  width: "70%",
-  height: "70%",
-  margin: "1%",
-  padding: "0.5rem 1rem",
-  backgroundColor: "white",
-  cursor: "move",
-  overflow: "auto",
+  border: '1px solid black',
+  width: '70%',
+  height: '70%',
+  margin: '1%',
+  padding: '0.5rem 1rem',
+  backgroundColor: 'white',
+  cursor: 'move',
+  overflow: 'auto',
 };
 export const Card = memo(({ id, text, title, image, moveCard }) => {
   const ref = useRef(null);
@@ -38,8 +38,10 @@ export const Card = memo(({ id, text, title, image, moveCard }) => {
   const containerStyle = useMemo(() => ({ ...cardStyle, opacity }), [opacity]);
   return (
     <div ref={ref} style={containerStyle}>
-      <img src={image} alt="img" style={{ height: "45%", width: "auto" }}/>
-      <h3 style={{ textAlign: "center" }}>{title}</h3>
+      <img src={image} alt="img" style={{ height: '45%', width: 'auto' }} />
+      <a >
+        <h3 style={{ textAlign: 'center' }}>{title}</h3>
+      </a>
       {text}
     </div>
   );
