@@ -4,17 +4,8 @@ import { Card } from './Card';
 import Projects from '../../Data/Projects.js';
 import update from 'immutability-helper';
 import Wood from '../Projects/Images/Wood.jpg';
+import './Projects.css';
 
-const constainerStyle = {
-  width: 'auto',
-  display: 'flex',
-  height: '877px',
-  justifyContent: 'center',
-  backgroundImage: 'url(' + CorkBoard + ')',
-  backgroundRepeat: 'repeat',
-  imageRendering: 'high-quality',
-  overflow: 'auto',
-};
 function buildCardData() {
   const cardsById = [];
   const cardsByIndex = [];
@@ -75,30 +66,10 @@ export default class ProjectsContainer extends React.Component {
           overflow: 'hidden',
         }}
       >
-        <div
-          className="ProjectsContainer"
-          style={{
-            background: `url(${Wood})`,
-            height: '5vh',
-            marginTop: '-15px',
-            marginBottom: '10px',
-            backgroundPosition: 'center',
-            backgroundSize: '170vh 14vh',
-            backgroundRepeat: 'repeat',
-          }}
-        >
-          <h1
-            className="Title"
-            style={{
-              paddingTop: '10px',
-              color: 'white',
-              textAlign: 'center',
-            }}
-          >
-            Projects
-          </h1>
-        </div>
-        <div style={constainerStyle}>
+        <header>
+          <h1>Projects</h1>
+        </header>
+        <div className="projects-container">
           {cardsByIndex.map((card) => (
             <Card
               key={card.id}

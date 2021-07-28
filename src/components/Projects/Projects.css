@@ -1,0 +1,39 @@
+header {
+  background: url('Images/Wood.jpg');
+  height: 5vh;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: 170vh 14vh;
+  background-repeat: repeat;
+}
+header h1 {
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+.projects-container {
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 877px;
+  justify-content: center;
+  background-image: url('Images/Corkboard.jpg');
+  background-repeat: repeat;
+  image-rendering: 'high-quality';
+  overflow: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .projects-container {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 877px;
+    justify-content: center;
+    background-image: url('Images/Corkboard.jpg');
+    background-repeat: repeat;
+    image-rendering: 'high-quality';
+    overflow: auto;
+  }
+}

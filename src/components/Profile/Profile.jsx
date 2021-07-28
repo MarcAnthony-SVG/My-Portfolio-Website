@@ -51,7 +51,7 @@ function Profile() {
             come up with creative solutions to everyday issues.
           </p>
         </animated.article>
-        <div>
+        <div className="photo-article">
           <animated.img
             src={profilePic}
             id="profile-pic"

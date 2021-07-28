@@ -7,20 +7,22 @@
   border: 65px inset darkslategrey;
 }
 .container-article {
-  align-content: space-between;
+  /* align-content: center; */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   overflow: hidden;
   height: auto;
 }
+.photo-article{
 
+}
 #profile-pic {
   order: 3;
   /* width: 15vw; */
   background-color: darkgrey;
   border: 3px solid black;
-  height: 46vh;
+  height: 44vh;
 }
 
 #title {
@@ -32,27 +34,33 @@
   padding: 10px;
   background-color: darkgrey;
   border: 3px solid black;
-  height: 44vh;
+  height: 42vh;
   overflow: hidden;
   margin-inline: 4.1vw;
 }
 @media screen and (max-width: 1400px) {
   .container-article {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
     height: auto;
   }
   .info-article {
-    width: 35%;
+    width: auto;
     padding: 1px;
-    height: 45vh;
+    height: auto;
     overflow: auto;
-    margin-inline: 4.1vw;
+    margin: 0.5%;
+    /* margin-inline: 4.1vw; */
   }
-
+  /* .info-article {
+    border: 1px solid red;
+  } */
   #profile-pic {
-    /* margin-left: 2%; */
-    /* height: 100%; */
-    /* width: 25%; */
+    /* margin-left: 38vw; */
+    height: 30vh;
+    width: 15vw;
   }
 }
 @media screen and (max-width: 600px) {
@@ -66,7 +74,7 @@
   }
   #profile-pic {
     margin-left: 2%;
-    height: 100%;
+    height: 80%;
     width: 93.4%;
   }
 

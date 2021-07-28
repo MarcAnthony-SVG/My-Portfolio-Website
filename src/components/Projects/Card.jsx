@@ -4,6 +4,7 @@ import { useDrag, useDrop } from 'react-dnd';
 import { ItemTypes } from '../../Utilities/ItemTypes';
 
 const cardStyle = {
+  // flex: "wrap",
   border: '1px solid black',
   width: '70%',
   height: '70%',
@@ -39,9 +40,7 @@ export const Card = memo(({ id, text, title, image, moveCard }) => {
   return (
     <div ref={ref} style={containerStyle}>
       <img src={image} alt="img" style={{ height: '45%', width: 'auto' }} />
-      <a >
         <h3 style={{ textAlign: 'center' }}>{title}</h3>
-      </a>
       {text}
     </div>
   );
