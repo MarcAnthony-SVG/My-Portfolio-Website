@@ -23,7 +23,13 @@ header h1 {
   image-rendering: 'high-quality';
   overflow: auto;
 }
-
+article img {
+  height: 45%;
+  width: auto;
+}
+article h3 {
+  text-align: center;
+}
 @media screen and (max-width: 900px) {
   .projects-container {
     width: auto;

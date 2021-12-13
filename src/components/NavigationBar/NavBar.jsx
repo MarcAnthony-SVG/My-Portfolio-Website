@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { animated } from 'react-spring';
+import './NavBar.css';
+
 var Style = {
   position: 'fixed',
   right: '10px',
@@ -15,72 +17,72 @@ var Style = {
 
 const Navbar = () => {
   return (
-    <animated.nav className="nav" id="navbar" style={Style}>
-      <div className="nav-content">
-        <div className="nav-items">
-          <div>
-            <Link
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={1}
-              duration={1000}
-            >
-              Title
-            </Link>
-          </div>
-          <div>
-            <Link
-              activeClass="active"
-              to="profile-section"
-              spy={true}
-              smooth={true}
-              offset={1}
-              duration={1000}
-            >
-              Profile
-            </Link>
-          </div>
-          <div>
-            <Link
-              activeClass="active"
-              to="experience-section"
-              spy={true}
-              smooth={true}
-              offset={1}
-              duration={1000}
-            >
-              Experience
-            </Link>
-          </div>
-          <div>
-            <Link
-              activeClass="active"
-              to="ProjectsContainer"
-              spy={true}
-              smooth={true}
-              offset={1}
-              duration={1000}
-            >
-              Projects
-            </Link>
-          </div>
-          <div>
-            <Link
-              activeClass="active"
-              to="contact-section"
-              spy={true}
-              smooth={true}
-              offset={1}
-              duration={1000}
-            >
-              ContactInfo
-            </Link>
-          </div>
-        </div>
-      </div>
-    </animated.nav>
+    // <animated.nav style={Style}>
+    <nav className="nav-content">
+      <ul className="nav-items">
+        <li>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={1}
+            duration={1000}
+          >
+            Title
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="profile-section"
+            spy={true}
+            smooth={true}
+            offset={1}
+            duration={1000}
+          >
+            Profile
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="experience-section"
+            spy={true}
+            smooth={true}
+            offset={1}
+            duration={1000}
+          >
+            Experience
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="projects-container"
+            spy={true}
+            smooth={true}
+            offset={1}
+            duration={1000}
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="contact-section"
+            spy={true}
+            smooth={true}
+            offset={1}
+            duration={1000}
+          >
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </nav>
+    // </animated.nav>
   );
 };
 export default Navbar;

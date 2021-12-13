@@ -1,0 +1,55 @@
+.nav-content {
+  position: fixed;
+  right: 0px;
+  top: 46%;
+  padding: 1px;
+  background-color: #708090;
+  height: 104px;
+  border: 2px solid silver;
+  text-align: center;
+  border-radius: 7px;
+  z-index: 1;
+}
+.nav-content ul {
+  list-style-type: none;
+  margin: 9px;
+  padding: 0px 2px 0px 0px;
+  width: 90px;
+}
+.nav-content li {
+  display: block;
+  /* width: 60px; */
+}
+.nav-content li :hover {
+  color: hsl(218, 67%, 29%);
+}
+
+@media screen and (max-width: 900px) {
+  .nav-content {
+    /* overflow: auto; */
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    /* background-color: red; */
+    height: 50px;
+    border-radius: 0px;
+    /* text-align: justify; */
+    border: 1px solid silver;
+    z-index: 1;
+  }
+  .nav-content ul {
+    width: 100%;
+    /* background-color: #555; */
+    /* overflow: auto; */
+  }
+  .nav-content li {
+    /* float: left; */
+    display: inline-block;
+    padding: 2px 2% 0px 2%;
+    /* width: 14%; */
+    text-align: center; /* If you want the text to be centered */
+  }
+  .nav-content li:hover {
+    color: hsl(218, 67%, 29%);
+  }
+}

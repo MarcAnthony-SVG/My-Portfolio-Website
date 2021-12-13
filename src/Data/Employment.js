@@ -78,7 +78,7 @@ var IntelAnalyst = {
   CompanyLogo:
     'https://portfolio-website-marc.s3.us-east-2.amazonaws.com/ArmyLogo.png',
   Duration: `Jan 2015 - Aug 2020`,
-  Location: `Fort Hood, TX`,
+  Location: `Fort Hood, Texas`,
   Purpose: IntelAnalystPurpose,
   BulletPoints: IntelAnalystBulletPoints,
   Achievments: IntelAnalystAchievements,
@@ -89,7 +89,7 @@ var FMVAnalyst = {
   CompanyLogo:
     'https://portfolio-website-marc.s3.us-east-2.amazonaws.com/ArmyLogo.png',
   Duration: `Aug 2015 - Aug 2018`,
-  Location: `Fort Gordon, GA`,
+  Location: `Fort Gordon, Georgia`,
   Purpose: FMVAnalystPurpose,
   BulletPoints: FMVAnalystBulletPoints,
   Acheivements: FMVAnlaystAcheivements,

@@ -15,6 +15,7 @@ function buildCardData() {
       image: Projects[i].image,
       title: Projects[i].title,
       text: Projects[i].text,
+      link: Projects[i].link,
     };
     cardsById[card.id] = card;
     cardsByIndex[i] = card;
@@ -59,7 +60,7 @@ export default class ProjectsContainer extends React.Component {
   render() {
     const { cardsByIndex } = this.state;
     return (
-      <div
+      <section
         style={{
           backgroundColor: 'black',
           border: '5px solid black',
@@ -77,11 +78,12 @@ export default class ProjectsContainer extends React.Component {
               image={card.image}
               title={card.title}
               text={card.text}
+              link={card.link}
               moveCard={this.moveCard}
             />
           ))}
         </div>
-      </div>
+      </section>
     );
   }
   scheduleUpdate(updateFn) {

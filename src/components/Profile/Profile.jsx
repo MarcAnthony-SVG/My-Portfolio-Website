@@ -4,8 +4,13 @@ import { useSpring, animated } from 'react-spring';
 import profilePic from './Images/profilePic.jpeg';
 import './Profile.css';
 
+const list = ['Father', 'Spouse', 'Solider', 'Analyst', 'Developer'];
+
 function Profile() {
   const [isVisible, setVisibility] = useState(false);
+  const [occupation, setOccupation] = useState(list[0]); // <-- seed initial state
+  const [clicked, setClicked] = useState(false);
+  const [index, setIndex] = useState(0);
   const fadeAnimation = useSpring({
     opacity: isVisible ? 1 : 0,
   });
@@ -16,12 +21,24 @@ function Profile() {
   const { x } = useSpring({
     x: isVisible ? 0 : 100,
   });
-  const [clicked, setClicked] = useState(false);
   useEffect(() => {
     if (clicked) {
       window.location.assign(this);
     }
   });
+
+  useEffect(() => {
+    const timerId = setInterval(
+      () => setIndex((i) => (i + 1) % list.length), // <-- increment index
+      2500
+    );
+    return () => clearInterval(timerId);
+  }, []);
+
+  useEffect(() => {
+    setOccupation(list[index]); // <-- update media state when index updates
+  }, [index]);
+
   return (
     <section className="profile-section">
       <Waypoint
@@ -67,22 +84,22 @@ function Profile() {
           <h2>Details</h2>
           <ul>
             <li>
-              <b>Occupation</b>:Software Engineer
+              <b>Occupation</b>: {occupation}
             </li>
             <li>
-              <b>Name</b>:Marc Rodriguez
+              <b>Name</b>: Marc Rodriguez
             </li>
             <li>
-              <b>Age</b>:28
+              <b>Age</b>: 28
             </li>
             <li>
-              <b>Location</b>:San Antonio, Texas
+              <b>Location</b>: San Antonio, Texas
             </li>
             <li>
-              <b>Email</b>:Marcanthonyrodriguez95@gmail.com
+              <b>Email</b>: Marcanthonyrodriguez95@gmail.com
             </li>
             <li>
-              <b>Phone Number</b>:210-745-8744
+              <b>Phone Number</b>: 210-745-8744
             </li>
           </ul>
         </animated.article>

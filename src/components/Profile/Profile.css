@@ -14,8 +14,7 @@
   overflow: hidden;
   height: auto;
 }
-.photo-article{
-
+.photo-article {
 }
 #profile-pic {
   order: 3;
@@ -38,11 +37,15 @@
   overflow: hidden;
   margin-inline: 4.1vw;
 }
+ul {
+  list-style-type: none;
+}
 @media screen and (max-width: 1400px) {
   .container-article {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    justify-content: center;
     align-content: center;
     height: auto;
   }
@@ -53,6 +56,9 @@
     overflow: auto;
     margin: 0.5%;
     /* margin-inline: 4.1vw; */
+  }
+  div > img {
+    display: inline;
   }
   /* .info-article {
     border: 1px solid red;
@@ -65,7 +71,7 @@
 }
 @media screen and (max-width: 600px) {
   .info-article {
-    width: 100%; /*Don't use percentages*/
+    /* width: 100%; Don't use percentages */
     overflow: hidden;
     margin: 2%;
   }

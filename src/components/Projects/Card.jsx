@@ -14,7 +14,7 @@ const cardStyle = {
   cursor: 'move',
   overflow: 'auto',
 };
-export const Card = memo(({ id, text, title, image, moveCard }) => {
+export const Card = memo(({ id, text, title, image, link, moveCard }) => {
   const ref = useRef(null);
   const [{ isDragging }, connectDrag] = useDrag({
     item: { id, type: ItemTypes.CARD },
@@ -38,10 +38,11 @@ export const Card = memo(({ id, text, title, image, moveCard }) => {
   const opacity = isDragging ? 0 : 1;
   const containerStyle = useMemo(() => ({ ...cardStyle, opacity }), [opacity]);
   return (
-    <div ref={ref} style={containerStyle}>
-      <img src={image} alt="img" style={{ height: '45%', width: 'auto' }} />
-        <h3 style={{ textAlign: 'center' }}>{title}</h3>
-      {text}
-    </div>
+    <article ref={ref} style={containerStyle}>
+      <img src={image} alt="img" />
+      <h3 >{title}</h3>
+      <p>{text}</p>
+      <a href={link}>{link}</a>
+    </article>
   );
 });

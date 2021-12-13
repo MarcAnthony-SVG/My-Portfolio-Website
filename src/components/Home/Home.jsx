@@ -99,13 +99,13 @@ function Home() {
           reset();
         }}
       />
-      <div style={HomeText}>
+      <main style={HomeText}>
         {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
           <animated.div key={key} style={rest}>
             <animated.div>{item}</animated.div>
           </animated.div>
         ))}
-      </div>
+      </main>
     </div>
   );
 }
