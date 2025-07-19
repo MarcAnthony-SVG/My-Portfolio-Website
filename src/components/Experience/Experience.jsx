@@ -1,15 +1,16 @@
 import React from 'react';
 import { Jobs } from '../../Data/Employment';
 import '../Experience/Experience.css';
+
 function Experience() {
-  const careers = Jobs;
+
   return (
     <section className="experience-section">
       <div>
         <h1>Experience</h1>
       </div>
       <div className="info-container">
-        {careers.map((job) => (
+        {Jobs.map((job) => (
           <div className="parent-container">
               <div className="experience-uppercontainer">
                 <img

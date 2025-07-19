@@ -3,7 +3,7 @@ import CorkBoard from '../Projects/Images/Corkboard.jpg';
 import { Card } from './Card';
 import Projects from '../../Data/Projects.js';
 import update from 'immutability-helper';
-import Wood from '../Projects/Images/Wood.jpg';
+import Wood from '../Projects/Images/wood.jpg';
 import './Projects.css';
 
 function buildCardData() {
@@ -66,6 +66,7 @@ export default class ProjectsContainer extends React.Component {
           border: '5px solid black',
           overflow: 'hidden',
         }}
+        className="projects-section"
       >
         <header>
           <h1>Projects</h1>

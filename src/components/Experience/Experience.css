@@ -1,24 +1,35 @@
 .experience-section {
-  background-color: white;
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
   text-align: center;
-  /* // width: 'auto', */
   height: 86.4vh;
-  border: 65px inset darkred;
+  border: 65px inset rgba(139, 0, 0, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
+
 .info-container {
   display: flex;
   justify-content: center;
   height: 64vh;
-  /* overflow: hidden; */
+  padding: 20px 0;
 }
+
 .parent-container {
   border-style: solid;
   width: 50%;
-  padding: 10px;
+  padding: 15px;
   margin: 10px;
-  background-color: lightgrey;
-  border-radius: 0.9%;
+  background-color: rgba(211, 211, 211, 0.8);
+  border-radius: 10px;
   overflow: auto;
+  border-color: #2E86C1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.parent-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(46, 134, 193, 0.5);
+  z-index: 1;
 }
 
 .experience-uppercontainer {
@@ -26,50 +37,71 @@
   flex-direction: row;
   align-items: center;
 }
+
 .experience-uppercontainer-list {
   list-style-type: none;
   margin: 10px;
   padding: 10px;
+  color: #f5f7fa;
+  font-family: 'Arial', sans-serif;
 }
-.experience-midcontainer{
+
+.experience-midcontainer {
   display: inline-flex;
   flex-direction: row;
 }
 
-.parent-container:hover {
-  transform: scaleY(1.2);
-  /* height: auto; */
-  position: relative;
-  z-index: 1;
+.experience-details p {
+  text-align: left;
+  color: #f5f7fa;
+  font-family: 'Montserrat', sans-serif;
 }
 
-p {
+.experience-skills-list li {
   text-align: left;
+  flex-basis: 50%;
+  color: #f5f7fa;
+  font-family: 'Arial', sans-serif;
 }
-li {
+.experience-uppercontainer-list li {
   text-align: left;
-  flex-basis: 50%; /* or width: 50% */
+  flex-basis: 50%;
+  color: #f5f7fa;
+  font-family: 'Arial', sans-serif;
 }
-
 #test {
   width: 400px;
   height: 400px;
-  background: hotpink;
+  background: rgba(255, 105, 180, 0.8);
   border-radius: 16px;
   touch-action: none;
   user-select: none;
   cursor: grab;
+  transition: transform 0.3s ease;
 }
+
+#test:hover {
+  transform: scale(1.05);
+}
+
 .logos {
   width: 25%;
   height: 25%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
+
+.logos:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 600px) {
   .experience-section {
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, #4a90e2, #50e3c2);
     height: auto;
-    border: 45px inset darkred;
+    border: 45px inset rgba(139, 0, 0, 0.8);
   }
+
   .info-container {
     display: flex;
     flex-wrap: wrap;
@@ -78,35 +110,44 @@ li {
     overflow: hidden;
     height: auto;
   }
+
   .parent-container {
     border-style: solid;
     width: 100%;
-    /* padding: 10px; */
     margin: 0px;
-    background-color: lightgrey;
-    border-radius: 0.9%;
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 8px;
     overflow: auto;
+    border-color: #2E86C1;
   }
 
   h2 {
     font-size: small;
+    color: #f5f7fa;
   }
+
   h3 {
     font-size: small;
+    color: #f5f7fa;
   }
+
   p {
     font-size: small;
+    color: #f5f7fa;
   }
 }
+
 @media screen and (max-width: 736px) {
   .experience-section {
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, #4a90e2, #50e3c2);
     height: auto;
-    border: 45px inset darkred;
+    border: 45px inset rgba(139, 0, 0, 0.8);
   }
+
   .logos {
     width: 9%;
   }
+
   .info-container {
     display: flex;
     flex-wrap: wrap;
@@ -115,34 +156,44 @@ li {
     overflow: hidden;
     height: auto;
   }
+
   .parent-container {
     border-style: solid;
     width: 100%;
     margin: 0px;
-    background-color: lightgrey;
-    border-radius: 0.9%;
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 8px;
     overflow: auto;
+    border-color: #2E86C1;
   }
 
   h2 {
     font-size: small;
+    color: #f5f7fa;
   }
+
   h3 {
     font-size: small;
+    color: #f5f7fa;
   }
+
   p {
     font-size: small;
+    color: #f5f7fa;
   }
 }
+
 @media screen and (max-width: 1336px) {
   .experience-section {
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, #4a90e2, #50e3c2);
     height: auto;
-    border: 45px inset darkred;
+    border: 45px inset rgba(139, 0, 0, 0.8);
   }
+
   .logos {
     width: 10%;
   }
+
   .info-container {
     display: flex;
     flex-wrap: wrap;
@@ -151,23 +202,29 @@ li {
     overflow: hidden;
     height: auto;
   }
+
   .parent-container {
     border-style: solid;
     width: 100%;
-    /* padding: 10px; */
     margin: 0px;
-    background-color: lightgrey;
-    border-radius: 0.9%;
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 8px;
     overflow: auto;
+    border-color: #2E86C1;
   }
 
   h2 {
     font-size: small;
+    color: #f5f7fa;
   }
+
   h3 {
     font-size: small;
+    color: #f5f7fa;
   }
+
   p {
     font-size: small;
+    color: #f5f7fa;
   }
 }

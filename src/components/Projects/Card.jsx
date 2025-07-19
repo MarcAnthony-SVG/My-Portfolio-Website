@@ -11,6 +11,7 @@ const cardStyle = {
   margin: '1%',
   padding: '0.5rem 1rem',
   backgroundColor: 'white',
+  color:'black',
   cursor: 'move',
   overflow: 'auto',
 };
